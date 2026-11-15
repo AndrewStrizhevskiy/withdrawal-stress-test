@@ -1,0 +1,6 @@
+Cycle 8 amendment A5: S0-Pro re-checks, master seed 20261117
+config {"n_size": 400, "n_cov": 100, "k_null": 200, "boot": 300}
+1. size: 0.050 over 400 null datasets (limit 0.06; binomial SE at 0.05: 0.011) -> PASS
+2. coverage with fixed subjects: Delta E 0.896 over 431 intervals (misses below 19, above 26; mean width 0.0342, sd of error 0.0104), JI 0.910 over 89 -> FAIL
+A5 overall: FAIL
+seconds 356

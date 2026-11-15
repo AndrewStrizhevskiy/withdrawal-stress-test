@@ -1,0 +1,46 @@
+Cycle 8 S1 primary analysis (SYNTHETIC CODE TEST, not a result)
+models 64, items 14022, bootstrap resamples 2
+
+H1: T = 0.00455, p = 0.167, jackknife 90% CI [0.00397, 0.00512], MDE 0.0028, developers used 13, within pairs 139 -> INCONCLUSIVE
+H1 sensitivity: strict_panel (30 models): T 0.00478, p 0.167 -> INCONCLUSIVE; without_largest_developer (55 models): T 0.00456, p 0.167 -> INCONCLUSIVE; without_accuracy_below_40pct (62 models): T 0.00442, p 0.167 -> INCONCLUSIVE; open_weight_only (41 models): T 0.00479, p 0.167 -> INCONCLUSIVE (largest developer: google)
+H2 n=3: full winner stack, worst-case winner best, flip False; best 10.24/11.40; plurality 7.22/11.40; npw 7.22/11.40; ds 7.30/11.40; stack 7.22/11.40
+H2 n=5: full winner stack, worst-case winner best, flip False; best 10.24/11.40; plurality 6.18/11.40; npw 6.18/11.40; ds 6.25/11.40; stack 6.13/11.40
+H2 n=7: full winner stack, worst-case winner plurality, flip False; best 10.24/11.40; plurality 5.84/8.69; npw 5.83/8.69; ds 5.83/8.84; stack 5.75/8.69
+H2 n=9: full winner stack, worst-case winner plurality, flip False; best 10.24/11.40; plurality 5.70/7.52; npw 5.69/7.52; ds 5.69/7.62; stack 5.58/7.55
+H2 -> REFUTED
+H3: held-out worst-case error robust 10.16, cap 7.82, greedy 11.47, MI 8.73; gain vs cap -2.33 pp, CI [-2.41, -0.72]; full-availability cost vs cap -0.06 pp -> REFUTED
+
+Descriptive (error, %; 95% CI):
+  D/prim/JI/dev:ai21+api-only: 0.13 [0.09, 0.17]
+  D/prim/JI/dev:google+api-only: 0.12 [0.04, 0.20]
+  D/prim/JI/dev:google+dev:ai21: 0.13 [0.09, 0.17]
+  D/prim/JI/dev:google+dev:meta: -0.17 [-0.28, -0.06]
+  D/prim/JI/dev:google+dev:qwen: 0.05 [-0.24, 0.34]
+  D/prim/JI/dev:meta+api-only: -0.17 [-0.28, -0.06]
+  D/prim/JI/dev:meta+dev:ai21: 1.76 [1.43, 2.09]
+  D/prim/JI/dev:meta+dev:qwen: 1.54 [-4.72, 7.80]
+  D/prim/JI/dev:qwen+api-only: 0.05 [-0.24, 0.34]
+  D/prim/JI/dev:qwen+dev:ai21: -0.51 [-0.51, -0.50]
+  D/prim/dE/api-only: -0.12 [-0.25, -0.09]
+  D/prim/dE/dev:ai21: 0.44 [0.16, 0.47]
+  D/prim/dE/dev:google: -0.12 [-0.25, -0.09]
+  D/prim/dE/dev:meta: 1.52 [1.62, 2.58]
+  D/prim/dE/dev:qwen: 4.67 [4.33, 5.08]
+  D/prim/full: 6.80 [6.37, 6.52]
+  S/best_single_any: 10.24 [9.91, 9.96]
+  S/best_single_open: 10.24 [9.91, 9.96]
+  S/best_single_open/eng: 11.38 [10.61, 12.09]
+  S/full_panel: 9.80 [8.92, 9.74]
+  S/full_panel_api_withdrawn: 8.99 [8.29, 8.77]
+  S/full_panel_api_withdrawn/eng: 9.62 [10.45, 10.96]
+  S/open5: 6.58 [6.27, 6.32]
+  S/open5/eng: 7.05 [7.06, 7.71]
+  S/open_compute100B: 6.58 [6.27, 6.32]
+  S/prim_api_withdrawn: 6.68 [6.27, 6.28]
+  S/prim_api_withdrawn/eng: 7.25 [7.72, 7.72]
+  S/prim_full/eng: 7.32 [7.59, 7.72]
+  S/robust_api_withdrawn: 6.65 [6.38, 6.42]
+  S/robust_full: 6.33 [5.85, 6.13]
+
+portfolios (fold 0 / fold 1): {"cap": [["qwen_m40", "meta_m16", "ai21_m49", "nvidia_m62", "anthropic_m19"], ["qwen_m40", "meta_m16", "ai21_m49", "nvidia_m62", "anthropic_m19"]], "greedy": [["qwen_m40", "google_m0", "meta_m16", "qwen_m37", "ai21_m49"], ["qwen_m40", "google_m0", "meta_m16", "qwen_m37", "ai21_m49"]], "mi": [["qwen_m40", "meta_m16", "ai21_m49", "ai21_m48", "microsoft_m44"], ["qwen_m40", "meta_m16", "ai21_m49", "qwen_m37", "meta_m9"]], "robust": [["qwen_m40", "meta_m16", "ai21_m49", "anthropic_m19", "ai21_m48"], ["qwen_m40", "meta_m16", "nvidia_m62", "ai21_m49", "ai21_m48"]], "open5": [["qwen_m40", "google_m6", "meta_m16", "qwen_m37", "qwen_m39"], ["qwen_m40", "google_m6", "meta_m16", "qwen_m37", "qwen_m39"]], "open_compute100B": [["qwen_m40", "google_m6", "meta_m16", "qwen_m37", "qwen_m39"], ["qwen_m40", "google_m6", "meta_m16", "qwen_m37", "qwen_m39"]]}
+seconds 526

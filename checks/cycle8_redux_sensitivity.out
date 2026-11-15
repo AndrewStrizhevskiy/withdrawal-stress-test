@@ -1,0 +1,24 @@
+Cycle 8 MMLU-Redux exclusion sensitivity (protocol Section 39)
+HELM items 14038; Redux items 5700; matched 5686 (0.998); flagged HELM items 374; key-wrong subset 144
+
+H1 without flagged items (13664 items): T 0.00447 (S1: 0.00462), p 0.005, jackknife 90% CI [0.00151, 0.00743] -> SUPPORTED
+
+Descriptives (%, 95% subject-bootstrap CI with exclusion; S1 value; key-wrong-only exclusion point):
+  primary portfolio error: 10.19 [7.81, 13.72]; S1 11.06; key-wrong-only 10.47
+  dE API-only: 2.26 [1.36, 4.13]; S1 2.19; key-wrong-only 2.22
+  sovereignty cost C: 2.85 [1.99, 3.50]; S1 2.86; key-wrong-only 2.89
+  best single open: 12.46 [9.42, 16.59]; S1 13.24; key-wrong-only 12.70
+  open5: 12.87 [9.62, 16.61]; S1 13.77; key-wrong-only 13.19
+  H3 cap held-out worst: 10.85 [8.05, 14.72]; S1 11.65; key-wrong-only 11.08
+  H3 robust held-out worst: 10.96 [8.30, 14.75]; S1 11.81; key-wrong-only 11.21
+  H3 gain robust vs cap: -0.12 [-0.68, 0.27]; S1 -0.16; key-wrong-only -0.14
+  dE dev:01-ai: 0.09 [-0.42, 0.30]; S1 0.10; key-wrong-only 0.09
+  dE dev:anthropic: 0.61 [0.29, 1.36]; S1 0.59; key-wrong-only 0.60
+  dE dev:deepseek-ai: 0.47 [0.02, 0.82]; S1 0.46; key-wrong-only 0.45
+  dE dev:google: 0.42 [0.07, 0.93]; S1 0.38; key-wrong-only 0.40
+  dE dev:openai: 0.23 [-0.12, 0.62]; S1 0.27; key-wrong-only 0.26
+  H2 n=3: voting-rule spread full 0.07, worst 0.31
+  H2 n=5: voting-rule spread full 0.05, worst 0.04
+  H2 n=7: voting-rule spread full 0.18, worst 0.04
+  H2 n=9: voting-rule spread full 0.33, worst 0.53
+seconds 4748

@@ -1,0 +1,16 @@
+Cycle 8 POST HOC (Section 40): leaderboard inheritance with model-card lineage
+models with a card base_model 213; chain loops 348; class sizes C0 41974, C1 18161, C2 422, C3 169; family bootstrap 1000, seed 20261117
+  C1: +0.0748 [+0.0671, +0.0821] (n 18157, families 242)
+  C2: +0.2199 [+0.1793, +0.2485] (n 421, families 15)
+  C3: +0.3092 [+0.2790, +0.3413] (n 168, families 64)
+  C2 (with size): +0.2183 [+0.1787, +0.2433] (n 411, families 14)
+  C2 placebo: +0.2116 [+0.1380, +0.2331] (n 411, families 14)
+  C2 - placebo: +0.0068 [-0.0108, +0.0596] (n 411, families 14)
+  C3 (with size): +0.3108 [+0.2794, +0.3459] (n 161, families 64)
+  C3 placebo: +0.2095 [+0.1824, +0.2321] (n 161, families 64)
+  C3 - placebo: +0.1013 [+0.0729, +0.1338] (n 161, families 64)
+  C3 fine-tune only: +0.2823 [+0.2409, +0.3403] (n 65, families 17)
+  C3 fine-tune only - placebo: +0.1007 [+0.0614, +0.1619] (n 65, families 17)
+  C3 merge only: +0.3302 [+0.2978, +0.3604] (n 96, families 55)
+  C3 merge only - placebo: +0.1018 [+0.0722, +0.1308] (n 96, families 55)
+seconds 103

@@ -1,0 +1,121 @@
+MMLU-Pro Step 0 checks (2026-11-14)
+models listed: 70; with parsed rows: 69
+item ids seen: 12032; ids with inconsistent key or option count across models: 0
+
+per model: items, invalid share, parse rule 1/2/0 shares, agreement with HELM correctness (items compared)
+  allenai_olmo-2-0325-32b-instruct: 1000, invalid 0.064, rules 0.926/0.011/0.063, agreement 0.991 (1000)
+  allenai_olmo-2-1124-13b-instruct: 1000, invalid 0.123, rules 0.866/0.011/0.123, agreement 0.981 (1000)
+  allenai_olmo-2-1124-7b-instruct: 1000, invalid 0.060, rules 0.930/0.010/0.060, agreement 0.996 (1000)
+  allenai_olmoe-1b-7b-0125-instruct: 1000, invalid 0.137, rules 0.823/0.040/0.137, agreement 0.988 (1000)
+  amazon_nova-lite-v1:0: 1000, invalid 0.007, rules 0.991/0.002/0.007, agreement 1.000 (1000)
+  amazon_nova-micro-v1:0: 1000, invalid 0.059, rules 0.936/0.005/0.059, agreement 0.984 (1000)
+  amazon_nova-premier-v1:0: 1000, invalid 0.001, rules 0.999/0.000/0.001, agreement 0.993 (1000)
+  amazon_nova-pro-v1:0: 1000, invalid 0.039, rules 0.947/0.014/0.039, agreement 0.983 (1000)
+  anthropic_claude-3-5-haiku-20241022: 1000, invalid 0.003, rules 0.997/0.000/0.003, agreement 0.998 (1000)
+  anthropic_claude-3-5-sonnet-20240620: 12032, invalid 0.007, rules 0.992/0.000/0.007, agreement 1.000 (12032)
+  anthropic_claude-3-5-sonnet-20241022: 1000, invalid 0.008, rules 0.992/0.000/0.008, agreement 1.000 (1000)
+  anthropic_claude-3-7-sonnet-20250219: 1000, invalid 0.005, rules 0.995/0.000/0.005, agreement 0.996 (1000)
+  anthropic_claude-haiku-4-5-20251001: 1000, invalid 0.483, rules 0.405/0.112/0.483, agreement 0.598 (1000)
+  anthropic_claude-opus-4-20250514: 1000, invalid 0.002, rules 0.998/0.000/0.002, agreement 1.000 (1000)
+  anthropic_claude-opus-4-20250514-thinking-10k: 1000, invalid 0.001, rules 0.999/0.000/0.001, agreement 1.000 (1000)
+  anthropic_claude-sonnet-4-20250514: 1000, invalid 0.000, rules 1.000/0.000/0.000, agreement 1.000 (1000)
+  anthropic_claude-sonnet-4-20250514-thinking-10k: 1000, invalid 0.001, rules 0.999/0.000/0.001, agreement 0.999 (1000)
+  anthropic_claude-sonnet-4-5-20250929: 1000, invalid 0.001, rules 0.960/0.039/0.001, agreement 0.999 (1000)
+  deepseek-ai_deepseek-r1-0528: 1000, invalid 0.083, rules 0.916/0.001/0.083, agreement 1.000 (1000)
+  deepseek-ai_deepseek-v3: 1000, invalid 0.064, rules 0.922/0.014/0.064, agreement 0.968 (1000)
+  google_gemini-1.5-flash-002: 1000, invalid 0.041, rules 0.948/0.011/0.041, agreement 0.983 (1000)
+  google_gemini-1.5-pro-002: 1000, invalid 0.010, rules 0.989/0.001/0.010, agreement 0.998 (1000)
+  google_gemini-2.0-flash-001: 1000, invalid 0.103, rules 0.892/0.005/0.103, agreement 0.945 (1000)
+  google_gemini-2.0-flash-lite-preview-02-05: 1000, invalid 0.015, rules 0.979/0.006/0.015, agreement 0.984 (1000)
+  google_gemini-2.5-flash-lite: 1000, invalid 0.333, rules 0.624/0.043/0.333, agreement 0.952 (1000)
+  google_gemini-2.5-flash-preview-04-17: 1000, invalid 0.233, rules 0.737/0.030/0.233, agreement 0.992 (1000)
+  google_gemini-2.5-pro-preview-03-25: 1000, invalid 0.023, rules 0.976/0.001/0.023, agreement 0.999 (1000)
+  google_gemini-3-pro-preview: 1000, invalid 0.024, rules 0.975/0.001/0.024, agreement 0.997 (1000)
+  ibm_granite-3.3-8b-instruct: 1000, invalid 0.101, rules 0.872/0.027/0.101, agreement 0.972 (1000)
+  ibm_granite-4.0-h-small: 1000, invalid 0.033, rules 0.965/0.003/0.032, agreement 0.989 (1000)
+  ibm_granite-4.0-micro: 1000, invalid 0.038, rules 0.958/0.004/0.038, agreement 0.986 (1000)
+  marin-community_marin-8b-instruct: 1000, invalid 0.407, rules 0.531/0.062/0.407, agreement 0.955 (1000)
+  meta_llama-3.1-405b-instruct-turbo: 1000, invalid 0.014, rules 0.985/0.001/0.014, agreement 1.000 (1000)
+  meta_llama-3.1-70b-instruct-turbo: 1000, invalid 0.023, rules 0.976/0.001/0.023, agreement 0.997 (1000)
+  meta_llama-3.1-8b-instruct-turbo: 1000, invalid 0.150, rules 0.819/0.032/0.149, agreement 0.986 (1000)
+  meta_llama-4-maverick-17b-128e-instruct-fp8: 1000, invalid 0.020, rules 0.980/0.000/0.020, agreement 0.986 (1000)
+  meta_llama-4-scout-17b-16e-instruct: 1000, invalid 0.006, rules 0.994/0.000/0.006, agreement 0.994 (1000)
+  mistralai_mistral-7b-instruct-v0.3: 1000, invalid 0.120, rules 0.869/0.011/0.120, agreement 0.994 (1000)
+  mistralai_mistral-large-2411: 1000, invalid 0.144, rules 0.846/0.010/0.144, agreement 0.956 (1000)
+  mistralai_mistral-small-2503: 1000, invalid 0.339, rules 0.641/0.020/0.339, agreement 0.807 (1000)
+  mistralai_mixtral-8x22b-instruct-v0.1: 1000, invalid 0.113, rules 0.871/0.016/0.113, agreement 0.990 (1000)
+  mistralai_mixtral-8x7b-instruct-v0.1: 1000, invalid 0.247, rules 0.730/0.023/0.247, agreement 0.992 (1000)
+  moonshotai_kimi-k2-instruct: 1000, invalid 0.008, rules 0.989/0.003/0.008, agreement 0.995 (1000)
+  openai_gpt-4.1-2025-04-14: 1000, invalid 0.015, rules 0.980/0.005/0.015, agreement 0.986 (1000)
+  openai_gpt-4.1-mini-2025-04-14: 1000, invalid 0.035, rules 0.958/0.007/0.035, agreement 0.976 (1000)
+  openai_gpt-4.1-nano-2025-04-14: 1000, invalid 0.271, rules 0.700/0.029/0.271, agreement 0.906 (1000)
+  openai_gpt-4o-2024-08-06: 12032, invalid 0.035, rules 0.963/0.002/0.035, agreement 0.997 (12032)
+  openai_gpt-4o-2024-11-20: NO DATA (scenario_state.json: HTTP Error 404: Not Found)
+  openai_gpt-4o-mini-2024-07-18: 1000, invalid 0.061, rules 0.935/0.004/0.061, agreement 0.993 (1000)
+  openai_gpt-5-2025-08-07: 1000, invalid 0.002, rules 0.998/0.000/0.002, agreement 1.000 (1000)
+  openai_gpt-5-mini-2025-08-07: 1000, invalid 0.000, rules 1.000/0.000/0.000, agreement 1.000 (1000)
+  openai_gpt-5-nano-2025-08-07: 1000, invalid 0.005, rules 0.995/0.000/0.005, agreement 1.000 (1000)
+  openai_gpt-5.1-2025-11-13: 1000, invalid 0.000, rules 1.000/0.000/0.000, agreement 1.000 (1000)
+  openai_gpt-oss-120b: 1000, invalid 0.001, rules 0.999/0.000/0.001, agreement 1.000 (1000)
+  openai_gpt-oss-20b: 1000, invalid 0.041, rules 0.959/0.000/0.041, agreement 0.966 (1000)
+  openai_o3-2025-04-16: 1000, invalid 0.000, rules 1.000/0.000/0.000, agreement 1.000 (1000)
+  openai_o4-mini-2025-04-16: 1000, invalid 0.001, rules 0.999/0.000/0.001, agreement 0.999 (1000)
+  qwen_qwen2.5-72b-instruct-turbo: 1000, invalid 0.210, rules 0.769/0.021/0.210, agreement 0.917 (1000)
+  qwen_qwen2.5-7b-instruct-turbo: 1000, invalid 0.046, rules 0.949/0.005/0.046, agreement 0.992 (1000)
+  qwen_qwen3-235b-a22b-fp8-tput: 1000, invalid 0.119, rules 0.869/0.012/0.119, agreement 0.923 (1000)
+  qwen_qwen3-235b-a22b-instruct-2507-fp8: 1000, invalid 0.006, rules 0.994/0.000/0.006, agreement 0.987 (1000)
+  qwen_qwen3-next-80b-a3b-thinking: 1000, invalid 0.053, rules 0.946/0.001/0.053, agreement 0.998 (1000)
+  writer_palmyra-fin: 1000, invalid 0.238, rules 0.709/0.053/0.238, agreement 0.907 (1000)
+  writer_palmyra-med: 1000, invalid 0.003, rules 0.997/0.000/0.003, agreement 1.000 (1000)
+  writer_palmyra-x-004: 1000, invalid 0.172, rules 0.804/0.024/0.172, agreement 0.927 (1000)
+  writer_palmyra-x5: 1000, invalid 0.018, rules 0.979/0.003/0.018, agreement 0.984 (1000)
+  xai_grok-3-beta: 1000, invalid 0.041, rules 0.957/0.002/0.041, agreement 0.978 (1000)
+  xai_grok-3-mini-beta: 1000, invalid 0.024, rules 0.976/0.000/0.024, agreement 1.000 (1000)
+  xai_grok-4-0709: 1000, invalid 0.043, rules 0.957/0.000/0.043, agreement 1.000 (1000)
+  zai-org_glm-4.5-air-fp8: 1000, invalid 0.077, rules 0.923/0.000/0.077, agreement 1.000 (1000)
+
+deduplication: 4 drops -> 66 models; kept models missing: []
+  drop anthropic_claude-3-5-sonnet-20240620 -> keep anthropic_claude-3-5-sonnet-20241022: earlier snapshot
+  drop openai_gpt-4o-2024-11-20 -> keep openai_gpt-4o-2024-08-06: later snapshot has no scenario_state.json in HELM; the latest snapshot with data is kept
+  drop anthropic_claude-opus-4-20250514-thinking-10k -> keep anthropic_claude-opus-4-20250514: same weights, reasoning budget
+  drop anthropic_claude-sonnet-4-20250514-thinking-10k -> keep anthropic_claude-sonnet-4-20250514: same weights, reasoning budget
+agreement < 0.95 or not available (excluded from primary, kept for sensitivity): ['anthropic_claude-haiku-4-5-20251001', 'google_gemini-2.0-flash-001', 'mistralai_mistral-small-2503', 'openai_gpt-4.1-nano-2025-04-14', 'qwen_qwen2.5-72b-instruct-turbo', 'qwen_qwen3-235b-a22b-fp8-tput', 'writer_palmyra-fin', 'writer_palmyra-x-004']
+items common to all 58 primary models: 1000
+adapter-setting classes (primary): T=1,max_tokens=14096,n=5,p=864577cf2296: 22; T=1.0,max_tokens=4096,n=5,p=c73e4ff2f56c: 18; T=1,max_tokens=4096,n=5,p=c73e4ff2f56c: 11; T=1,max_tokens=2048,n=5,p=c73e4ff2f56c: 5; T=0.6,max_tokens=14096,n=5,p=864577cf2296: 1; T=1,max_tokens=2000,n=5,p=c73e4ff2f56c: 1
+
+access classification (Hugging Face model API, 2026-11-14):
+  allenai_olmo-2-0325-32b-instruct: allenai/OLMo-2-0325-32B-Instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  allenai_olmo-2-1124-13b-instruct: allenai/OLMo-2-1124-13B-Instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  allenai_olmo-2-1124-7b-instruct: allenai/OLMo-2-1124-7B-Instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  allenai_olmoe-1b-7b-0125-instruct: allenai/OLMoE-1B-7B-0125-Instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  deepseek-ai_deepseek-r1-0528: deepseek-ai/DeepSeek-R1-0528 -> {'status': 'ok', 'license': 'mit', 'gated': False}
+  deepseek-ai_deepseek-v3: deepseek-ai/DeepSeek-V3 -> {'status': 'ok', 'license': None, 'gated': False}
+  ibm_granite-3.3-8b-instruct: ibm-granite/granite-3.3-8b-instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  ibm_granite-4.0-h-small: ibm-granite/granite-4.0-h-small -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  ibm_granite-4.0-micro: ibm-granite/granite-4.0-micro -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  marin-community_marin-8b-instruct: marin-community/marin-8b-instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  meta_llama-3.1-405b-instruct-turbo: meta-llama/Llama-3.1-405B-Instruct -> {'status': 'ok', 'license': 'llama3.1', 'gated': 'manual'}
+  meta_llama-3.1-70b-instruct-turbo: meta-llama/Llama-3.1-70B-Instruct -> {'status': 'ok', 'license': 'llama3.1', 'gated': 'manual'}
+  meta_llama-3.1-8b-instruct-turbo: meta-llama/Llama-3.1-8B-Instruct -> {'status': 'ok', 'license': 'llama3.1', 'gated': 'manual'}
+  meta_llama-4-maverick-17b-128e-instruct-fp8: meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 -> {'status': 'ok', 'license': 'other', 'gated': 'manual'}
+  meta_llama-4-scout-17b-16e-instruct: meta-llama/Llama-4-Scout-17B-16E-Instruct -> {'status': 'ok', 'license': 'other', 'gated': 'manual'}
+  mistralai_mistral-7b-instruct-v0.3: mistralai/Mistral-7B-Instruct-v0.3 -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  mistralai_mistral-large-2411: mistralai/Mistral-Large-Instruct-2411 -> {'status': 'ok', 'license': 'other', 'gated': False}
+  mistralai_mistral-small-2503: mistralai/Mistral-Small-3.1-24B-Instruct-2503 -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  mistralai_mixtral-8x22b-instruct-v0.1: mistralai/Mixtral-8x22B-Instruct-v0.1 -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  mistralai_mixtral-8x7b-instruct-v0.1: mistralai/Mixtral-8x7B-Instruct-v0.1 -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  moonshotai_kimi-k2-instruct: moonshotai/Kimi-K2-Instruct -> {'status': 'ok', 'license': 'other', 'gated': False}
+  openai_gpt-oss-120b: openai/gpt-oss-120b -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  openai_gpt-oss-20b: openai/gpt-oss-20b -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  qwen_qwen2.5-72b-instruct-turbo: Qwen/Qwen2.5-72B-Instruct -> {'status': 'ok', 'license': 'other', 'gated': False}
+  qwen_qwen2.5-7b-instruct-turbo: Qwen/Qwen2.5-7B-Instruct -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  qwen_qwen3-235b-a22b-fp8-tput: Qwen/Qwen3-235B-A22B-FP8 -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  qwen_qwen3-235b-a22b-instruct-2507-fp8: Qwen/Qwen3-235B-A22B-Instruct-2507-FP8 -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  qwen_qwen3-next-80b-a3b-thinking: Qwen/Qwen3-Next-80B-A3B-Thinking -> {'status': 'ok', 'license': 'apache-2.0', 'gated': False}
+  writer_palmyra-fin: Writer/Palmyra-Fin-70B-32K -> {'status': 'ok', 'license': None, 'gated': False}  FLAG: open release exists; HELM may have queried a different hosted version
+  writer_palmyra-med: Writer/Palmyra-Med-70B-32K -> {'status': 'ok', 'license': 'other', 'gated': False}  FLAG: open release exists; HELM may have queried a different hosted version
+  zai-org_glm-4.5-air-fp8: zai-org/GLM-4.5-Air-FP8 -> {'status': 'ok', 'license': 'mit', 'gated': False}
+
+unverified open-weight candidates (treated as API-only until resolved): []
+primary panel: 58 models, 15 developers (12 with >= 2), 27 open-weight, 31 API-only; strict (modal settings) panel: 22
+developers: openai 12, google 7, anthropic 6, meta 5, allenai 4, amazon 4, mistralai 4, ibm 3, qwen 3, xai 3, deepseek-ai 2, writer 2, marin-community 1, moonshotai 1, zai-org 1

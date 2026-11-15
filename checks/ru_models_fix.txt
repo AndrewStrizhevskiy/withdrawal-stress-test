@@ -1,0 +1,2 @@
+yandexgpt5-lite-8b	hf.co/yandex/YandexGPT-5-Lite-8B-instruct-GGUF:Q4_K_M	yandexgpt
+saiga-yandexgpt-8b	hf.co/IlyaGusev/saiga_yandexgpt_8b_gguf:Q4_K_M	saiga-yandexgpt

@@ -1,0 +1,11 @@
+Cycle 8 POST-HOC: H1 developer contrast under alternative agreement measures (HELM MMLU, 70 models)
+N2 null panels: 200; values: observed contrast; N2 mean [5th, 95th percentile]; z = (obs - null mean) / null sd
+  x     matched  : obs +0.00462; N2 +0.00005 [-0.00047, +0.00063]; z 14.1
+  x     unmatched: obs +0.00036; N2 +0.00013 [-0.00033, +0.00060]; z 0.8
+  raw   matched  : obs +0.00581; N2 +0.00118 [+0.00065, +0.00174]; z 13.6
+  raw   unmatched: obs +0.00624; N2 +0.00587 [+0.00535, +0.00635]; z 1.2
+  cond  matched  : obs +0.01756; N2 -0.00034 [-0.00322, +0.00266]; z 9.6
+  cond  unmatched: obs +0.01422; N2 -0.00178 [-0.00457, +0.00093]; z 9.4
+  capa  matched  : obs +0.01850; N2 -0.00026 [-0.00217, +0.00163]; z 16.8
+  capa  unmatched: obs +0.01028; N2 -0.00060 [-0.00239, +0.00103]; z 10.5
+seconds 171

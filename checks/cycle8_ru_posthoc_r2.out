@@ -1,0 +1,9 @@
+Cycle 8 POST HOC (Section 35, R2): origin vs scale; values in points (accuracy and admission change, %)
+  all six Russian 8-12B vs all anchors / acc: +6.75 [+5.79, +7.82]; leave-one-model-out range [+1.24, +9.82]
+  all six Russian 8-12B vs all anchors / adm: +0.01 [-0.06, +0.11]; leave-one-model-out range [-0.01, +0.03]
+  all six Russian 8-12B vs without Llama / acc: +1.24 [+0.56, +1.97]; leave-one-model-out range [-0.45, +3.09]
+  all six Russian 8-12B vs without Llama / adm: -0.01 [-0.08, +0.10]; leave-one-model-out range [-0.03, +0.02]
+  own-base Russian 8-12B (3) vs all anchors / acc: +8.35 [+7.33, +9.42]; leave-one-model-out range [+2.84, +11.42]
+  own-base Russian 8-12B (3) vs all anchors / adm: +0.01 [-0.08, +0.13]; leave-one-model-out range [-0.02, +0.06]
+  own-base Russian 8-12B (3) vs without Llama / acc: +2.84 [+1.95, +3.74]; leave-one-model-out range [+1.15, +4.91]
+  own-base Russian 8-12B (3) vs without Llama / adm: -0.00 [-0.09, +0.15]; leave-one-model-out range [-0.04, +0.04]

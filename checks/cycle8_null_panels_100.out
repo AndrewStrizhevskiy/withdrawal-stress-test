@@ -1,0 +1,4 @@
+Cycle 8 POST HOC: Delta E on 100 null panels each (MMLU, primary pipeline); pp; mean [5th, 95th]; share of panels with value <= observed
+  N1: full error 1.22 [1.05, 1.38] (observed 11.06; share <= observed 1.00); API-only dE 10.23 [4.42, 17.37] (n 100; observed 2.19; share <= observed 0.00); first 20 reproduce S1b: True
+  N2: full error 10.00 [9.64, 10.37] (observed 11.06; share <= observed 1.00); API-only dE 2.59 [2.00, 2.91] (n 100; observed 2.19; share <= observed 0.12); first 20 reproduce S1b: True
+seconds 39

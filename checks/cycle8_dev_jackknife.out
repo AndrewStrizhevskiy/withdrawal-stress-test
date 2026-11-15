@@ -1,0 +1,11 @@
+Cycle 8 POST HOC (Section 42): leave-one-developer-out jackknife (points; full pipeline re-selected)
+
+MMLU: full C 2.86, dE(API-only) 2.19
+  C: leave-one-out range [2.15 (without anthropic), 3.48 (without deepseek-ai)]; jackknife SE 1.23; sign changes 0 of 18
+  dE_api: leave-one-out range [1.68 (without google), 7.62 (without deepseek-ai)]; jackknife SE 5.25; sign changes 0 of 18
+  h3_gain: leave-one-out range [-0.88 (without deepseek-ai), 0.07 (without anthropic)]; jackknife SE 0.77; sign changes 3 of 18
+
+MMLU-Pro: full C 5.20
+  C: leave-one-out range [4.10 (without ibm), 6.80 (without deepseek-ai)]; jackknife SE 2.21; sign changes 0 of 15
+  h3_gain: leave-one-out range [-2.80 (without anthropic), -1.00 (without google)]; jackknife SE 1.89; sign changes 0 of 15
+seconds 384

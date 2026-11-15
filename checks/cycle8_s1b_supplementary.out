@@ -1,0 +1,36 @@
+Cycle 8 S1b supplementary outputs
+models 70, items 14038
+
+Decision-code check against S1 outputs: reproduced (H2 REFUTED, H3 REFUTED, gain -0.16)
+
+RAW (primary portfolio), 95% percentile CI, resamples used:
+  api-only: 1.198 [1.123, 1.556], 200
+  dev:01-ai: 1.009 [0.953, 1.024], 200
+  dev:anthropic: 1.053 [1.024, 1.135], 200
+  dev:deepseek-ai: 1.042 [1.002, 1.072], 198
+  dev:google: 1.035 [1.006, 1.094], 200
+  dev:openai: 1.024 [0.989, 1.052], 180
+
+Admission chart (MODEL-BASED, 1PL-g fit to open-weight panel): base = open-weight portfolio ['deepseek-ai_deepseek-v3', '01-ai_yi-34b', 'meta_llama-3.1-405b-instruct-turbo', 'qwen_qwen2-72b-instruct', 'nvidia_nemotron-4-340b-instruct'] / ['deepseek-ai_deepseek-v3', '01-ai_yi-34b', 'meta_llama-3.1-405b-instruct-turbo', 'qwen_qwen2.5-72b-instruct-turbo', 'meta_llama-3.1-70b-instruct-turbo'], base plurality error 13.77
+  a=0.5,r=0.0: gain -0.29 pp (sd over draws 0.05)
+  a=0.5,r=0.3: gain -0.19 pp (sd over draws 0.05)
+  a=0.5,r=0.6: gain -0.11 pp (sd over draws 0.04)
+  a=0.7,r=0.0: gain -0.11 pp (sd over draws 0.06)
+  a=0.7,r=0.3: gain -0.09 pp (sd over draws 0.05)
+  a=0.7,r=0.6: gain -0.04 pp (sd over draws 0.03)
+  a=0.85,r=0.0: gain 0.96 pp (sd over draws 0.09)
+  a=0.85,r=0.3: gain 0.65 pp (sd over draws 0.07)
+  a=0.85,r=0.6: gain 0.40 pp (sd over draws 0.07)
+
+Full 70-model plurality, engineering subset, full availability: 24.89 [18.01, 35.35]
+
+Delta E of the re-selected primary portfolio on simulated null panels (pp; mean [5th, 95th]):
+  N1: full error 1.20 [1.06, 1.33] (n=20); API-only dE 11.08 [6.83, 17.39] (n=20), emptied 0; largest developer dE 2.90 [1.51, 4.65] (n=20)
+  N2: full error 9.98 [9.62, 10.45] (n=20); API-only dE 2.87 [2.36, 4.05] (n=20), emptied 0; largest developer dE 1.35 [0.52, 2.46] (n=20)
+  observed: full error 11.06; API-only dE 2.19; largest developer dE 0.59
+
+H2/H3 sensitivity analyses (100 resamples each; largest developer: google):
+  strict_panel (30 models): H2 REFUTED (n=3: plurality->stack, plurality 11.23/13.66; n=5: plurality->plurality, plurality 11.16/13.24; n=7: stack->stack, plurality 11.21/13.11; n=9: stack->plurality, plurality 11.58/12.93); H3 REFUTED (robust 11.65, cap 11.65, gain 0.00 [-0.56, 0.27], cost 0.00)
+  without_largest_developer (61 models): H2 REFUTED (n=3: ds->best, plurality 11.80/13.24; n=5: stack->best, plurality 11.61/13.24; n=7: stack->stack, plurality 11.75/13.11; n=9: stack->npw, plurality 12.14/12.95); H3 REFUTED (robust 12.56, cap 12.39, gain -0.16 [-1.04, 0.23], cost 0.31)
+  without_accuracy_below_40pct (69 models): H2 REFUTED (n=3: plurality->stack, plurality 11.23/13.66; n=5: plurality->plurality, plurality 11.16/13.24; n=7: stack->plurality, plurality 11.15/13.24; n=9: stack->plurality, plurality 11.40/12.93); H3 REFUTED (robust 11.81, cap 11.65, gain -0.16 [-0.50, 0.21], cost 0.21)
+seconds 4542

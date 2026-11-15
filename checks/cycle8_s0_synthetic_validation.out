@@ -1,0 +1,34 @@
+Cycle 8 S0 synthetic validation
+config: {"n_subj": 57, "per_subj": 246, "fresh_subj": 244, "draws": 100, "k_null": 100, "k_pred": 20, "boot": 300, "adm_draws": 30, "n_null": 200, "n_power": 100, "power_sigmas": [0.1, 0.2, 0.3, 0.5], "recovery_sigmas": [0.0, 0.3], "admission_sigma": 0.3}
+models 64, developers 18, developers with >=2 models 13, API-only models 23
+datasets: sigma=0.0: 200, sigma=0.1: 100, sigma=0.2: 100, sigma=0.3: 100, sigma=0.5: 100
+observed accuracy range across datasets: min 0.331, max 0.884 (means)
+
+Criterion 1 (size): rejection rate under sigma=0: 0.055 (n=200); mean T under null 1.090  -> PASS
+
+Criterion 2 (minimal detectable effect): power of H1 by sigma (one-sided, pre-registered)
+  sigma=0.1: power 0.06, mean T 0.47 (n=100); secondary two-sided power 0.02
+  sigma=0.2: power 0.10, mean T 0.20 (n=100); secondary two-sided power 0.04
+  sigma=0.3: power 0.11, mean T -0.03 (n=100); secondary two-sided power 0.05
+  sigma=0.5: power 0.12, mean T 0.76 (n=100); secondary two-sided power 0.09
+  secondary: two-sided rejection rate under sigma=0: 0.025
+  -> FAIL: no sigma reaches power 0.8
+
+Criterion 3 (recovery)
+  dE interval coverage: 0.923 over 470 scenario estimates -> pass
+  JI interval coverage: 0.906 over 85 -> pass
+  mean Spearman(fitted b, true b): 0.774 -> fail
+  N2-predicted dE within tolerance under sigma=0: 0.975 over 871 -> pass
+  admission chart, mean over datasets (gain in accuracy, percentage points): a, r: N2 | true | mean |diff|
+    a=0.50 r=0.0:  -0.57 |  -0.53 |  0.05 ok
+    a=0.50 r=0.3:  -0.40 |  -0.37 |  0.04 ok
+    a=0.50 r=0.6:  -0.23 |  -0.21 |  0.02 ok
+    a=0.70 r=0.0:  -0.09 |  -0.03 |  0.06 ok
+    a=0.70 r=0.3:  -0.07 |  -0.03 |  0.04 ok
+    a=0.70 r=0.6:  -0.04 |  -0.01 |  0.03 ok
+    a=0.85 r=0.0:   0.83 |   1.00 |  0.17 ok
+    a=0.85 r=0.3:   0.59 |   0.70 |  0.11 ok
+    a=0.85 r=0.6:   0.33 |   0.40 |  0.07 ok
+  -> FAIL
+
+S0 overall: FAIL

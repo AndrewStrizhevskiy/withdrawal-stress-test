@@ -1,0 +1,11 @@
+Cycle 8 S0-Pro: MMLU-Pro panel structure, 1000 items, 10 options, master seed 20261116
+config {"n_null": 200, "n_alt": 100, "n_recovery": 100, "k_null": 100, "boot": 300}
+criterion 1, size: 0.070 over 200 null datasets (limit 0.06) -> FAIL
+  sigma 0.1: power 0.04, mean T 0.00033, developers used 10.7, within pairs 127.7
+  sigma 0.2: power 0.51, mean T 0.00198, developers used 10.7, within pairs 127.5
+  sigma 0.3: power 0.88, mean T 0.00358, developers used 10.7, within pairs 127.3
+  sigma 0.5: power 1.00, mean T 0.00870, developers used 10.7, within pairs 127.3
+criterion 2, MDE: sigma 0.3, MDE = 0.00358 -> PASS
+criterion 3, item-bootstrap coverage at sigma 0.3: Delta E 0.871 over 458 intervals, JI 0.927 over 96 -> FAIL
+S0-Pro overall: FAIL
+seconds 294

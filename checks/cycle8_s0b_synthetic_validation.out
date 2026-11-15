@@ -1,0 +1,52 @@
+Cycle 8 S0 under Amendment A2
+config: {"n_subj": 57, "per_subj": 246, "fresh_subj": 244, "k_null": 100, "k_pred": 20, "boot": 300, "adm_draws": 30, "n_null": 200, "n_power": 100, "power_sigmas": [0.1, 0.2, 0.3, 0.5], "recovery_sigmas": [0.0, 0.3], "admission_sigma": 0.3}
+models 64, developers 18, developers with >=2 models 13
+datasets: sigma=0.0: 200, sigma=0.1: 100, sigma=0.2: 100, sigma=0.3: 100, sigma=0.5: 100
+
+Shared by both N2 variants:
+  3a dE interval coverage 0.912 over 454 -> pass
+  3b JI interval coverage 0.890 over 91 -> FAIL
+
+N2 variant 2pl
+  1  size: rejection rate under sigma=0 0.035 (n=200), mean T -0.00006 -> pass
+     sigma=0.1: power 0.45, mean T 0.00075 (n=100)
+     sigma=0.2: power 1.00, mean T 0.00267 (n=100)
+     sigma=0.3: power 1.00, mean T 0.00582 (n=100)
+     sigma=0.5: power 1.00, mean T 0.01514 (n=100)
+  2  MDE: mean T 0.00267 at sigma=0.2 -> pass
+  3c replicate reliability (mean Spearman) 0.897 -> pass
+  3d N2-predicted dE within tolerance 0.980 over 895 -> pass
+     admission a=0.50 r=0.0: N2  -0.58 | true  -0.54 | mean |diff|  0.05 pp
+     admission a=0.50 r=0.3: N2  -0.41 | true  -0.38 | mean |diff|  0.04 pp
+     admission a=0.50 r=0.6: N2  -0.23 | true  -0.22 | mean |diff|  0.02 pp
+     admission a=0.70 r=0.0: N2  -0.07 | true  -0.00 | mean |diff|  0.07 pp
+     admission a=0.70 r=0.3: N2  -0.05 | true   0.00 | mean |diff|  0.05 pp
+     admission a=0.70 r=0.6: N2  -0.03 | true   0.00 | mean |diff|  0.03 pp
+     admission a=0.85 r=0.0: N2   0.98 | true   1.15 | mean |diff|  0.18 pp
+     admission a=0.85 r=0.3: N2   0.69 | true   0.81 | mean |diff|  0.12 pp
+     admission a=0.85 r=0.6: N2   0.39 | true   0.46 | mean |diff|  0.07 pp
+  3e admission chart, worst mean |diff| 0.18 pp -> pass
+  -> variant 2pl: FAIL
+
+N2 variant 1plg
+  1  size: rejection rate under sigma=0 0.050 (n=200), mean T 0.00006 -> pass
+     sigma=0.1: power 0.58, mean T 0.00087 (n=100)
+     sigma=0.2: power 1.00, mean T 0.00276 (n=100)
+     sigma=0.3: power 1.00, mean T 0.00594 (n=100)
+     sigma=0.5: power 1.00, mean T 0.01531 (n=100)
+  2  MDE: mean T 0.00276 at sigma=0.2 -> pass
+  3c replicate reliability (mean Spearman) 0.939 -> pass
+  3d N2-predicted dE within tolerance 0.981 over 895 -> pass
+     admission a=0.50 r=0.0: N2  -0.55 | true  -0.54 | mean |diff|  0.03 pp
+     admission a=0.50 r=0.3: N2  -0.38 | true  -0.38 | mean |diff|  0.03 pp
+     admission a=0.50 r=0.6: N2  -0.22 | true  -0.22 | mean |diff|  0.02 pp
+     admission a=0.70 r=0.0: N2  -0.04 | true  -0.00 | mean |diff|  0.05 pp
+     admission a=0.70 r=0.3: N2  -0.03 | true   0.00 | mean |diff|  0.04 pp
+     admission a=0.70 r=0.6: N2  -0.01 | true   0.00 | mean |diff|  0.03 pp
+     admission a=0.85 r=0.0: N2   1.07 | true   1.15 | mean |diff|  0.09 pp
+     admission a=0.85 r=0.3: N2   0.75 | true   0.81 | mean |diff|  0.06 pp
+     admission a=0.85 r=0.6: N2   0.43 | true   0.46 | mean |diff|  0.04 pp
+  3e admission chart, worst mean |diff| 0.09 pp -> pass
+  -> variant 1plg: FAIL
+
+S0 (A2) overall: FAIL (no N2 variant passes all criteria)

@@ -1,0 +1,52 @@
+Cycle 8 S1 primary analysis
+models 70, items 14038, bootstrap resamples 200
+
+H1: T = 0.00462, p = 0.005, jackknife 90% CI [0.00162, 0.00762], MDE 0.0028, developers used 12, within pairs 170 -> SUPPORTED
+H1 sensitivity: strict_panel (30 models): T 0.00991, p 0.010 -> SUPPORTED; without_largest_developer (61 models): T 0.00422, p 0.010 -> SUPPORTED; without_accuracy_below_40pct (69 models): T 0.00458, p 0.010 -> SUPPORTED; open_weight_only (42 models): T 0.00595, p 0.010 -> SUPPORTED (largest developer: google)
+H2 n=3: full winner plurality, worst-case winner stack, flip False; best 12.36/13.66; plurality 11.23/13.66; npw 11.23/13.66; ds 11.31/13.66; stack 11.28/13.41
+H2 n=5: full winner plurality, worst-case winner plurality, flip False; best 12.36/13.66; plurality 11.16/13.24; npw 11.18/13.24; ds 11.23/13.24; stack 11.18/13.24
+H2 n=7: full winner stack, worst-case winner plurality, flip False; best 12.36/13.66; plurality 11.15/13.24; npw 11.13/13.24; ds 11.36/13.24; stack 11.12/13.24
+H2 n=9: full winner stack, worst-case winner plurality, flip False; best 12.36/13.66; plurality 11.40/12.93; npw 11.40/12.93; ds 11.55/13.43; stack 11.16/13.03
+H2 -> REFUTED
+H3: held-out worst-case error robust 11.81, cap 11.65, greedy 11.65, MI 12.65; gain vs cap -0.16 pp, CI [-0.63, 0.20]; full-availability cost vs cap 0.21 pp -> REFUTED
+
+Descriptive (error, %; 95% CI):
+  D/prim/JI/dev:01-ai+api-only: -0.10 [-0.70, 0.15]
+  D/prim/JI/dev:01-ai+dev:anthropic: -0.01 [-0.38, 0.62]
+  D/prim/JI/dev:01-ai+dev:deepseek-ai: -0.09 [-0.47, 0.37]
+  D/prim/JI/dev:01-ai+dev:google: -0.06 [-0.37, 0.50]
+  D/prim/JI/dev:01-ai+dev:openai: -0.19 [-0.58, 0.18]
+  D/prim/JI/dev:anthropic+api-only: -0.59 [-1.24, -0.23]
+  D/prim/JI/dev:anthropic+dev:deepseek-ai: 1.26 [0.57, 1.91]
+  D/prim/JI/dev:anthropic+dev:google: 0.95 [0.22, 1.64]
+  D/prim/JI/dev:anthropic+dev:openai: 1.12 [0.50, 1.70]
+  D/prim/JI/dev:deepseek-ai+api-only: 10.14 [2.18, 13.64]
+  D/prim/JI/dev:deepseek-ai+dev:google: 0.80 [0.04, 1.65]
+  D/prim/JI/dev:deepseek-ai+dev:openai: 0.60 [0.21, 1.00]
+  D/prim/JI/dev:google+api-only: -0.38 [-0.88, -0.01]
+  D/prim/JI/dev:google+dev:openai: 0.71 [0.10, 1.21]
+  D/prim/JI/dev:openai+api-only: -0.27 [-0.70, 0.10]
+  D/prim/dE/api-only: 2.19 [1.24, 5.28]
+  D/prim/dE/dev:01-ai: 0.10 [-0.51, 0.31]
+  D/prim/dE/dev:anthropic: 0.59 [0.26, 1.27]
+  D/prim/dE/dev:deepseek-ai: 0.46 [0.02, 0.83]
+  D/prim/dE/dev:google: 0.38 [0.06, 0.93]
+  D/prim/dE/dev:openai: 0.27 [-0.10, 0.69]
+  D/prim/full: 11.06 [8.89, 14.65]
+  S/best_single_any: 12.36 [9.53, 16.10]
+  S/best_single_open: 13.24 [10.29, 17.51]
+  S/best_single_open/eng: 16.24 [10.57, 25.09]
+  S/full_panel: 17.04 [13.54, 21.56]
+  S/full_panel_api_withdrawn: 19.08 [15.23, 24.05]
+  S/full_panel_api_withdrawn/eng: 26.92 [19.19, 37.41]
+  S/open5: 13.77 [10.63, 17.77]
+  S/open5/eng: 20.41 [14.13, 29.20]
+  S/open_compute100B: 19.03 [15.24, 23.52]
+  S/prim_api_withdrawn: 13.24 [10.69, 17.69]
+  S/prim_api_withdrawn/eng: 16.24 [10.57, 28.79]
+  S/prim_full/eng: 15.81 [10.90, 24.95]
+  S/robust_api_withdrawn: 13.41 [10.52, 17.51]
+  S/robust_full: 11.12 [8.67, 14.79]
+
+portfolios (fold 0 / fold 1): {"cap": [["anthropic_claude-3-5-sonnet-20241022", "google_gemini-1.5-pro-002", "deepseek-ai_deepseek-v3", "openai_gpt-4o-2024-08-06", "meta_llama-3.1-405b-instruct-turbo"], ["anthropic_claude-3-5-sonnet-20241022", "deepseek-ai_deepseek-v3", "google_gemini-1.5-pro-002", "meta_llama-3.1-405b-instruct-turbo", "openai_gpt-4o-2024-08-06"]], "greedy": [["anthropic_claude-3-5-sonnet-20241022", "01-ai_yi-34b", "google_gemini-1.5-pro-002", "deepseek-ai_deepseek-v3", "openai_gpt-4o-2024-08-06"], ["anthropic_claude-3-5-sonnet-20241022", "01-ai_yi-34b", "google_gemini-1.5-pro-002", "deepseek-ai_deepseek-v3", "openai_gpt-4o-2024-08-06"]], "mi": [["anthropic_claude-3-5-sonnet-20241022", "google_gemini-1.5-pro-002", "deepseek-ai_deepseek-v3", "qwen_qwen2-72b-instruct", "mistralai_mistral-7b-v0.1"], ["anthropic_claude-3-5-sonnet-20241022", "deepseek-ai_deepseek-v3", "google_gemini-1.5-pro-002", "nvidia_nemotron-4-340b-instruct", "mistralai_mistral-7b-v0.1"]], "robust": [["anthropic_claude-3-5-sonnet-20241022", "deepseek-ai_deepseek-v3", "google_gemini-1.5-pro-002", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen1.5-72b"], ["anthropic_claude-3-5-sonnet-20241022", "deepseek-ai_deepseek-v3", "google_gemini-1.5-pro-002", "meta_llama-3.1-405b-instruct-turbo", "openai_gpt-4o-2024-08-06"]], "open5": [["deepseek-ai_deepseek-v3", "01-ai_yi-34b", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen2-72b-instruct", "nvidia_nemotron-4-340b-instruct"], ["deepseek-ai_deepseek-v3", "01-ai_yi-34b", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen2.5-72b-instruct-turbo", "meta_llama-3.1-70b-instruct-turbo"]], "open_compute100B": [["qwen_qwen2.5-72b-instruct-turbo", "01-ai_yi-6b", "microsoft_phi-3-medium-4k-instruct", "microsoft_phi-3-small-8k-instruct"], ["qwen_qwen2.5-72b-instruct-turbo", "01-ai_yi-6b", "microsoft_phi-3-medium-4k-instruct", "microsoft_phi-3-small-8k-instruct"]]}
+seconds 4307

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/helm_mmlu_parsed.tsv.gz
+data/helm_mmlu_pro_parsed.tsv.gz
+data/helm_mmlu_prompts.jsonl.gz
+data/olb/olb_contents.json.gz
+data/olb/kim2025_hf_featured_models.csv.gz

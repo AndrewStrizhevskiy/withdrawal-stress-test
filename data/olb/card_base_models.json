@@ -1,0 +1,2866 @@
+{
+"01-ai/Yi-1.5-34B-32K": {
+"base_model": null,
+"ok": true
+},
+"01-ai/Yi-1.5-34B-Chat": {
+"base_model": null,
+"ok": true
+},
+"01-ai/Yi-1.5-9B-Chat": {
+"base_model": null,
+"ok": true
+},
+"AALF/FuseChat-Llama-3.1-8B-Instruct-preview": {
+"base_model": null,
+"ok": true
+},
+"AALF/FuseChat-Llama-3.1-8B-SFT-preview": {
+"base_model": null,
+"ok": true
+},
+"AELLM/gemma-2-aeria-infinity-9b": {
+"base_model": [
+"ifable/gemma-2-Ifable-9B",
+"BAAI/Gemma2-9B-IT-Simpo-Infinity-Preference"
+],
+"ok": true
+},
+"AELLM/gemma-2-lyco-infinity-9b": {
+"base_model": [
+"recoilme/recoilme-gemma-2-9B-v0.4",
+"BAAI/Gemma2-9B-IT-Simpo-Infinity-Preference"
+],
+"ok": true
+},
+"Aashraf995/Creative-7B-nerd": {
+"base_model": [
+"suayptalha/HomerCreativeAnvita-Mix-Qw7B",
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.5"
+],
+"ok": true
+},
+"Aashraf995/Qwen-Evo-7B": {
+"base_model": [
+"fblgit/cybertron-v4-qw7B-UNAMGS",
+"suayptalha/HomerCreativeAnvita-Mix-Qw7B",
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.5"
+],
+"ok": true
+},
+"AuraIndustries/Aura-8B": {
+"base_model": [
+"arcee-ai/Llama-3.1-SuperNova-Lite"
+],
+"ok": true
+},
+"Azure99/blossom-v5-32b": {
+"base_model": null,
+"ok": true
+},
+"BAAI/Infinity-Instruct-3M-0625-Llama3-70B": {
+"base_model": null,
+"ok": true
+},
+"BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B": {
+"base_model": null,
+"ok": true
+},
+"BAAI/Infinity-Instruct-7M-Gen-Llama3_1-70B": {
+"base_model": null,
+"ok": true
+},
+"BenevolenceMessiah/Qwen2.5-72B-2x-Instruct-TIES-v1.0": {
+"base_model": [
+"rombodawg/Rombos-LLM-V2.5-Qwen-72b",
+"Qwen/Qwen2.5-72B",
+"abacusai/Dracarys2-72B-Instruct"
+],
+"ok": true
+},
+"BlackBeenie/Neos-Phi-3-14B-v0.1": {
+"base_model": [
+"microsoft/Phi-3-medium-4k-instruct"
+],
+"ok": true
+},
+"BoltMonkey/DreadMix": {
+"base_model": [
+"DreadPoor/Eunoia_Vespera-8B-LINEAR",
+"DreadPoor/Promissum_Mane-8B-LINEAR-lorablated"
+],
+"ok": true
+},
+"BoltMonkey/NeuralDaredevil-SuperNova-Lite-7B-DARETIES-abliterated": {
+"base_model": [
+"mlabonne/NeuralDaredevil-8B-abliterated",
+"grimjim/Llama-3.1-SuperNova-Lite-lorabilterated-8B"
+],
+"ok": true
+},
+"BoltMonkey/SuperNeuralDreadDevil-8b": {
+"base_model": [
+"BoltMonkey/NeuralDaredevil-SuperNova-Lite-7B-DARETIES-abliterated",
+"BoltMonkey/DreadMix"
+],
+"ok": true
+},
+"ClaudioItaly/intelligence-cod-rag-7b-v3": {
+"base_model": [
+"AIDC-AI/Marco-o1",
+"happzy2633/qwen2.5-7b-ins-v3"
+],
+"ok": true
+},
+"CohereForAI/aya-expanse-32b": {
+"base_model": null,
+"ok": true
+},
+"CohereForAI/c4ai-command-r-plus": {
+"base_model": null,
+"ok": true
+},
+"CombinHorizon/Josiefied-abliteratedV4-Qwen2.5-14B-Inst-BaseMerge-TIES": {
+"base_model": [
+"Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4",
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"CombinHorizon/Rombos-Qwen2.5-7B-Inst-BaseMerge-TIES": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct",
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"CombinHorizon/YiSM-blossom5.1-34B-SLERP": {
+"base_model": [
+"altomek/YiSM-34B-0rn",
+"Azure99/blossom-v5.1-34b"
+],
+"ok": true
+},
+"CombinHorizon/huihui-ai-abliterated-Qwen2.5-32B-Inst-BaseMerge-TIES": {
+"base_model": [
+"Qwen/Qwen2.5-32B",
+"huihui-ai/Qwen2.5-32B-Instruct-abliterated"
+],
+"ok": true
+},
+"CombinHorizon/huihui-ai-abliteratedV2-Qwen2.5-14B-Inst-BaseMerge-TIES": {
+"base_model": [
+"huihui-ai/Qwen2.5-14B-Instruct-abliterated-v2",
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"Cran-May/T.E-8.1": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"CultriX/Qwen2.5-14B-MegaMerge-pt2": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"CultriX/Qwen2.5-14B-Wernicke": {
+"base_model": [
+"v000000/Qwen2.5-Lumen-14B",
+"arcee-ai/SuperNova-Medius",
+"Qwen/Qwen2.5-14B",
+"rombodawg/Rombos-LLM-V2.6-Qwen-14b",
+"Qwen/Qwen2.5-14B-Instruct",
+"EVA-UNIT-01/EVA-Qwen2.5-14B-v0.0"
+],
+"ok": true
+},
+"CultriX/Qwestion-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"CultriX/SeQwence-14B": {
+"base_model": null,
+"ok": true
+},
+"CultriX/SeQwence-14B-EvolMerge": {
+"base_model": [
+"CultriX/SeQwence-14Bv1",
+"CultriX/Qwestion-14B",
+"CultriX/Qwen2.5-14B-Wernicke"
+],
+"ok": true
+},
+"Dampfinchen/Llama-3.1-8B-Ultra-Instruct": {
+"base_model": [
+"nbeerbower/llama3.1-gutenberg-8B",
+"akjindal53244/Llama-3.1-Storm-8B",
+"NousResearch/Meta-Llama-3.1-8B",
+"nbeerbower/llama3.1-airoboros3.2-QDT-8B",
+"Sao10K/Llama-3.1-8B-Stheno-v3.4"
+],
+"ok": true
+},
+"Danielbrdz/Barcenas-14b-Phi-3-medium-ORPO": {
+"base_model": null,
+"ok": true
+},
+"DeepAutoAI/Explore_Llama-3.1-8B-Inst": {
+"base_model": [
+"meta-llama/Llama-3.1-8B-Instruct"
+],
+"ok": true
+},
+"DeepAutoAI/d2nwg_Llama-3.1-8B-Instruct-v0.0": {
+"base_model": null,
+"ok": true
+},
+"DeepAutoAI/ldm_soup_Llama-3.1-8B-Inst": {
+"base_model": [
+"meta-llama/Llama-3.1-8B-Instruct"
+],
+"ok": true
+},
+"DeepAutoAI/ldm_soup_Llama-3.1-8B-Instruct-v0.0": {
+"base_model": null,
+"ok": true
+},
+"DeepAutoAI/ldm_soup_Llama-3.1-8B-Instruct-v0.1": {
+"base_model": null,
+"ok": true
+},
+"DeepMount00/Llama-3-8b-Ita": {
+"base_model": "meta-llama/Meta-Llama-3-8B",
+"ok": true
+},
+"DeepMount00/Llama-3.1-8b-ITA": {
+"base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+"ok": true
+},
+"DeepMount00/Llama-3.1-Distilled": {
+"base_model": "meta-llama/Meta-Llama-3-8B",
+"ok": true
+},
+"DreadPoor/BaeZel-8B-LINEAR": {
+"base_model": [
+"DreadPoor/Heart_Stolen-8B-Model_Stock",
+"DreadPoor/Aspire_1.3-8B_model-stock",
+"DreadPoor/LemonP-8B-Model_Stock"
+],
+"ok": true
+},
+"DreadPoor/Condensed_Milk-8B-Model_Stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Emu_Eggs-9B-Model_Stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Matryoshka-8B-LINEAR": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Promissum_Mane-8B-LINEAR": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2": {
+"base_model": "Qwen/Qwen2.5-72B",
+"ok": true
+},
+"EpistemeAI2/Fireball-Phi-3-medium-4k-inst-Philos": {
+"base_model": "unsloth/phi-3-medium-4k-instruct-bnb-4bit",
+"ok": true
+},
+"Etherll/Herplete-LLM-Llama-3.1-8b-Ties": {
+"base_model": [
+"rombodawg/Meta-Llama-3.1-8B-reuploaded",
+"Etherll/Herplete-LLM-Llama-3.1-8b"
+],
+"ok": true
+},
+"Etherll/Qwen2.5-7B-della-test": {
+"base_model": [
+"Qwen/Qwen2.5-7B",
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"Etherll/Qwen2.5-Coder-7B-Instruct-Ties": {
+"base_model": [
+"Qwen/Qwen2.5-Coder-7B-Instruct",
+"Qwen/Qwen2.5-Coder-7B"
+],
+"ok": true
+},
+"Etherll/SuperHermes": {
+"base_model": [
+"rombodawg/Meta-Llama-3.1-8B-reuploaded",
+"Joseph717171/Llama-3.1-SuperNova-8B-Lite_TIES_with_Base",
+"Etherll/Hermes-3-Llama-3.1-8B-adapter",
+"Joseph717171/Llama-3.1-SuperNova-8B-Lite_TIES_with_Base"
+],
+"ok": true
+},
+"GoToCompany/gemma2-9b-cpt-sahabatai-v1-instruct": {
+"base_model": [
+"GoToCompany/gemma2-9b-cpt-sahabatai-v1-base"
+],
+"ok": true
+},
+"Goekdeniz-Guelmez/Josiefied-Qwen2.5-14B-Instruct-abliterated-v4": {
+"base_model": "Qwen/Qwen2.5-14B-Instruct",
+"ok": true
+},
+"Goekdeniz-Guelmez/Josiefied-Qwen2.5-7B-Instruct-abliterated-v2": {
+"base_model": "Qwen/Qwen2.5-7B",
+"ok": true
+},
+"Goekdeniz-Guelmez/josie-7b-v6.0-step2000": {
+"base_model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-7B-Instruct-abliterated-v2",
+"ok": true
+},
+"GreenNode/GreenNode-small-9B-it": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"Gryphe/Pantheon-RP-Pure-1.6.2-22b-Small": {
+"base_model": "mistralai/Mistral-Small-Instruct-2409",
+"ok": true
+},
+"Gunulhona/Gemma-Ko-Merge": {
+"base_model": [
+"lemon07r/Gemma-2-Ataraxy-9B",
+"wzhouad/gemma-2-9b-it-WPO-HB",
+"rtzr/ko-gemma-2-9b-it",
+"ghost613/gemma9_on_korean_summary_events",
+"rtzr/ko-gemma-2-9b-it"
+],
+"ok": true
+},
+"HPAI-BSC/Llama3.1-Aloe-Beta-8B": {
+"base_model": null,
+"ok": true
+},
+"HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1": {
+"base_model": "mistral-community/Mixtral-8x22B-v0.1",
+"ok": true
+},
+"HumanLLMs/Humanish-Qwen2.5-7B-Instruct": {
+"base_model": "Qwen/Qwen2.5-7B-Instruct",
+"ok": true
+},
+"IntervitensInc/internlm2_5-20b-llamafied": {
+"base_model": null,
+"ok": true
+},
+"Isaak-Carter/Josiefied-Qwen2.5-7B-Instruct-abliterated": {
+"base_model": "Qwen/Qwen2.5-7B",
+"ok": true
+},
+"Isaak-Carter/Josiefied-Qwen2.5-7B-Instruct-abliterated-v2": {
+"base_model": "Qwen/Qwen2.5-7B",
+"ok": true
+},
+"Joseph717171/Llama-3.1-SuperNova-8B-Lite_TIES_with_Base": {
+"base_model": null,
+"ok": true
+},
+"Junhoee/Qwen-Megumin": {
+"base_model": "Qwen/Qwen2.5-7B-Instruct",
+"ok": true
+},
+"KSU-HW-SEC/Llama3-70b-SVA-FT-1415": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"KSU-HW-SEC/Llama3-70b-SVA-FT-500": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"KSU-HW-SEC/Llama3-70b-SVA-FT-final": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"KSU-HW-SEC/Llama3.1-70b-SVA-FT-1000step": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"Kukedlc/Qwen-2.5-7b-Spanish-o1-CoT": {
+"base_model": null,
+"ok": true
+},
+"LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"Lambent/qwen2.5-reinstruct-alternate-lumen-14B": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct",
+"Lambent/qwen2.5-lumen-rebased-14B"
+],
+"ok": true
+},
+"Lil-R/2_PRYMMAL-ECE-7B-SLERP": {
+"base_model": [
+"Tsunami-th/Tsunami-0.5x-7B-Instruct",
+"rombodawg/Rombos-LLM-V2.5-Qwen-7b"
+],
+"ok": true
+},
+"Marsouuu/general3Bv2-ECE-PRYMMAL-Martial": {
+"base_model": [
+"Tsunami-th/Tsunami-0.5x-7B-Instruct",
+"fblgit/cybertron-v4-qw7B-MGS"
+],
+"ok": true
+},
+"MaziyarPanahi/calme-2.1-qwen2.5-72b": {
+"base_model": "Qwen/Qwen2.5-72B",
+"ok": true
+},
+"MaziyarPanahi/calme-2.2-qwen2.5-72b": {
+"base_model": "Qwen/Qwen2.5-72B",
+"ok": true
+},
+"MaziyarPanahi/calme-2.4-rys-78b": {
+"base_model": "MaziyarPanahi/calme-2.1-rys-78b",
+"ok": true
+},
+"MaziyarPanahi/calme-3.1-instruct-78b": {
+"base_model": "MaziyarPanahi/calme-3-selfmerge-qwen2-78b",
+"ok": true
+},
+"MaziyarPanahi/calme-3.2-instruct-78b": {
+"base_model": "MaziyarPanahi/calme-3-selfmerge-qwen2-78b",
+"ok": true
+},
+"NAPS-ai/naps-llama-3_1-8b-instruct-v0.4": {
+"base_model": [
+"meta-llama/Meta-Llama-3.1-8B-Instruct"
+],
+"ok": true
+},
+"NLPark/AnFeng_v3.1-Avocet": {
+"base_model": null,
+"ok": true
+},
+"NLPark/B-and-W_Flycatcher-3AD1E": {
+"base_model": null,
+"ok": true
+},
+"NLPark/Shi-Ci-Robin-Test_3AD80": {
+"base_model": [
+"meta-llama/Llama-3.1-70B-Instruct"
+],
+"ok": true
+},
+"Nohobby/MS-Schisandra-22B-v0.1": {
+"base_model": [
+"unsloth/Mistral-Small-Instruct-2409",
+"TheDrummer/Cydonia-22B-v1.2",
+"Gryphe/Pantheon-RP-Pure-1.6.2-22b-Small",
+"anthracite-org/magnum-v4-22b",
+"ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
+"spow12/ChatWaifu_v2.0_22B",
+"rAIfle/Acolyte-22B",
+"Envoid/Mistral-Small-NovusKyver",
+"InferenceIllusionist/SorcererLM-22B"
+],
+"ok": true
+},
+"Nohobby/MS-Schisandra-22B-v0.2": {
+"base_model": [
+"unsloth/Mistral-Small-Instruct-2409",
+"Gryphe/Pantheon-RP-Pure-1.6.2-22b-Small",
+"anthracite-org/magnum-v4-22b",
+"ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
+"spow12/ChatWaifu_v2.0_22B",
+"rAIfle/Acolyte-22B",
+"Envoid/Mistral-Small-NovusKyver",
+"InferenceIllusionist/SorcererLM-22B",
+"allura-org/MS-Meadowlark-22B",
+"crestf411/MS-sunfall-v0.7.0"
+],
+"ok": true
+},
+"NousResearch/Hermes-3-Llama-3.1-70B": {
+"base_model": "meta-llama/Meta-Llama-3.1-70B",
+"ok": true
+},
+"OpenBuddy/openbuddy-llama3-70b-v21.2-32k": {
+"base_model": null,
+"ok": true
+},
+"OpenBuddy/openbuddy-llama3.1-70b-v22.1-131k": {
+"base_model": null,
+"ok": true
+},
+"OpenBuddy/openbuddy-nemotron-70b-v23.1-131k": {
+"base_model": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+"ok": true
+},
+"OpenBuddy/openbuddy-nemotron-70b-v23.2-131k": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"OpenBuddy/openbuddy-qwen2.5llamaify-14b-v23.3-200k": {
+"base_model": null,
+"ok": true
+},
+"Orenguteng/Llama-3.1-8B-Lexi-Uncensored": {
+"base_model": null,
+"ok": true
+},
+"Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2": {
+"base_model": null,
+"ok": true
+},
+"Orion-zhen/Qwen2.5-7B-Instruct-Uncensored": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"Qwen/QwQ-32B-Preview": {
+"base_model": "Qwen/Qwen2.5-32B-Instruct",
+"ok": true
+},
+"Qwen/Qwen1.5-110B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen1.5-110B-Chat": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen1.5-32B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen1.5-32B-Chat": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-57B-A14B-Instruct": {
+"base_model": "Qwen/Qwen2-57B-A14B",
+"ok": true
+},
+"Qwen/Qwen2-72B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-72B-Instruct": {
+"base_model": "Qwen/Qwen2-72B",
+"ok": true
+},
+"Qwen/Qwen2-7B-Instruct": {
+"base_model": "Qwen/Qwen2-7B",
+"ok": true
+},
+"Qwen/Qwen2-Math-72B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-VL-72B-Instruct": {
+"base_model": [
+"Qwen/Qwen2-VL-72B"
+],
+"ok": true
+},
+"Qwen/Qwen2-VL-7B-Instruct": {
+"base_model": [
+"Qwen/Qwen2-VL-7B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-14B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2.5-14B-Instruct": {
+"base_model": "Qwen/Qwen2.5-14B",
+"ok": true
+},
+"Qwen/Qwen2.5-32B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2.5-32B-Instruct": {
+"base_model": "Qwen/Qwen2.5-32B",
+"ok": true
+},
+"Qwen/Qwen2.5-3B-Instruct": {
+"base_model": "Qwen/Qwen2.5-3B",
+"ok": true
+},
+"Qwen/Qwen2.5-72B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2.5-72B-Instruct": {
+"base_model": "Qwen/Qwen2.5-72B",
+"ok": true
+},
+"Qwen/Qwen2.5-7B-Instruct": {
+"base_model": "Qwen/Qwen2.5-7B",
+"ok": true
+},
+"Qwen/Qwen2.5-Coder-14B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-Coder-14B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-Coder-32B": {
+"base_model": [
+"Qwen/Qwen2.5-32B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-Coder-32B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-Coder-32B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-Coder-7B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-Coder-7B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-Math-72B-Instruct": {
+"base_model": "Qwen/Qwen2.5-Math-72B",
+"ok": true
+},
+"Replete-AI/L3.1-Pneuma-8B": {
+"base_model": "meta-llama/Llama-3.1-8B-Instruct",
+"ok": true
+},
+"Saxo/Linkbricks-Horizon-AI-Korean-Superb-27B": {
+"base_model": "google/gemma-2-27b-it",
+"ok": true
+},
+"Shreyash2010/Uma-4x4B-Instruct-v0.1": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"SicariusSicariiStuff/Qwen2.5-14B_Uncencored": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"SicariusSicariiStuff/Qwen2.5-14B_Uncensored": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"SicariusSicariiStuff/Qwen2.5-14B_Uncensored_Instruct": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"Svak/MN-12B-Inferor-v0.1": {
+"base_model": [
+"nbeerbower/Mistral-Nemo-Gutenberg-Doppel-12B-v2",
+"Fizzarolli/MN-12b-Sunrose",
+"anthracite-org/magnum-v4-12b",
+"mistralai/Mistral-Nemo-Instruct-2407"
+],
+"ok": true
+},
+"Syed-Hasan-8503/Phi-3-mini-4K-instruct-cpo-simpo": {
+"base_model": null,
+"ok": true
+},
+"T145/Llama-3.1-8B-Instruct-Zeus": {
+"base_model": [
+"meta-llama/Llama-3.1-8B-Instruct",
+"akjindal53244/Llama-3.1-Storm-8B",
+"arcee-ai/Llama-3.1-SuperNova-Lite",
+"Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2"
+],
+"ok": true
+},
+"T145/ZEUS-8B-V2L2": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"T145/ZEUS-8B-V3": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"T145/ZEUS-8B-V4": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"T145/ZEUS-8B-V7": {
+"base_model": [
+"SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA",
+"akjindal53244/Llama-3.1-Storm-8B",
+"unsloth/Meta-Llama-3.1-8B-Instruct",
+"arcee-ai/Llama-3.1-SuperNova-Lite"
+],
+"ok": true
+},
+"TheDrummer/Cydonia-22B-v1.2": {
+"base_model": null,
+"ok": true
+},
+"TheTsar1209/qwen-carpmuscle-r-v0.3": {
+"base_model": [
+"Qwen/Qwen2.5-14B",
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"TheTsar1209/qwen-carpmuscle-v0.1": {
+"base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+"ok": true
+},
+"TheTsar1209/qwen-carpmuscle-v0.2": {
+"base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+"ok": true
+},
+"TheTsar1209/qwen-carpmuscle-v0.3": {
+"base_model": "unsloth/qwen2.5-14b-bnb-4bit",
+"ok": true
+},
+"TheTsar1209/qwen-carpmuscle-v0.4": {
+"base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+"ok": true
+},
+"Tsunami-th/Tsunami-0.5-7B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct",
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"Tsunami-th/Tsunami-0.5x-7B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct",
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"Tsunami-th/Tsunami-1.0-14B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct",
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"Tsunami-th/Tsunami-1.0-7B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct",
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"Undi95/MG-FinalMix-72B": {
+"base_model": [
+"Qwen/Qwen2-72B-Instruct",
+"alpindale/magnum-72b-v1"
+],
+"ok": true
+},
+"VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct": {
+"base_model": null,
+"ok": true
+},
+"VAGOsolutions/Llama-3.1-SauerkrautLM-8b-Instruct": {
+"base_model": null,
+"ok": true
+},
+"VAGOsolutions/SauerkrautLM-Phi-3-medium": {
+"base_model": null,
+"ok": true
+},
+"VAGOsolutions/SauerkrautLM-v2-14b-DPO": {
+"base_model": [
+"VAGOsolutions/SauerkrautLM-v2-14b-SFT"
+],
+"ok": true
+},
+"VAGOsolutions/SauerkrautLM-v2-14b-SFT": {
+"base_model": [
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"ValiantLabs/Llama3.1-70B-ShiningValiant2": {
+"base_model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+"ok": true
+},
+"Weyaxi/Bagel-Hermes-34B-Slerp": {
+"base_model": null,
+"ok": true
+},
+"ZeroXClem/Qwen-2.5-Aether-SlerpFusion-7B": {
+"base_model": [
+"allknowingroger/QwenSlerp8-7B",
+"Locutusque/StockQwen-2.5-7B"
+],
+"ok": true
+},
+"ZeroXClem/Qwen2.5-7B-HomerAnvita-NerdMix": {
+"base_model": [
+"bunnycore/Qandora-2.5-7B-Creative",
+"allknowingroger/HomerSlerp1-7B",
+"sethuiyer/Qwen2.5-7B-Anvita",
+"fblgit/cybertron-v4-qw7B-MGS",
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.0",
+"newsbang/Homer-v0.5-Qwen2.5-7B"
+],
+"ok": true
+},
+"ZeroXClem/Qwen2.5-7B-HomerCreative-Mix": {
+"base_model": [
+"newsbang/Homer-v0.5-Qwen2.5-7B",
+"allknowingroger/HomerSlerp1-7B",
+"bunnycore/Qwen2.5-7B-Instruct-Fusion",
+"bunnycore/Qandora-2.5-7B-Creative"
+],
+"ok": true
+},
+"ZeroXClem/Qwen2.5-7B-Qandora-CySec": {
+"base_model": [
+"bunnycore/QandoraExp-7B",
+"trollek/Qwen2.5-7B-CySecButler-v0.1"
+],
+"ok": true
+},
+"aaditya/Llama3-OpenBioLLM-70B": {
+"base_model": "meta-llama/Meta-Llama-3-70B-Instruct",
+"ok": true
+},
+"abacusai/Dracarys-72B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"abacusai/Smaug-72B-v0.1": {
+"base_model": "moreh/MoMo-72B-lora-1.8.7-DPO",
+"ok": true
+},
+"abacusai/Smaug-Llama-3-70B-Instruct-32K": {
+"base_model": null,
+"ok": true
+},
+"abacusai/Smaug-Qwen2-72B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"abhishek/autotrain-llama3-70b-orpo-v2": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"akjindal53244/Llama-3.1-Storm-8B": {
+"base_model": null,
+"ok": true
+},
+"allenai/Llama-3.1-Tulu-3-70B": {
+"base_model": [
+"allenai/Llama-3.1-Tulu-3-70B-DPO"
+],
+"ok": true
+},
+"allenai/Llama-3.1-Tulu-3-70B-DPO": {
+"base_model": [
+"allenai/Llama-3.1-Tulu-3-70B-SFT"
+],
+"ok": true
+},
+"allenai/Llama-3.1-Tulu-3-70B-SFT": {
+"base_model": [
+"meta-llama/Llama-3.1-70B"
+],
+"ok": true
+},
+"allenai/Llama-3.1-Tulu-3-8B-DPO": {
+"base_model": [
+"allenai/Llama-3.1-Tulu-3-8B-SFT"
+],
+"ok": true
+},
+"allknowingroger/QwenSlerp4-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"allknowingroger/QwenSlerp6-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"allknowingroger/QwenStock1-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"allknowingroger/QwenStock2-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"allknowingroger/QwenStock3-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"allura-org/MS-Meadowlark-22B": {
+"base_model": [
+"unsloth/Mistral-Small-Instruct-2409"
+],
+"ok": true
+},
+"alpindale/WizardLM-2-8x22B": {
+"base_model": null,
+"ok": true
+},
+"anthracite-org/magnum-v1-72b": {
+"base_model": "Qwen/Qwen2-72B-Instruct",
+"ok": true
+},
+"anthracite-org/magnum-v2-72b": {
+"base_model": "Qwen/Qwen2-72B-Instruct",
+"ok": true
+},
+"anthracite-org/magnum-v3-27b-kto": {
+"base_model": [
+"anthracite-forge/magnum-v3-27b-kto-r3",
+"anthracite-forge/magnum-v3-27b-KTO-e1-r2",
+"anthracite-forge/magnum-v3-27b-KTO-e0.25-r1",
+"IntervitensInc/gemma-2-27b-chatml"
+],
+"ok": true
+},
+"anthracite-org/magnum-v3-34b": {
+"base_model": null,
+"ok": true
+},
+"anthracite-org/magnum-v4-27b": {
+"base_model": null,
+"ok": true
+},
+"arcee-ai/Arcee-Nova": {
+"base_model": null,
+"ok": true
+},
+"arcee-ai/Llama-3.1-SuperNova-Lite": {
+"base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+"ok": true
+},
+"arcee-ai/Llama-Spark": {
+"base_model": null,
+"ok": true
+},
+"arcee-ai/SuperNova-Medius": {
+"base_model": [
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"arcee-ai/Virtuoso-Small": {
+"base_model": [
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"brgx53/3Bgeneralv2-ECE-PRYMMAL-Martial": {
+"base_model": [
+"fblgit/cybertron-v4-qw7B-MGS",
+"Tsunami-th/Tsunami-0.5x-7B-Instruct"
+],
+"ok": true
+},
+"brgx53/3Blarenegv2-ECE-PRYMMAL-Martial": {
+"base_model": [
+"fblgit/cybertron-v4-qw7B-MGS",
+"Tsunami-th/Tsunami-0.5x-7B-Instruct"
+],
+"ok": true
+},
+"bunnycore/CyberCore-Qwen-2.1-7B": {
+"base_model": [
+"rombodawg/Rombos-LLM-V2.5-Qwen-7b",
+"fblgit/cybertron-v4-qw7B-UNAMGS",
+"bunnycore/Qwen-2.1-7b-Persona-lora_model",
+"fblgit/cybertron-v4-qw7B-MGS",
+"bunnycore/Qwen-2.1-7b-Persona-lora_model"
+],
+"ok": true
+},
+"bunnycore/Qandora-2.5-7B-Creative": {
+"base_model": [
+"bunnycore/Qandora-2.5-7B",
+"bunnycore/Qwen-2.1-7b-Persona-lora_model"
+],
+"ok": true
+},
+"bunnycore/QandoraExp-7B": {
+"base_model": [
+"Etherll/Qwen2.5-7B-della-test",
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.0",
+"fblgit/cybertron-v4-qw7B-MGS",
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"bunnycore/QandoraExp-7B-Persona": {
+"base_model": [
+"bunnycore/QandoraExp-7B",
+"bunnycore/Qwen-2.1-7b-Persona-lora_model"
+],
+"ok": true
+},
+"bunnycore/Qwen2.5-7B-Instruct-Fusion": {
+"base_model": [
+"Qwen/Qwen2.5-7B",
+"rombodawg/Rombos-LLM-V2.5-Qwen-7b",
+"fblgit/cybertron-v4-qw7B-MGS",
+"sethuiyer/Qwen2.5-7B-Anvita"
+],
+"ok": true
+},
+"byroneverson/Mistral-Small-Instruct-2409-abliterated": {
+"base_model": "mistralai/Mistral-Small-Instruct-2409",
+"ok": true
+},
+"byroneverson/Yi-1.5-9B-Chat-16K-abliterated": {
+"base_model": "01-ai/Yi-1.5-9B-Chat-16K",
+"ok": true
+},
+"cloudyu/Mixtral_34Bx2_MoE_60B": {
+"base_model": [
+"jondurbin/bagel-dpo-34b-v0.2",
+"SUSTech/SUS-Chat-34B"
+],
+"ok": true
+},
+"cognitivecomputations/dolphin-2.9.2-Phi-3-Medium-abliterated": {
+"base_model": [
+"unsloth/Phi-3-mini-4k-instruct"
+],
+"ok": true
+},
+"cognitivecomputations/dolphin-2.9.2-qwen2-72b": {
+"base_model": "Qwen/Qwen2-72B",
+"ok": true
+},
+"cstr/llama3.1-8b-spaetzle-v90": {
+"base_model": [
+"cstr/llama3.1-8b-spaetzle-v85",
+"cstr/llama3.1-8b-spaetzle-v86",
+"cstr/llama3.1-8b-spaetzle-v74"
+],
+"ok": true
+},
+"deepseek-ai/deepseek-llm-67b-chat": {
+"base_model": null,
+"ok": true
+},
+"dfurman/CalmeRys-78B-Orpo-v0.1": {
+"base_model": [
+"MaziyarPanahi/calme-2.4-rys-78b"
+],
+"ok": true
+},
+"dfurman/Qwen2-72B-Orpo-v0.1": {
+"base_model": [
+"Qwen/Qwen2-72B-Instruct"
+],
+"ok": true
+},
+"djuna/G2-BigGSHT-27B-2": {
+"base_model": [
+"unsloth/gemma-2-27b-it",
+"AALF/gemma-2-27b-it-SimPO-37K-100steps",
+"djuna/G2-BigGSHT-27B-calc"
+],
+"ok": true
+},
+"djuna/L3.1-ForStHS": {
+"base_model": [
+"rityak/L3.1-FormaxGradient",
+"vicgalle/Configurable-Llama-3.1-8B-Instruct",
+"ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.1",
+"grimjim/Llama-3-Instruct-abliteration-LoRA-8B",
+"DreadPoor/Heart_Stolen-8B-Model_Stock"
+],
+"ok": true
+},
+"djuna/L3.1-Promissum_Mane-8B-Della-1.5-calc": {
+"base_model": [
+"DreadPoor/Spei_Meridiem-8B-model_stock",
+"DreadPoor/Aspire1.1-8B-model_stock",
+"DreadPoor/Heart_Stolen1.1-8B-Model_Stock",
+"unsloth/Meta-Llama-3.1-8B"
+],
+"ok": true
+},
+"djuna/L3.1-Promissum_Mane-8B-Della-calc": {
+"base_model": [
+"DreadPoor/Spei_Meridiem-8B-model_stock",
+"unsloth/Meta-Llama-3.1-8B",
+"DreadPoor/Heart_Stolen1.1-8B-Model_Stock",
+"DreadPoor/Aspire1.1-8B-model_stock"
+],
+"ok": true
+},
+"djuna/Q2.5-Partron-7B": {
+"base_model": [
+"Locutusque/StockQwen-2.5-7B",
+"djuna/Q2.5-Fuppavy-7B",
+"fblgit/cybertron-v4-qw7B-MGS",
+"happzy2633/qwen2.5-7b-ins-v3"
+],
+"ok": true
+},
+"dnhkng/RYS-Llama-3-Large-Instruct": {
+"base_model": null,
+"ok": true
+},
+"dnhkng/RYS-Llama3.1-Large": {
+"base_model": null,
+"ok": true
+},
+"dnhkng/RYS-XLarge": {
+"base_model": null,
+"ok": true
+},
+"dnhkng/RYS-XLarge-base": {
+"base_model": null,
+"ok": true
+},
+"dnhkng/RYS-XLarge2": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"dwikitheduck/gen-inst-1": {
+"base_model": "Qwen/Qwen2.5-14B-Instruct",
+"ok": true
+},
+"dwikitheduck/gen-try1": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"dwikitheduck/gen-try1-notemp": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"ehristoforu/Gemma2-9B-it-psy10k-mental_health": {
+"base_model": "ehristoforu/Gemma2-9B-it-psy10k",
+"ok": true
+},
+"ehristoforu/Gemma2-9b-it-train6": {
+"base_model": "ehristoforu/Gemma2-9b-it-train5",
+"ok": true
+},
+"ehristoforu/HappyLlama1": {
+"base_model": "voidful/Llama-3.2-8B-Instruct",
+"ok": true
+},
+"ehristoforu/RQwen-v0.1": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"ehristoforu/RQwen-v0.2": {
+"base_model": "ehristoforu/RQwen-v0.1",
+"ok": true
+},
+"experiment-llm/exp-3-q-r": {
+"base_model": "ehristoforu/exp-2-q-r",
+"ok": true
+},
+"failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5": {
+"base_model": null,
+"ok": true
+},
+"fblgit/TheBeagle-v2beta-32B-MGS": {
+"base_model": [
+"Qwen/Qwen2.5-32B-Instruct"
+],
+"ok": true
+},
+"fblgit/cybertron-v4-qw7B-MGS": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"fblgit/cybertron-v4-qw7B-UNAMGS": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"flammenai/Llama3.1-Flammades-70B": {
+"base_model": [
+"nbeerbower/Llama3.1-Gutenberg-Doppel-70B"
+],
+"ok": true
+},
+"flammenai/Mahou-1.5-llama3.1-70B": {
+"base_model": [
+"flammenai/Llama3.1-Flammades-70B"
+],
+"ok": true
+},
+"flammenai/Mahou-1.5-mistral-nemo-12B": {
+"base_model": [
+"flammenai/Flammades-Mistral-Nemo-12B"
+],
+"ok": true
+},
+"freewheelin/free-evo-qwen72b-v0.8-re": {
+"base_model": null,
+"ok": true
+},
+"gbueno86/Brinebreath-Llama-3.1-70B": {
+"base_model": [
+"meta-llama/Meta-Llama-3.1-70B-Instruct",
+"NousResearch/Hermes-3-Llama-3.1-70B",
+"abacusai/Dracarys-Llama-3.1-70B-Instruct",
+"VAGOsolutions/Llama-3.1-SauerkrautLM-70b-Instruct"
+],
+"ok": true
+},
+"glaiveai/Reflection-Llama-3.1-70B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"gmonsoon/gemma2-9b-sahabatai-v1-instruct-BaseTIES": {
+"base_model": [
+"GoToCompany/gemma2-9b-cpt-sahabatai-v1-instruct",
+"aisingapore/gemma2-9b-cpt-sea-lionv3-instruct"
+],
+"ok": true
+},
+"google/gemma-2-27b-it": {
+"base_model": "google/gemma-2-27b",
+"ok": true
+},
+"hotmailuser/Gemma2Crono-27B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"hotmailuser/Gemma2SimPO-27B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"hotmailuser/Gemma2atlas-27B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"hotmailuser/Gemma2magnum-27b": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"hotmailuser/Qwen2.5-HomerSlerp-7B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"huihui-ai/QwQ-32B-Coder-Fusion-9010": {
+"base_model": [
+"huihui-ai/QwQ-32B-Preview-abliterated",
+"huihui-ai/Qwen2.5-Coder-32B-Instruct-abliterated"
+],
+"ok": true
+},
+"huihui-ai/Qwen2.5-14B-Instruct-abliterated-v2": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"huihui-ai/Qwen2.5-7B-Instruct-abliterated": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2": {
+"base_model": "Qwen/Qwen2.5-7B-Instruct",
+"ok": true
+},
+"informatiker/Qwen2-7B-Instruct-abliterated": {
+"base_model": null,
+"ok": true
+},
+"internlm/internlm2_5-20b-chat": {
+"base_model": null,
+"ok": true
+},
+"internlm/internlm2_5-7b-chat": {
+"base_model": null,
+"ok": true
+},
+"invisietch/MiS-Firefly-v0.2-22B": {
+"base_model": null,
+"ok": true
+},
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v0.9": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.4": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.5": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"jeffmeloy/Qwen2.5-7B-olm-v1.0": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"jeffmeloy/jeffmeloy_Qwen2.5-7B-minperplexity-1": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"jpacifico/Chocolatine-14B-Instruct-4k-DPO": {
+"base_model": null,
+"ok": true
+},
+"jpacifico/Chocolatine-14B-Instruct-DPO-v1.2": {
+"base_model": null,
+"ok": true
+},
+"jpacifico/Chocolatine-3B-Instruct-DPO-v1.2": {
+"base_model": null,
+"ok": true
+},
+"leafspark/Llama-3.1-8B-MultiReflection-Instruct": {
+"base_model": [
+"meta-llama/Meta-Llama-3.1-8B-Instruct"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v4-Advanced-9B": {
+"base_model": [
+"lemon07r/Gemma-2-Ataraxy-v3-Advanced-9B",
+"zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1-t0.25"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v4a-Advanced-9B": {
+"base_model": [
+"lemon07r/Gemma-2-Ataraxy-v3-Advanced-9B",
+"zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1-t0.25"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v4b-9B": {
+"base_model": [
+"zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1-t0.25",
+"lemon07r/Gemma-2-Ataraxy-v3b-9B"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v4c-9B": {
+"base_model": [
+"lemon07r/Gemma-2-Ataraxy-v3b-9B",
+"zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1-t0.25"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v4d-9B": {
+"base_model": [
+"sam-paech/Darkest-muse-v1",
+"lemon07r/Gemma-2-Ataraxy-v4c-9B"
+],
+"ok": true
+},
+"mattshumer/ref_70_e3": {
+"base_model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+"ok": true
+},
+"meditsolutions/Llama-3.1-MedIT-SUN-8B": {
+"base_model": [
+"meta-llama/Llama-3.1-8B-Instruct",
+"arcee-ai/Llama-3.1-SuperNova-Lite"
+],
+"ok": true
+},
+"meditsolutions/MSH-v1-Bielik-v2.3-Instruct-MedIT-merge": {
+"base_model": [
+"speakleash/Bielik-11B-v2.3-Instruct"
+],
+"ok": true
+},
+"meditsolutions/MedIT-Mesh-3B-Instruct": {
+"base_model": [
+"microsoft/Phi-3.5-mini-instruct"
+],
+"ok": true
+},
+"meta-llama/Llama-3.3-70B-Instruct": {
+"base_model": [
+"meta-llama/Llama-3.1-70B"
+],
+"ok": true
+},
+"meta-llama/Meta-Llama-3-70B": {
+"base_model": null,
+"ok": true
+},
+"meta-llama/Meta-Llama-3-70B-Instruct": {
+"base_model": "meta-llama/Meta-Llama-3-70B",
+"ok": true
+},
+"meta-llama/Meta-Llama-3.1-70B-Instruct": {
+"base_model": "meta-llama/Meta-Llama-3.1-70B",
+"ok": true
+},
+"meta-llama/Meta-Llama-3.1-8B-Instruct": {
+"base_model": "meta-llama/Meta-Llama-3.1-8B",
+"ok": true
+},
+"microsoft/Phi-3-medium-128k-instruct": {
+"base_model": null,
+"ok": true
+},
+"microsoft/Phi-3-medium-4k-instruct": {
+"base_model": null,
+"ok": true
+},
+"microsoft/Phi-3-mini-128k-instruct": {
+"base_model": null,
+"ok": true
+},
+"microsoft/Phi-3-mini-4k-instruct": {
+"base_model": null,
+"ok": true
+},
+"microsoft/Phi-3.5-MoE-instruct": {
+"base_model": null,
+"ok": true
+},
+"microsoft/Phi-3.5-mini-instruct": {
+"base_model": null,
+"ok": true
+},
+"mistralai/Mistral-Large-Instruct-2411": {
+"base_model": null,
+"ok": true
+},
+"mistralai/Mistral-Small-Instruct-2409": {
+"base_model": null,
+"ok": true
+},
+"mlabonne/BigQwen2.5-52B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-32B-Instruct"
+],
+"ok": true
+},
+"mlabonne/BigQwen2.5-Echo-47B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-32B-Instruct"
+],
+"ok": true
+},
+"mlabonne/Hermes-3-Llama-3.1-70B-lorablated": {
+"base_model": [
+"NousResearch/Hermes-3-Llama-3.1-70B",
+"mlabonne/Llama-3-70B-Instruct-abliterated-LORA"
+],
+"ok": true
+},
+"mlabonne/NeuralDaredevil-8B-abliterated": {
+"base_model": [
+"mlabonne/Daredevil-8B-abliterated"
+],
+"ok": true
+},
+"mmnga/Llama-3-70B-japanese-suzume-vector-v0.1": {
+"base_model": null,
+"ok": true
+},
+"moeru-ai/L3.1-Moe-2x8B-v0.2": {
+"base_model": [
+"Joseph717171/Llama-3.1-SuperNova-8B-Lite_TIES_with_Base",
+"ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2"
+],
+"ok": true
+},
+"nbeerbower/Gemma2-Gutenberg-Doppel-9B": {
+"base_model": [
+"UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3"
+],
+"ok": true
+},
+"nbeerbower/Llama-3.1-Nemotron-lorablated-70B": {
+"base_model": [
+"nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+"mlabonne/Llama-3-70B-Instruct-abliterated-LORA"
+],
+"ok": true
+},
+"nbeerbower/Llama3.1-Gutenberg-Doppel-70B": {
+"base_model": [
+"mlabonne/Hermes-3-Llama-3.1-70B-lorablated"
+],
+"ok": true
+},
+"nbeerbower/Mistral-Small-Gutenberg-Doppel-22B": {
+"base_model": [
+"mistralai/Mistral-Small-Instruct-2409"
+],
+"ok": true
+},
+"nbeerbower/Qwen2.5-Gutenberg-Doppel-14B": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"newsbang/Homer-7B-v0.1": {
+"base_model": null,
+"ok": true
+},
+"newsbang/Homer-7B-v0.2": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"newsbang/Homer-v0.3-Qwen2.5-7B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"newsbang/Homer-v0.5-Qwen2.5-7B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"newsbang/Homer-v1.0-Qwen2.5-7B": {
+"base_model": null,
+"ok": true
+},
+"nhyha/N3N_Delirium-v1_1030_0227": {
+"base_model": "sam-paech/Delirium-v1",
+"ok": true
+},
+"nhyha/N3N_gemma-2-9b-it_20241029_1532": {
+"base_model": "unsloth/gemma-2-9b-it",
+"ok": true
+},
+"nhyha/N3N_gemma-2-9b-it_20241110_2026": {
+"base_model": "unsloth/gemma-2-9b-it",
+"ok": true
+},
+"nhyha/merge_Qwen2.5-7B-Instruct_20241023_0314": {
+"base_model": "unsloth/Qwen2.5-7B-Instruct",
+"ok": true
+},
+"nisten/franqwenstein-35b": {
+"base_model": [
+"Qwen/Qwen2.5-32B",
+"AiCloser/Qwen2.5-32B-AGI",
+"Qwen/Qwen2.5-32B-Instruct"
+],
+"ok": true
+},
+"nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+"base_model": "meta-llama/Llama-3.1-70B-Instruct",
+"ok": true
+},
+"oxyapi/oxy-1-small": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"paloalma/ECE-TW3-JRGL-V1": {
+"base_model": null,
+"ok": true
+},
+"paloalma/ECE-TW3-JRGL-V5": {
+"base_model": null,
+"ok": true
+},
+"paloalma/TW3-JRGL-v2": {
+"base_model": null,
+"ok": true
+},
+"qingy2019/Qwen2.5-Math-14B-Instruct": {
+"base_model": "unsloth/qwen2.5-14b-instruct-bnb-4bit",
+"ok": true
+},
+"qingy2019/Qwen2.5-Math-14B-Instruct-Alpha": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"qingy2019/Qwen2.5-Ultimate-14B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"qingy2024/Fusion-14B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-14B",
+"arcee-ai/Virtuoso-Small",
+"qingy2024/Qwen2.5-Math-14B-Instruct-Preview"
+],
+"ok": true
+},
+"qingy2024/Fusion2-14B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"qingy2024/Qwen2.5-Math-14B-Instruct-Preview": {
+"base_model": "unsloth/qwen2.5-14b-instruct-bnb-4bit",
+"ok": true
+},
+"qingy2024/Qwen2.6-14B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"qingy2024/Qwen2.6-Math-14B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"recoilme/Gemma-2-Ataraxy-Gemmasutra-9B-slerp": {
+"base_model": null,
+"ok": true
+},
+"recoilme/recoilme-gemma-2-9B-v0.1": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"recoilme/recoilme-gemma-2-9B-v0.2": {
+"base_model": null,
+"ok": true
+},
+"recoilme/recoilme-gemma-2-9B-v0.3": {
+"base_model": null,
+"ok": true
+},
+"recoilme/recoilme-gemma-2-9B-v0.5": {
+"base_model": [
+"TheDrummer/Gemmasutra-9B-v1",
+"lemon07r/Gemma-2-Ataraxy-9B"
+],
+"ok": true
+},
+"rhymes-ai/Aria": {
+"base_model": [
+"rhymes-ai/Aria-Base-64K"
+],
+"ok": true
+},
+"rombodawg/Rombos-LLM-V2.5-Qwen-14b": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"rombodawg/Rombos-LLM-V2.5-Qwen-32b": {
+"base_model": [
+"Qwen/Qwen2.5-32B-Instruct"
+],
+"ok": true
+},
+"rombodawg/Rombos-LLM-V2.5-Qwen-72b": {
+"base_model": [
+"Qwen/Qwen2.5-72B-Instruct"
+],
+"ok": true
+},
+"rombodawg/Rombos-LLM-V2.6-Nemotron-70b": {
+"base_model": null,
+"ok": true
+},
+"rombodawg/Rombos-LLM-V2.6-Qwen-14b": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"sam-paech/Darkest-muse-v1": {
+"base_model": [
+"lemon07r/Gemma-2-Ataraxy-v2-9B",
+"sam-paech/Delirium-v1",
+"sam-paech/Quill-v1"
+],
+"ok": true
+},
+"sam-paech/Delirium-v1": {
+"base_model": "unsloth/gemma-2-9b-it",
+"ok": true
+},
+"sam-paech/Quill-v1": {
+"base_model": [
+"google/gemma-2-9b-it"
+],
+"ok": true
+},
+"sequelbox/Llama3.1-70B-PlumChat": {
+"base_model": [
+"nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+"meta-llama/Llama-3.1-70B-Instruct",
+"ValiantLabs/Llama3.1-70B-ShiningValiant2"
+],
+"ok": true
+},
+"sethuiyer/Qwen2.5-7B-Anvita": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"sometimesanotion/Lamarck-14B-v0.3": {
+"base_model": [
+"arcee-ai/Virtuoso-Small",
+"CultriX/SeQwence-14B-EvolMerge",
+"CultriX/Qwen2.5-14B-Wernicke",
+"sthenno-com/miscii-14b-1028",
+"underwoods/medius-erebus-magnum-14b",
+"sometimesanotion/lamarck-14b-prose-model_stock",
+"sometimesanotion/lamarck-14b-reason-model_stock"
+],
+"ok": true
+},
+"sometimesanotion/Lamarck-14B-v0.4-Qwenvergence": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"sometimesanotion/Qwen-2.5-14B-Virmarckeoso": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"sometimesanotion/lamarck-14b-prose-model_stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"sometimesanotion/lamarck-14b-reason-model_stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"speakleash/Bielik-11B-v2.3-Instruct": {
+"base_model": [
+"speakleash/Bielik-11B-v2",
+"speakleash/Bielik-11B-v2.0-Instruct",
+"speakleash/Bielik-11B-v2.1-Instruct",
+"speakleash/Bielik-11B-v2.2-Instruct"
+],
+"ok": true
+},
+"spow12/ChatWaifu_22B_v2.0_preview": {
+"base_model": [
+"mistralai/Mistral-Small-Instruct-2409"
+],
+"ok": true
+},
+"spow12/ChatWaifu_v2.0_22B": {
+"base_model": [
+"mistralai/Mistral-Small-Instruct-2409"
+],
+"ok": true
+},
+"ssmits/Qwen2.5-95B-Instruct": {
+"base_model": [
+"Qwen/Qwen2.5-72B-Instruct"
+],
+"ok": true
+},
+"sthenno-com/miscii-14b-1028": {
+"base_model": [
+"Qwen/Qwen2.5-14B-Instruct"
+],
+"ok": true
+},
+"suayptalha/HomerCreativeAnvita-Mix-Qw7B": {
+"base_model": [
+"ZeroXClem/Qwen2.5-7B-HomerAnvita-NerdMix",
+"ZeroXClem/Qwen2.5-7B-HomerCreative-Mix"
+],
+"ok": true
+},
+"suayptalha/Rombos-2.5-T.E-8.1": {
+"base_model": [
+"rombodawg/Rombos-LLM-V2.5-Qwen-7b",
+"Cran-May/T.E-8.1"
+],
+"ok": true
+},
+"tanliboy/lambda-qwen2.5-14b-dpo-test": {
+"base_model": "Qwen/Qwen2.5-14B-Instruct",
+"ok": true
+},
+"tanliboy/lambda-qwen2.5-32b-dpo-test": {
+"base_model": "Qwen/Qwen2.5-32B-Instruct",
+"ok": true
+},
+"tenyx/Llama3-TenyxChat-70B": {
+"base_model": null,
+"ok": true
+},
+"theprint/ReWiz-Qwen-2.5-14B": {
+"base_model": "unsloth/qwen2.5-14b-bnb-4bit",
+"ok": true
+},
+"tiiuae/Falcon3-10B-Base": {
+"base_model": null,
+"ok": true
+},
+"tiiuae/Falcon3-10B-Instruct": {
+"base_model": "tiiuae/Falcon3-10B-Base",
+"ok": true
+},
+"tiiuae/Falcon3-3B-Instruct": {
+"base_model": "tiiuae/Falcon3-3B-Instruct",
+"ok": true
+},
+"tiiuae/Falcon3-7B-Instruct": {
+"base_model": "tiiuae/Falcon3-7B-Base",
+"ok": true
+},
+"tiiuae/Falcon3-Mamba-7B-Instruct": {
+"base_model": [
+"tiiuae/Falcon3-Mamba-7B-Base"
+],
+"ok": true
+},
+"01-ai/Yi-1.5-9B-Chat-16K": {
+"base_model": null,
+"ok": true
+},
+"AALF/gemma-2-27b-it-SimPO-37K-100steps": {
+"base_model": "google/gemma-2-27b-it",
+"ok": true
+},
+"AIDC-AI/Marco-o1": {
+"base_model": null,
+"ok": true
+},
+"AiCloser/Qwen2.5-32B-AGI": {
+"base_model": [
+"Qwen/Qwen2.5-32B-Instruct"
+],
+"ok": true
+},
+"ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.1": {
+"base_model": null,
+"ok": true
+},
+"ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2": {
+"base_model": null,
+"ok": true
+},
+"ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1": {
+"base_model": null,
+"ok": true
+},
+"Azure99/blossom-v5.1-34b": {
+"base_model": null,
+"ok": true
+},
+"BAAI/Gemma2-9B-IT-Simpo-Infinity-Preference": {
+"base_model": "google/gemma-2-9b-it",
+"ok": true
+},
+"CultriX/SeQwence-14Bv1": {
+"base_model": [
+"CultriX/SeQwence-14B",
+"VAGOsolutions/SauerkrautLM-v2-14b-DPO",
+"v000000/Qwen2.5-Lumen-14B",
+"CultriX/Qwen2.5-14B-Wernicke",
+"Qwen/Qwen2.5-14B",
+"CultriX/Qwen2.5-14B-MegaMerge-pt2"
+],
+"ok": true
+},
+"DreadPoor/Aspire1.1-8B-model_stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Aspire_1.3-8B_model-stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Eunoia_Vespera-8B-LINEAR": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Heart_Stolen-8B-Model_Stock": {
+"base_model": [
+"akjindal53244/Llama-3.1-Storm-8B",
+"ResplendentAI/NoWarning_Llama3",
+"Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+"kloodia/lora-8b-physic",
+"Sao10K/L3-8B-Stheno-v3.2",
+"ResplendentAI/Smarts_Llama3",
+"NeverSleep/Lumimaid-v0.2-8B",
+"ResplendentAI/Theory_of_Mind_Llama3",
+"DreadPoor/ScaduTorrent1.1-8b-model_stock",
+"kloodia/lora-8b-medic",
+"mlabonne/Hermes-3-Llama-3.1-8B-lorablated",
+"kloodia/lora-8b-bio"
+],
+"ok": true
+},
+"DreadPoor/Heart_Stolen1.1-8B-Model_Stock": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/LemonP-8B-Model_Stock": {
+"base_model": [
+"Nekochu/Luminia-8B-RP",
+"ResplendentAI/Smarts_Llama3",
+"refuelai/Llama-3-Refueled",
+"Blackroot/Llama-3-8B-Abomination-LORA",
+"akjindal53244/Llama-3.1-Storm-8B",
+"kloodia/lora-8b-physic",
+"Joseph717171/Llama-3.1-SuperNova-8B-Lite_TIES_with_Base",
+"Replete-AI/L3-Pneuma-8B",
+"ResplendentAI/NoWarning_Llama3",
+"Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+"kloodia/lora-8b-bio"
+],
+"ok": true
+},
+"DreadPoor/Promissum_Mane-8B-LINEAR-lorablated": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"DreadPoor/Spei_Meridiem-8B-model_stock": {
+"base_model": [
+"NousResearch/Hermes-3-Llama-3.1-8B",
+"kloodia/lora-8b-physic",
+"DreadPoor/L3-8B-Stheno-v3.2-TASKBLATED",
+"ResplendentAI/Smarts_Llama3",
+"Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+"kloodia/lora-8b-bio",
+"arcee-ai/Llama-3.1-SuperNova-Lite",
+"hikikomoriHaven/llama3-8b-hikikomori-v0.4",
+"Replete-AI/Replete-LLM-V2-Llama-3.1-8b",
+"ResplendentAI/NoWarning_Llama3",
+"refuelai/Llama-3-Refueled",
+"Blackroot/Llama-3-8B-Abomination-LORA"
+],
+"ok": true
+},
+"EVA-UNIT-01/EVA-Qwen2.5-14B-v0.0": {
+"base_model": [
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"Envoid/Mistral-Small-NovusKyver": {
+"base_model": null,
+"ok": true
+},
+"Etherll/Hermes-3-Llama-3.1-8B-adapter": {
+"base_model": [
+"rombodawg/Meta-Llama-3.1-8B-reuploaded",
+"NousResearch/Hermes-3-Llama-3.1-8B"
+],
+"ok": true
+},
+"Etherll/Herplete-LLM-Llama-3.1-8b": {
+"base_model": [
+"NousResearch/Hermes-3-Llama-3.1-8B",
+"Replete-AI/Replete-LLM-V2-Llama-3.1-8b"
+],
+"ok": true
+},
+"Fizzarolli/MN-12b-Sunrose": {
+"base_model": [
+"Fizzarolli/MN-12b-Rosier-v1",
+"Fizzarolli/nemo-sunfall-v0.6.1-adapter-on-base"
+],
+"ok": true
+},
+"GoToCompany/gemma2-9b-cpt-sahabatai-v1-base": {
+"base_model": [
+"aisingapore/gemma2-9b-cpt-sea-lionv3-base"
+],
+"ok": true
+},
+"InferenceIllusionist/SorcererLM-22B": {
+"base_model": "unsloth/mistral-small-instruct-2409",
+"ok": true
+},
+"IntervitensInc/gemma-2-27b-chatml": {
+"base_model": null,
+"ok": true
+},
+"Lambent/qwen2.5-lumen-rebased-14B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"Locutusque/StockQwen-2.5-7B": {
+"base_model": [
+"Qwen/Qwen2.5-7B",
+"Qwen/Qwen2.5-Coder-7B-Instruct",
+"Qwen/Qwen2.5-7B-Instruct",
+"Qwen/Qwen2.5-Math-7B-Instruct"
+],
+"ok": true
+},
+"MaziyarPanahi/calme-2.1-rys-78b": {
+"base_model": "dnhkng/RYS-XLarge",
+"ok": true
+},
+"MaziyarPanahi/calme-3-selfmerge-qwen2-78b": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"NousResearch/Meta-Llama-3.1-8B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-57B-A14B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-7B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-VL-72B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2-VL-7B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2.5-3B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2.5-7B": {
+"base_model": null,
+"ok": true
+},
+"Qwen/Qwen2.5-Coder-14B": {
+"base_model": [
+"Qwen/Qwen2.5-14B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-Coder-7B": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"Qwen/Qwen2.5-Math-72B": {
+"base_model": "Qwen/Qwen2.5-72B",
+"ok": true
+},
+"SUSTech/SUS-Chat-34B": {
+"base_model": null,
+"ok": true
+},
+"Sao10K/Llama-3.1-8B-Stheno-v3.4": {
+"base_model": null,
+"ok": true
+},
+"SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA": {
+"base_model": null,
+"ok": true
+},
+"TheDrummer/Gemmasutra-9B-v1": {
+"base_model": [
+"BeaverAI/Gemmasutra-9B-v1b",
+"BeaverAI/Gemmasutra-9B-v1a"
+],
+"ok": true
+},
+"UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3": {
+"base_model": null,
+"ok": true
+},
+"abacusai/Dracarys-Llama-3.1-70B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"abacusai/Dracarys2-72B-Instruct": {
+"base_model": null,
+"ok": true
+},
+"aisingapore/gemma2-9b-cpt-sea-lionv3-instruct": {
+"base_model": [
+"aisingapore/Gemma-SEA-LION-v3-9B"
+],
+"ok": true
+},
+"allenai/Llama-3.1-Tulu-3-8B-SFT": {
+"base_model": [
+"meta-llama/Llama-3.1-8B"
+],
+"ok": true
+},
+"allknowingroger/HomerSlerp1-7B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"allknowingroger/QwenSlerp8-7B": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"alpindale/magnum-72b-v1": {
+"base_model": "Qwen/Qwen2-72B-Instruct",
+"ok": true
+},
+"altomek/YiSM-34B-0rn": {
+"base_model": [
+"01-ai/Yi-1.5-34B-Chat",
+"01-ai/Yi-1.5-34B"
+],
+"ok": true
+},
+"anthracite-forge/magnum-v3-27b-KTO-e0.25-r1": {
+"base_model": null,
+"ok": true
+},
+"anthracite-forge/magnum-v3-27b-KTO-e1-r2": {
+"base_model": null,
+"ok": true
+},
+"anthracite-forge/magnum-v3-27b-kto-r3": {
+"base_model": null,
+"ok": true
+},
+"anthracite-org/magnum-v4-12b": {
+"base_model": null,
+"ok": true
+},
+"anthracite-org/magnum-v4-22b": {
+"base_model": null,
+"ok": true
+},
+"bunnycore/Qandora-2.5-7B": {
+"base_model": null,
+"ok": true
+},
+"bunnycore/Qwen-2.1-7b-Persona-lora_model": {
+"base_model": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+"ok": true
+},
+"crestf411/MS-sunfall-v0.7.0": {
+"base_model": [
+"mistralai/Mistral-Small-Instruct-2409"
+],
+"ok": true
+},
+"cstr/llama3.1-8b-spaetzle-v74": {
+"base_model": [
+"cstr/llama3.1-8b-spaetzle-v59",
+"cstr/llama3.1-8b-spaetzle-v63",
+"cstr/llama3.1-8b-spaetzle-v66",
+"cstr/llama3.1-8b-spaetzle-v73"
+],
+"ok": true
+},
+"cstr/llama3.1-8b-spaetzle-v85": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"cstr/llama3.1-8b-spaetzle-v86": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"djuna/G2-BigGSHT-27B-calc": {
+"base_model": [
+"DazzlingXeno/G2-Xeno-SimPO-27b",
+"TheDrummer/Gemmasutra-Pro-27B-v1"
+],
+"ok": true
+},
+"djuna/Q2.5-Fuppavy-7B": {
+"base_model": [
+"Kortix/FastApply-7B-v1.0",
+"Qwen/Qwen2.5-Math-7B-Instruct",
+"huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+"Qwen/Qwen2.5-7B",
+"EVA-UNIT-01/EVA-Qwen2.5-7B-v0.1",
+"rombodawg/Rombos-LLM-V2.5-Qwen-7b",
+"MadeAgents/Hammer2.0-7b"
+],
+"ok": true
+},
+"ehristoforu/Gemma2-9B-it-psy10k": {
+"base_model": "unsloth/gemma-2-9b-it-bnb-4bit",
+"ok": true
+},
+"ehristoforu/Gemma2-9b-it-train5": {
+"base_model": "ehristoforu/Gemma2-9b-it-train4",
+"ok": true
+},
+"ehristoforu/exp-2-q-r": {
+"base_model": "ehristoforu/exp-1-q-r",
+"ok": true
+},
+"flammenai/Flammades-Mistral-Nemo-12B": {
+"base_model": [
+"nbeerbower/Mistral-Nemo-Gutenberg-Doppel-12B-v2"
+],
+"ok": true
+},
+"ghost613/gemma9_on_korean_summary_events": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"google/gemma-2-27b": {
+"base_model": null,
+"ok": true
+},
+"google/gemma-2-9b-it": {
+"base_model": "google/gemma-2-9b",
+"ok": true
+},
+"grimjim/Llama-3-Instruct-abliteration-LoRA-8B": {
+"base_model": [
+"meta-llama/Meta-Llama-3-8B-Instruct",
+"failspy/Meta-Llama-3-8B-Instruct-abliterated-v3"
+],
+"ok": true
+},
+"grimjim/Llama-3.1-SuperNova-Lite-lorabilterated-8B": {
+"base_model": [
+"arcee-ai/Llama-3.1-SuperNova-Lite",
+"grimjim/Llama-3-Instruct-abliteration-LoRA-8B"
+],
+"ok": true
+},
+"happzy2633/qwen2.5-7b-ins-v3": {
+"base_model": null,
+"ok": true
+},
+"huihui-ai/QwQ-32B-Preview-abliterated": {
+"base_model": "Qwen/QwQ-32B-Preview",
+"ok": true
+},
+"huihui-ai/Qwen2.5-32B-Instruct-abliterated": {
+"base_model": "Qwen/Qwen2.5-32B-Instruct",
+"ok": true
+},
+"huihui-ai/Qwen2.5-Coder-32B-Instruct-abliterated": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"ifable/gemma-2-Ifable-9B": {
+"base_model": null,
+"ok": true
+},
+"jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.0": {
+"base_model": [
+"Qwen/Qwen2.5-7B"
+],
+"ok": true
+},
+"jondurbin/bagel-dpo-34b-v0.2": {
+"base_model": null,
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-9B": {
+"base_model": [
+"princeton-nlp/gemma-2-9b-it-SimPO",
+"nbeerbower/gemma2-gutenberg-9B"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v2-9B": {
+"base_model": [
+"ifable/gemma-2-Ifable-9B",
+"jsgreenawalt/gemma-2-9B-it-advanced-v2.1"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v3-Advanced-9B": {
+"base_model": [
+"lemon07r/Gemma-2-Ataraxy-Advanced-9B",
+"nbeerbower/Gemma2-Gutenberg-Doppel-9B"
+],
+"ok": true
+},
+"lemon07r/Gemma-2-Ataraxy-v3b-9B": {
+"base_model": [
+"nbeerbower/Gemma2-Gutenberg-Doppel-9B",
+"wzhouad/gemma-2-9b-it-WPO-HB"
+],
+"ok": true
+},
+"meta-llama/Llama-3.1-70B": {
+"base_model": null,
+"ok": true
+},
+"meta-llama/Llama-3.1-70B-Instruct": {
+"base_model": "meta-llama/Meta-Llama-3.1-70B",
+"ok": true
+},
+"meta-llama/Llama-3.1-8B-Instruct": {
+"base_model": "meta-llama/Meta-Llama-3.1-8B",
+"ok": true
+},
+"meta-llama/Meta-Llama-3-8B": {
+"base_model": null,
+"ok": true
+},
+"meta-llama/Meta-Llama-3.1-70B": {
+"base_model": null,
+"ok": true
+},
+"meta-llama/Meta-Llama-3.1-8B": {
+"base_model": null,
+"ok": true
+},
+"mistral-community/Mixtral-8x22B-v0.1": {
+"base_model": null,
+"ok": true
+},
+"mistralai/Mistral-Nemo-Instruct-2407": {
+"base_model": "mistralai/Mistral-Nemo-Base-2407",
+"ok": true
+},
+"mlabonne/Daredevil-8B-abliterated": {
+"base_model": [
+"mlabonne/Daredevil-8B"
+],
+"ok": true
+},
+"mlabonne/Llama-3-70B-Instruct-abliterated-LORA": {
+"base_model": [
+"failspy/llama-3-70B-Instruct-abliterated"
+],
+"ok": true
+},
+"moreh/MoMo-72B-lora-1.8.7-DPO": {
+"base_model": null,
+"ok": true
+},
+"nbeerbower/Mistral-Nemo-Gutenberg-Doppel-12B-v2": {
+"base_model": [
+"axolotl-ai-co/romulus-mistral-nemo-12b-simpo"
+],
+"ok": true
+},
+"nbeerbower/llama3.1-airoboros3.2-QDT-8B": {
+"base_model": [
+"meta-llama/Meta-Llama-3.1-8B-Instruct"
+],
+"ok": true
+},
+"nbeerbower/llama3.1-gutenberg-8B": {
+"base_model": [
+"VAGOsolutions/Llama-3.1-SauerkrautLM-8b-Instruct"
+],
+"ok": true
+},
+"rAIfle/Acolyte-22B": {
+"base_model": [
+"unsloth/Mistral-Small-Instruct-2409",
+"unsloth/Mistral-Small-Instruct-2409",
+"rAIfle/Acolyte-LORA"
+],
+"ok": true
+},
+"recoilme/recoilme-gemma-2-9B-v0.4": {
+"base_model": null,
+"ok": true
+},
+"rhymes-ai/Aria-Base-64K": {
+"base_model": [
+"rhymes-ai/Aria-Base-8K"
+],
+"ok": true
+},
+"rityak/L3.1-FormaxGradient": {
+"base_model": null,
+"ok": false,
+"err": 401
+},
+"rombodawg/Meta-Llama-3.1-8B-reuploaded": {
+"base_model": null,
+"ok": true
+},
+"rombodawg/Rombos-LLM-V2.5-Qwen-7b": {
+"base_model": [
+"Qwen/Qwen2.5-7B-Instruct"
+],
+"ok": true
+},
+"rtzr/ko-gemma-2-9b-it": {
+"base_model": [
+"google/gemma-2-9b"
+],
+"ok": true
+},
+"speakleash/Bielik-11B-v2": {
+"base_model": null,
+"ok": true
+},
+"speakleash/Bielik-11B-v2.0-Instruct": {
+"base_model": "speakleash/Bielik-11B-v2",
+"ok": true
+},
+"speakleash/Bielik-11B-v2.1-Instruct": {
+"base_model": "speakleash/Bielik-11B-v2",
+"ok": true
+},
+"speakleash/Bielik-11B-v2.2-Instruct": {
+"base_model": "speakleash/Bielik-11B-v2",
+"ok": true
+},
+"tiiuae/Falcon3-7B-Base": {
+"base_model": null,
+"ok": true
+},
+"tiiuae/Falcon3-Mamba-7B-Base": {
+"base_model": null,
+"ok": true
+},
+"trollek/Qwen2.5-7B-CySecButler-v0.1": {
+"base_model": [
+"FourOhFour/Vapor_v2_7B",
+"bunnycore/Qwen-2.5-7b-TitanFusion-v5-Exp",
+"Qwen/Qwen2.5-7B",
+"bunnycore/Qwen2.5-7B-HyperMix",
+"WhiteRabbitNeo/WhiteRabbitNeo-2.5-Qwen-2.5-Coder-7B"
+],
+"ok": true
+},
+"underwoods/medius-erebus-magnum-14b": {
+"base_model": "Qwen/Qwen2.5-14B",
+"ok": true
+},
+"unsloth/Meta-Llama-3.1-8B": {
+"base_model": null,
+"ok": true
+},
+"unsloth/Meta-Llama-3.1-8B-Instruct": {
+"base_model": "meta-llama/Llama-3.1-8B-Instruct",
+"ok": true
+},
+"unsloth/Mistral-Small-Instruct-2409": {
+"base_model": "mistralai/Mistral-Small-Instruct-2409",
+"ok": true
+},
+"unsloth/Phi-3-mini-4k-instruct": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/Qwen2.5-14B-Instruct-bnb-4bit": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/Qwen2.5-7B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/gemma-2-27b-it": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/gemma-2-9b-it": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/phi-3-medium-4k-instruct-bnb-4bit": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/qwen2.5-14b-bnb-4bit": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/qwen2.5-14b-instruct-bnb-4bit": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"v000000/Qwen2.5-Lumen-14B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"vicgalle/Configurable-Llama-3.1-8B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"voidful/Llama-3.2-8B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"wzhouad/gemma-2-9b-it-WPO-HB": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1-t0.25": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"01-ai/Yi-1.5-34B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"BeaverAI/Gemmasutra-9B-v1a": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"BeaverAI/Gemmasutra-9B-v1b": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Blackroot/Llama-3-8B-Abomination-LORA": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"DazzlingXeno/G2-Xeno-SimPO-27b": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"DreadPoor/L3-8B-Stheno-v3.2-TASKBLATED": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"DreadPoor/ScaduTorrent1.1-8b-model_stock": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"EVA-UNIT-01/EVA-Qwen2.5-7B-v0.1": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Fizzarolli/MN-12b-Rosier-v1": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Fizzarolli/nemo-sunfall-v0.6.1-adapter-on-base": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"FourOhFour/Vapor_v2_7B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Kortix/FastApply-7B-v1.0": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"MadeAgents/Hammer2.0-7b": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Nekochu/Luminia-8B-RP": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"NeverSleep/Lumimaid-v0.2-8B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"NousResearch/Hermes-3-Llama-3.1-8B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Qwen/Qwen2.5-Math-7B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Replete-AI/L3-Pneuma-8B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Replete-AI/Replete-LLM-V2-Llama-3.1-8b": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"ResplendentAI/NoWarning_Llama3": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"ResplendentAI/Smarts_Llama3": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"ResplendentAI/Theory_of_Mind_Llama3": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"Sao10K/L3-8B-Stheno-v3.2": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"TheDrummer/Gemmasutra-Pro-27B-v1": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"WhiteRabbitNeo/WhiteRabbitNeo-2.5-Qwen-2.5-Coder-7B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"aisingapore/Gemma-SEA-LION-v3-9B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"aisingapore/gemma2-9b-cpt-sea-lionv3-base": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"axolotl-ai-co/romulus-mistral-nemo-12b-simpo": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"bunnycore/Qwen-2.5-7b-TitanFusion-v5-Exp": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"bunnycore/Qwen2.5-7B-HyperMix": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"cstr/llama3.1-8b-spaetzle-v59": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"cstr/llama3.1-8b-spaetzle-v63": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"cstr/llama3.1-8b-spaetzle-v66": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"cstr/llama3.1-8b-spaetzle-v73": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"ehristoforu/Gemma2-9b-it-train4": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"ehristoforu/exp-1-q-r": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"failspy/Meta-Llama-3-8B-Instruct-abliterated-v3": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"failspy/llama-3-70B-Instruct-abliterated": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"google/gemma-2-9b": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"hikikomoriHaven/llama3-8b-hikikomori-v0.4": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"jsgreenawalt/gemma-2-9B-it-advanced-v2.1": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"kloodia/lora-8b-bio": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"kloodia/lora-8b-medic": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"kloodia/lora-8b-physic": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"lemon07r/Gemma-2-Ataraxy-Advanced-9B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"meta-llama/Llama-3.1-8B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"meta-llama/Meta-Llama-3-8B-Instruct": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"mistralai/Mistral-Nemo-Base-2407": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"mlabonne/Daredevil-8B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"mlabonne/Hermes-3-Llama-3.1-8B-lorablated": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"nbeerbower/gemma2-gutenberg-9B": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"princeton-nlp/gemma-2-9b-it-SimPO": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"rAIfle/Acolyte-LORA": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"refuelai/Llama-3-Refueled": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"rhymes-ai/Aria-Base-8K": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/gemma-2-9b-it-bnb-4bit": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/mistral-small-instruct-2409": {
+"base_model": null,
+"ok": false,
+"err": 429
+},
+"unsloth/qwen2.5-7b-instruct-bnb-4bit": {
+"base_model": null,
+"ok": false,
+"err": 429
+}
+}

@@ -1,0 +1,25 @@
+Cycle 8 S1b supplementary outputs (SYNTHETIC CODE TEST, not a result)
+models 64, items 14022
+
+Admission chart (MODEL-BASED, 1PL-g fit to open-weight panel): base = open-weight portfolio ['qwen_m40', 'google_m6', 'meta_m16', 'qwen_m37', 'qwen_m39'] / ['qwen_m40', 'google_m6', 'meta_m16', 'qwen_m37', 'qwen_m39'], base plurality error 6.58
+  a=0.5,r=0.0: gain -0.47 pp (sd over draws 0.04)
+  a=0.5,r=0.3: gain -0.27 pp (sd over draws 0.07)
+  a=0.5,r=0.6: gain -0.29 pp (sd over draws 0.05)
+  a=0.7,r=0.0: gain -0.33 pp (sd over draws 0.12)
+  a=0.7,r=0.3: gain -0.20 pp (sd over draws 0.00)
+  a=0.7,r=0.6: gain -0.18 pp (sd over draws 0.04)
+  a=0.85,r=0.0: gain 0.14 pp (sd over draws 0.01)
+  a=0.85,r=0.3: gain 0.14 pp (sd over draws 0.04)
+  a=0.85,r=0.6: gain 0.04 pp (sd over draws 0.06)
+
+Full 70-model plurality, engineering subset, full availability: 10.84 [11.80, 12.32]
+
+Delta E of the re-selected primary portfolio on simulated null panels (pp; mean [5th, 95th]):
+  N1: full error 1.23 [1.22, 1.24] (n=2); API-only dE 0.41 [0.37, 0.44] (n=2), emptied 0; largest developer dE 6.25 [4.73, 7.78] (n=2)
+  N2: full error 6.50 [6.27, 6.72] (n=2); API-only dE -0.36 [-0.41, -0.30] (n=2), emptied 0; largest developer dE 3.90 [3.09, 4.72] (n=2)
+
+H2/H3 sensitivity analyses (2 resamples each; largest developer: google):
+  strict_panel (30 models): H2 REFUTED (n=3: plurality->best, plurality 9.31/17.43; n=5: plurality->best, plurality 8.27/17.43; n=7: stack->best, plurality 7.99/17.43; n=9: stack->plurality, plurality 7.89/16.15); H3 INCONCLUSIVE (robust 17.43, cap 18.11, gain 0.68 [0.39, 0.73], cost -3.17)
+  without_largest_developer (55 models): H2 REFUTED (n=3: stack->best, plurality 7.22/11.40; n=5: stack->best, plurality 6.18/11.40; n=7: stack->plurality, plurality 5.84/8.69; n=9: stack->plurality, plurality 5.70/7.52); H3 REFUTED (robust 10.16, cap 7.82, gain -2.33 [-2.41, -0.72], cost -0.06)
+  without_accuracy_below_40pct (62 models): H2 REFUTED (n=3: stack->best, plurality 7.22/11.40; n=5: stack->best, plurality 6.18/11.40; n=7: stack->plurality, plurality 5.84/8.69; n=9: stack->plurality, plurality 5.70/7.52); H3 REFUTED (robust 10.16, cap 7.82, gain -2.33 [-2.41, -0.72], cost -0.06)
+seconds 536

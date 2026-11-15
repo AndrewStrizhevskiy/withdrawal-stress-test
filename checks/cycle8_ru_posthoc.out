@@ -1,0 +1,29 @@
+Cycle 8 POST-HOC robustness analyses (protocol Section 29)
+70 HELM models + 12 local runs, 14038 items, 200 subject-bootstrap resamples; values in %, 95% CI
+
+P1. Size-matched origin comparison: Russian 8-12B (6) vs foreign 7-12B anchors (4)
+  yandexgpt5-lite-8b: accuracy 73.27 [66.43, 78.61]; change in open5 error when added +0.13 [+0.05, +0.62]
+  t-lite-it-2.1: accuracy 72.44 [65.15, 78.32]; change in open5 error when added +0.08 [-0.10, +0.54]
+  gigachat3.1-10b: accuracy 71.77 [64.64, 76.93]; change in open5 error when added +0.24 [+0.08, +0.67]
+  vikhr-nemo-12b: accuracy 65.37 [57.98, 71.09]; change in open5 error when added +0.31 [+0.17, +0.63]
+  saiga-nemo-12b: accuracy 63.93 [56.91, 69.85]; change in open5 error when added +0.25 [+0.12, +0.54]
+  saiga-yandexgpt-8b: accuracy 66.31 [59.24, 72.02]; change in open5 error when added +0.28 [+0.13, +0.56]
+  qwen2.5-7b: accuracy 71.31 [64.59, 76.33]; change in open5 error when added +0.23 [+0.10, +0.66]
+  qwen3-8b: accuracy 67.29 [60.28, 73.02]; change in open5 error when added +0.22 [-0.03, +0.50]
+  llama3.1-8b: accuracy 45.56 [40.09, 50.61]; change in open5 error when added +0.16 [+0.09, +0.47]
+  mistral-nemo-12b: accuracy 64.23 [57.68, 69.98]; change in open5 error when added +0.22 [+0.11, +0.53]
+  [all anchors] accuracy: Russian 68.85 [61.63, 74.23], foreign 62.10 [55.70, 67.14], difference +6.75 [+5.79, +7.82]
+  [all anchors] admission change: Russian +0.21 [+0.14, +0.58], foreign +0.21 [+0.14, +0.50], difference +0.01 [-0.06, +0.11]
+  [all anchors] greedy-3 portfolio error: Russian 24.92 [19.80, 31.94], foreign 29.21 [22.65, 35.14], difference -4.30 [-4.90, -2.27]; portfolios {"russian": [["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b"], ["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b"]], "foreign": [["qwen2.5-7b", "llama3.1-8b", "qwen3-8b"], ["qwen2.5-7b", "mistral-nemo-12b", "qwen3-8b"]]}
+  [without Llama-3.1-8B] accuracy: Russian 68.85 [61.63, 74.23], foreign 67.61 [60.68, 72.93], difference +1.24 [+0.56, +1.97]
+  [without Llama-3.1-8B] admission change: Russian +0.21 [+0.14, +0.58], foreign +0.22 [+0.12, +0.54], difference -0.01 [-0.08, +0.10]
+  [without Llama-3.1-8B] greedy-3 portfolio error: Russian 24.92 [19.80, 31.94], foreign 27.92 [22.65, 35.14], difference -3.01 [-3.70, -2.18]; portfolios {"russian": [["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b"], ["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b"]], "foreign": [["qwen2.5-7b", "mistral-nemo-12b", "qwen3-8b"], ["qwen2.5-7b", "mistral-nemo-12b", "qwen3-8b"]]}
+  open5 error 13.77 [10.63, 17.77]
+
+P2. Own-base domestic portfolio (YandexGPT-5-Lite, saiga_yandexgpt, GigaChat3.1, GigaChat-20B)
+  domestic5 (Section 28.5, recomputed): 24.85 [19.69, 32.00]
+  best single: 26.73 [21.39, 33.57]; minus domestic5 +1.88 [+0.93, +2.61]
+  greedy n=3: 26.40 [21.07, 33.66]; minus domestic5 +1.55 [+0.06, +2.18]
+  plurality of all 4: 26.16 [20.88, 33.47]; minus domestic5 +1.31 [+0.01, +2.19]
+  greedy-3 members (fold 0 / fold 1): [["yandexgpt5-lite-8b", "gigachat-20b-v1.5", "gigachat3.1-10b"], ["yandexgpt5-lite-8b", "saiga-yandexgpt-8b", "gigachat3.1-10b"]]
+seconds 30

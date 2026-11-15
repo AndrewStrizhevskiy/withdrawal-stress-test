@@ -1,0 +1,56 @@
+Cycle 8 Russian-model run: 70 HELM models + 12 local runs (yandexgpt5-lite-8b, t-lite-it-2.1, gigachat3.1-10b, vikhr-nemo-12b, saiga-nemo-12b, saiga-yandexgpt-8b, gigachat-20b-v1.5, cotype-nano, qwen3-8b, qwen2.5-7b, llama3.1-8b, mistral-nemo-12b), 14038 items
+
+Local accuracy and invalid share:
+  yandexgpt5-lite-8b (russian): accuracy 0.7327, invalid 0.0001
+  t-lite-it-2.1 (russian): accuracy 0.7244, invalid 0.0001
+  gigachat3.1-10b (russian): accuracy 0.7177, invalid 0.0002
+  vikhr-nemo-12b (russian): accuracy 0.6537, invalid 0.0019
+  saiga-nemo-12b (russian): accuracy 0.6393, invalid 0.0001
+  saiga-yandexgpt-8b (russian): accuracy 0.6631, invalid 0.0000
+  gigachat-20b-v1.5 (russian): accuracy 0.6164, invalid 0.0001
+  cotype-nano (russian): accuracy 0.5388, invalid 0.0003
+  qwen3-8b (anchor): accuracy 0.6729, invalid 0.0000
+  qwen2.5-7b (anchor): accuracy 0.7131, invalid 0.0027
+  llama3.1-8b (anchor): accuracy 0.4556, invalid 0.0380
+  mistral-nemo-12b (anchor): accuracy 0.6423, invalid 0.0000
+
+1. Bridge: local run against its HELM counterpart
+  qwen2.5-7b vs qwen_qwen2.5-7b-instruct-turbo: answer agreement 0.9106; accuracy local 0.7131, HELM 0.7141; excess x 0.14174; most similar other HELM model to qwen_qwen2.5-7b-instruct-turbo: qwen_qwen2.5-72b-instruct-turbo (agreement 0.7676, x 0.03263)
+  llama3.1-8b vs meta_llama-3.1-8b-instruct-turbo: answer agreement 0.7482; accuracy local 0.4556, HELM 0.5422; excess x 0.15588; most similar other HELM model to meta_llama-3.1-8b-instruct-turbo: mistralai_mistral-small-2402 (agreement 0.5865, x 0.00424)
+  mistral-nemo-12b vs mistralai_open-mistral-nemo-2407: answer agreement 0.8653; accuracy local 0.6423, HELM 0.6463; excess x 0.15566; most similar other HELM model to mistralai_open-mistral-nemo-2407: mistralai_mistral-large-2407 (agreement 0.6957, x 0.02279)
+  deployment check: mean x over unrelated local-local pairs 0.00960 (58 pairs); over local-HELM pairs within 0.05 accuracy 0.01376 (216 pairs)
+
+2. Inheritance: excess same-wrong agreement x of the pair minus the mean over matched unrelated local pairs
+  t-lite-it-2.1 ~ qwen3-8b (fine-tune of declared base): x 0.04090, excess over 9 matched pairs (tol 0.03) 0.01822, N2 p = 0.005; P(same answer | both wrong) 0.647; accuracies 0.724/0.673
+  vikhr-nemo-12b ~ mistral-nemo-12b (fine-tune of declared base): x 0.08616, excess over 11 matched pairs (tol 0.03) 0.07760, N2 p = 0.005; P(same answer | both wrong) 0.743; accuracies 0.654/0.642
+  saiga-nemo-12b ~ mistral-nemo-12b (fine-tune, base by name): x 0.05205, excess over 6 matched pairs (tol 0.03) 0.03717, N2 p = 0.005; P(same answer | both wrong) 0.655; accuracies 0.639/0.642
+  vikhr-nemo-12b ~ saiga-nemo-12b (siblings on the same base): x 0.07161, excess over 11 matched pairs (tol 0.03) 0.06305, N2 p = 0.005; P(same answer | both wrong) 0.706; accuracies 0.654/0.639
+  saiga-yandexgpt-8b ~ yandexgpt5-lite-8b (fine-tune, base by name): x 0.03272, excess over 17 matched pairs (tol 0.03) 0.01131, N2 p = 0.005; P(same answer | both wrong) 0.646; accuracies 0.663/0.733
+  gigachat3.1-10b ~ gigachat-20b-v1.5 (same developer, different models): x 0.02961, excess over 11 matched pairs (tol 0.03) 0.01031, N2 p = 0.005; P(same answer | both wrong) 0.624; accuracies 0.718/0.616
+  (for scale: S1 H1 mean within-developer excess T = 0.00462)
+
+3. Admission and sovereignty (error %, 95% subject-bootstrap CI, 200 resamples)
+  open5: 13.77 [10.63, 17.77]
+  open5+yandexgpt5-lite-8b: 13.90 [10.82, 17.89]; change vs open5 +0.13 [+0.05, +0.62]
+  single/yandexgpt5-lite-8b: 26.73 [21.39, 33.57]
+  open5+t-lite-it-2.1: 13.85 [10.85, 17.82]; change vs open5 +0.08 [-0.10, +0.54]
+  single/t-lite-it-2.1: 27.56 [21.68, 34.85]
+  open5+gigachat3.1-10b: 14.01 [10.86, 17.92]; change vs open5 +0.24 [+0.08, +0.67]
+  single/gigachat3.1-10b: 28.23 [23.07, 35.36]
+  open5+vikhr-nemo-12b: 14.08 [10.85, 17.99]; change vs open5 +0.31 [+0.17, +0.63]
+  single/vikhr-nemo-12b: 34.63 [28.91, 42.02]
+  open5+saiga-nemo-12b: 14.02 [10.83, 17.97]; change vs open5 +0.25 [+0.12, +0.54]
+  single/saiga-nemo-12b: 36.07 [30.15, 43.09]
+  open5+saiga-yandexgpt-8b: 14.05 [10.96, 17.99]; change vs open5 +0.28 [+0.13, +0.56]
+  single/saiga-yandexgpt-8b: 33.69 [27.98, 40.76]
+  open5+gigachat-20b-v1.5: 14.06 [10.98, 18.02]; change vs open5 +0.29 [+0.17, +0.65]
+  single/gigachat-20b-v1.5: 38.36 [32.78, 45.94]
+  open5+cotype-nano: 13.96 [10.85, 17.99]; change vs open5 +0.19 [+0.11, +0.42]
+  single/cotype-nano: 46.12 [41.03, 52.15]
+  open5_with_russian_pool: 13.77 [10.63, 17.77]
+  domestic5: 24.85 [19.69, 32.00]
+  best_single_domestic: 26.73 [21.31, 33.63]
+  best_single_open_helm: 13.24 [10.29, 17.51]
+  Russian models in the re-selected open portfolio: 0.0 of 5 (mean over folds)
+  portfolios: {"open5": [["deepseek-ai_deepseek-v3", "01-ai_yi-34b", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen2-72b-instruct", "nvidia_nemotron-4-340b-instruct"], ["deepseek-ai_deepseek-v3", "01-ai_yi-34b", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen2.5-72b-instruct-turbo", "meta_llama-3.1-70b-instruct-turbo"]], "open5_with_russian_pool": [["deepseek-ai_deepseek-v3", "01-ai_yi-34b", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen2-72b-instruct", "nvidia_nemotron-4-340b-instruct"], ["deepseek-ai_deepseek-v3", "01-ai_yi-34b", "meta_llama-3.1-405b-instruct-turbo", "qwen_qwen2.5-72b-instruct-turbo", "meta_llama-3.1-70b-instruct-turbo"]], "domestic5": [["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b", "saiga-nemo-12b", "saiga-yandexgpt-8b"], ["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b", "saiga-yandexgpt-8b", "saiga-nemo-12b"]]}
+seconds 99

@@ -1,0 +1,13 @@
+Cycle 8 POST HOC (Section 35, R3): leaderboard inheritance robustness; excess of P(same|both wrong) over matched L0
+family bootstrap 1000, seed 20261116
+  L2: +0.1105 [+0.0691, +0.2914] (n 644, families 15)
+  L2_placebo: +0.0982 [+0.0655, +0.2273] (n 644, families 15)
+  L2-placebo: +0.0124 [+0.0022, +0.0966] (n 644, families 15)
+  L3: +0.1608 [+0.1321, +0.1766] (n 31, families 8)
+  L3_placebo: +0.1803 [+0.1171, +0.2240] (n 31, families 8)
+  L3-placebo: -0.0195 [-0.0522, +0.0253] (n 31, families 8)
+  L3 depth 2: +0.1614 [+0.1006, +0.1888] (n 14, families 6)
+  L3 depth 1: +0.1592 [+0.1159, +0.1821] (n 12, families 7)
+  L3 depth 3: +0.1928 [+0.1928, +0.1928] (n 6, families 1)
+  triplets: siblings - mean(child-base): +0.0535 [+0.0449, +0.1402] (n 112, families 6)
+seconds 101

@@ -1,0 +1,7 @@
+Cycle 8 Amendment A3: JI interval validation
+config: {"n_subj": 57, "per_subj": 246, "fresh_subj": 244, "boot": 300, "n": 400}, sigma=0.3, master seed 20261115
+datasets: 400; used 367; skipped 33
+A3 interval coverage: 0.940 (binomial SE at 0.90: 0.016); misses below 16, above 6
+old percentile interval coverage (comparison only): 0.940
+mean width A3 0.0090, old 0.0089
+A3 overall: PASS

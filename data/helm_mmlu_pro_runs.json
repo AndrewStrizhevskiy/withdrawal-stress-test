@@ -1,0 +1,1622 @@
+{
+ "releases": [
+  "v1.0.0",
+  "v1.1.0",
+  "v1.2.0",
+  "v1.3.0",
+  "v1.4.0",
+  "v1.5.0",
+  "v1.6.0",
+  "v1.7.0",
+  "v1.8.0",
+  "v1.9.0",
+  "v1.10.0",
+  "v1.11.0",
+  "v1.12.0",
+  "v1.13.0",
+  "v1.14.0",
+  "v1.15.0"
+ ],
+ "models": {
+  "allenai_olmo-2-0325-32b-instruct": {
+   "runs": [
+    [
+     "v1.8.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmo-2-0325-32b-instruct"
+    ]
+   ],
+   "chosen_release": "v1.8.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmo-2-0325-32b-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2048,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "allenai_olmo-2-1124-13b-instruct": {
+   "runs": [
+    [
+     "v1.8.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmo-2-1124-13b-instruct"
+    ]
+   ],
+   "chosen_release": "v1.8.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmo-2-1124-13b-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2048,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "allenai_olmo-2-1124-7b-instruct": {
+   "runs": [
+    [
+     "v1.8.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmo-2-1124-7b-instruct"
+    ]
+   ],
+   "chosen_release": "v1.8.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmo-2-1124-7b-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2048,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "allenai_olmoe-1b-7b-0125-instruct": {
+   "runs": [
+    [
+     "v1.8.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmoe-1b-7b-0125-instruct"
+    ]
+   ],
+   "chosen_release": "v1.8.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=allenai_olmoe-1b-7b-0125-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2048,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "amazon_nova-lite-v1:0": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-lite-v1:0"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-lite-v1:0",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "amazon_nova-micro-v1:0": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-micro-v1:0"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-micro-v1:0",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "amazon_nova-premier-v1:0": {
+   "runs": [
+    [
+     "v1.12.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-premier-v1:0"
+    ]
+   ],
+   "chosen_release": "v1.12.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-premier-v1:0",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "amazon_nova-pro-v1:0": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-pro-v1:0"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=amazon_nova-pro-v1:0",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-3-5-haiku-20241022": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-5-haiku-20241022"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-5-haiku-20241022",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-3-5-sonnet-20240620": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-5-sonnet-20240620"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-5-sonnet-20240620",
+   "items_parsed": 12032,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2000,
+   "num_outputs": 5,
+   "max_eval_instances": 100000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-3-5-sonnet-20241022": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-5-sonnet-20241022"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-5-sonnet-20241022",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-3-7-sonnet-20250219": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-7-sonnet-20250219"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-3-7-sonnet-20250219",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-haiku-4-5-20251001": {
+   "runs": [
+    [
+     "v1.15.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-haiku-4-5-20251001"
+    ]
+   ],
+   "chosen_release": "v1.15.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-haiku-4-5-20251001",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-opus-4-20250514": {
+   "runs": [
+    [
+     "v1.6.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-opus-4-20250514"
+    ]
+   ],
+   "chosen_release": "v1.6.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-opus-4-20250514",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-opus-4-20250514-thinking-10k": {
+   "runs": [
+    [
+     "v1.6.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-opus-4-20250514-thinking-10k"
+    ]
+   ],
+   "chosen_release": "v1.6.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-opus-4-20250514-thinking-10k",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-sonnet-4-20250514": {
+   "runs": [
+    [
+     "v1.6.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-sonnet-4-20250514"
+    ]
+   ],
+   "chosen_release": "v1.6.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-sonnet-4-20250514",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-sonnet-4-20250514-thinking-10k": {
+   "runs": [
+    [
+     "v1.6.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-sonnet-4-20250514-thinking-10k"
+    ]
+   ],
+   "chosen_release": "v1.6.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-sonnet-4-20250514-thinking-10k",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "anthropic_claude-sonnet-4-5-20250929": {
+   "runs": [
+    [
+     "v1.13.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-sonnet-4-5-20250929"
+    ]
+   ],
+   "chosen_release": "v1.13.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=anthropic_claude-sonnet-4-5-20250929",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "deepseek-ai_deepseek-r1-0528": {
+   "runs": [
+    [
+     "v1.7.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=deepseek-ai_deepseek-r1-0528"
+    ]
+   ],
+   "chosen_release": "v1.7.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=deepseek-ai_deepseek-r1-0528",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 0.6,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "deepseek-ai_deepseek-v3": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=deepseek-ai_deepseek-v3"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=deepseek-ai_deepseek-v3",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-1.5-flash-002": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-1.5-flash-002"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-1.5-flash-002",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-1.5-pro-002": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-1.5-pro-002"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-1.5-pro-002",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-2.0-flash-001": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.0-flash-001"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.0-flash-001",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-2.0-flash-lite-preview-02-05": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.0-flash-lite-preview-02-05"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.0-flash-lite-preview-02-05",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-2.5-flash-lite": {
+   "runs": [
+    [
+     "v1.11.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.5-flash-lite"
+    ]
+   ],
+   "chosen_release": "v1.11.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.5-flash-lite",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-2.5-flash-preview-04-17": {
+   "runs": [
+    [
+     "v1.4.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.5-flash-preview-04-17"
+    ]
+   ],
+   "chosen_release": "v1.4.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.5-flash-preview-04-17",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-2.5-pro-preview-03-25": {
+   "runs": [
+    [
+     "v1.4.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.5-pro-preview-03-25"
+    ]
+   ],
+   "chosen_release": "v1.4.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-2.5-pro-preview-03-25",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "google_gemini-3-pro-preview": {
+   "runs": [
+    [
+     "v1.15.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-3-pro-preview"
+    ]
+   ],
+   "chosen_release": "v1.15.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=google_gemini-3-pro-preview",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "ibm_granite-3.3-8b-instruct": {
+   "runs": [
+    [
+     "v1.10.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=ibm_granite-3.3-8b-instruct"
+    ]
+   ],
+   "chosen_release": "v1.10.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=ibm_granite-3.3-8b-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "ibm_granite-4.0-h-small": {
+   "runs": [
+    [
+     "v1.14.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=ibm_granite-4.0-h-small"
+    ]
+   ],
+   "chosen_release": "v1.14.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=ibm_granite-4.0-h-small",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "ibm_granite-4.0-micro": {
+   "runs": [
+    [
+     "v1.14.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=ibm_granite-4.0-micro"
+    ]
+   ],
+   "chosen_release": "v1.14.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=ibm_granite-4.0-micro",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "marin-community_marin-8b-instruct": {
+   "runs": [
+    [
+     "v1.8.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=marin-community_marin-8b-instruct"
+    ]
+   ],
+   "chosen_release": "v1.8.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,num_output_tokens=2048,model=marin-community_marin-8b-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2048,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "meta_llama-3.1-405b-instruct-turbo": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-3.1-405b-instruct-turbo"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-3.1-405b-instruct-turbo",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "meta_llama-3.1-70b-instruct-turbo": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-3.1-70b-instruct-turbo"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-3.1-70b-instruct-turbo",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "meta_llama-3.1-8b-instruct-turbo": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-3.1-8b-instruct-turbo"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-3.1-8b-instruct-turbo",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "meta_llama-4-maverick-17b-128e-instruct-fp8": {
+   "runs": [
+    [
+     "v1.2.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-4-maverick-17b-128e-instruct-fp8"
+    ]
+   ],
+   "chosen_release": "v1.2.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-4-maverick-17b-128e-instruct-fp8",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "meta_llama-4-scout-17b-16e-instruct": {
+   "runs": [
+    [
+     "v1.2.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-4-scout-17b-16e-instruct"
+    ]
+   ],
+   "chosen_release": "v1.2.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=meta_llama-4-scout-17b-16e-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "mistralai_mistral-7b-instruct-v0.3": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mistral-7b-instruct-v0.3"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mistral-7b-instruct-v0.3",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "mistralai_mistral-large-2411": {
+   "runs": [
+    [
+     "v1.1.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mistral-large-2411"
+    ]
+   ],
+   "chosen_release": "v1.1.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mistral-large-2411",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "mistralai_mistral-small-2503": {
+   "runs": [
+    [
+     "v1.1.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mistral-small-2503"
+    ]
+   ],
+   "chosen_release": "v1.1.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mistral-small-2503",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "mistralai_mixtral-8x22b-instruct-v0.1": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mixtral-8x22b-instruct-v0.1"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mixtral-8x22b-instruct-v0.1",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "mistralai_mixtral-8x7b-instruct-v0.1": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mixtral-8x7b-instruct-v0.1"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=mistralai_mixtral-8x7b-instruct-v0.1",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "moonshotai_kimi-k2-instruct": {
+   "runs": [
+    [
+     "v1.9.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=moonshotai_kimi-k2-instruct"
+    ]
+   ],
+   "chosen_release": "v1.9.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=moonshotai_kimi-k2-instruct",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-4.1-2025-04-14": {
+   "runs": [
+    [
+     "v1.3.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4.1-2025-04-14"
+    ]
+   ],
+   "chosen_release": "v1.3.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4.1-2025-04-14",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-4.1-mini-2025-04-14": {
+   "runs": [
+    [
+     "v1.3.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4.1-mini-2025-04-14"
+    ]
+   ],
+   "chosen_release": "v1.3.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4.1-mini-2025-04-14",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-4.1-nano-2025-04-14": {
+   "runs": [
+    [
+     "v1.3.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4.1-nano-2025-04-14"
+    ]
+   ],
+   "chosen_release": "v1.3.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4.1-nano-2025-04-14",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-4o-2024-08-06": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4o-2024-08-06"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4o-2024-08-06",
+   "items_parsed": 12032,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 2000,
+   "num_outputs": 5,
+   "max_eval_instances": 100000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-4o-2024-11-20": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4o-2024-11-20"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4o-2024-11-20",
+   "items_parsed": 0,
+   "error": "scenario_state.json: HTTP Error 404: Not Found"
+  },
+  "openai_gpt-4o-mini-2024-07-18": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4o-mini-2024-07-18"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-4o-mini-2024-07-18",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-5-2025-08-07": {
+   "runs": [
+    [
+     "v1.12.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5-2025-08-07"
+    ]
+   ],
+   "chosen_release": "v1.12.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5-2025-08-07",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-5-mini-2025-08-07": {
+   "runs": [
+    [
+     "v1.12.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5-mini-2025-08-07"
+    ]
+   ],
+   "chosen_release": "v1.12.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5-mini-2025-08-07",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-5-nano-2025-08-07": {
+   "runs": [
+    [
+     "v1.12.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5-nano-2025-08-07"
+    ]
+   ],
+   "chosen_release": "v1.12.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5-nano-2025-08-07",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-5.1-2025-11-13": {
+   "runs": [
+    [
+     "v1.15.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5.1-2025-11-13"
+    ]
+   ],
+   "chosen_release": "v1.15.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-5.1-2025-11-13",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-oss-120b": {
+   "runs": [
+    [
+     "v1.11.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-oss-120b"
+    ]
+   ],
+   "chosen_release": "v1.11.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-oss-120b",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_gpt-oss-20b": {
+   "runs": [
+    [
+     "v1.12.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-oss-20b"
+    ]
+   ],
+   "chosen_release": "v1.12.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_gpt-oss-20b",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_o3-2025-04-16": {
+   "runs": [
+    [
+     "v1.4.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_o3-2025-04-16"
+    ]
+   ],
+   "chosen_release": "v1.4.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_o3-2025-04-16",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "openai_o4-mini-2025-04-16": {
+   "runs": [
+    [
+     "v1.4.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_o4-mini-2025-04-16"
+    ]
+   ],
+   "chosen_release": "v1.4.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=openai_o4-mini-2025-04-16",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "qwen_qwen2.5-72b-instruct-turbo": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen2.5-72b-instruct-turbo"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen2.5-72b-instruct-turbo",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "qwen_qwen2.5-7b-instruct-turbo": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen2.5-7b-instruct-turbo"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen2.5-7b-instruct-turbo",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "qwen_qwen3-235b-a22b-fp8-tput": {
+   "runs": [
+    [
+     "v1.5.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen3-235b-a22b-fp8-tput"
+    ]
+   ],
+   "chosen_release": "v1.5.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen3-235b-a22b-fp8-tput",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "qwen_qwen3-235b-a22b-instruct-2507-fp8": {
+   "runs": [
+    [
+     "v1.12.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen3-235b-a22b-instruct-2507-fp8"
+    ]
+   ],
+   "chosen_release": "v1.12.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen3-235b-a22b-instruct-2507-fp8",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "qwen_qwen3-next-80b-a3b-thinking": {
+   "runs": [
+    [
+     "v1.13.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen3-next-80b-a3b-thinking"
+    ]
+   ],
+   "chosen_release": "v1.13.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=qwen_qwen3-next-80b-a3b-thinking",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "writer_palmyra-fin": {
+   "runs": [
+    [
+     "v1.1.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-fin"
+    ]
+   ],
+   "chosen_release": "v1.1.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-fin",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "writer_palmyra-med": {
+   "runs": [
+    [
+     "v1.5.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-med"
+    ]
+   ],
+   "chosen_release": "v1.5.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-med",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "writer_palmyra-x-004": {
+   "runs": [
+    [
+     "v1.0.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-x-004"
+    ]
+   ],
+   "chosen_release": "v1.0.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-x-004",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1.0,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "writer_palmyra-x5": {
+   "runs": [
+    [
+     "v1.5.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-x5"
+    ]
+   ],
+   "chosen_release": "v1.5.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=writer_palmyra-x5",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "xai_grok-3-beta": {
+   "runs": [
+    [
+     "v1.3.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=xai_grok-3-beta"
+    ]
+   ],
+   "chosen_release": "v1.3.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=xai_grok-3-beta",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "xai_grok-3-mini-beta": {
+   "runs": [
+    [
+     "v1.3.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=xai_grok-3-mini-beta"
+    ]
+   ],
+   "chosen_release": "v1.3.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=xai_grok-3-mini-beta",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 4096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "c73e4ff2f56c",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "xai_grok-4-0709": {
+   "runs": [
+    [
+     "v1.9.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=xai_grok-4-0709"
+    ]
+   ],
+   "chosen_release": "v1.9.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=xai_grok-4-0709",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  },
+  "zai-org_glm-4.5-air-fp8": {
+   "runs": [
+    [
+     "v1.11.0",
+     "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=zai-org_glm-4.5-air-fp8"
+    ]
+   ],
+   "chosen_release": "v1.11.0",
+   "run_name": "mmlu_pro:subset=all,use_chain_of_thought=true,use_few_shot=false,model=zai-org_glm-4.5-air-fp8",
+   "items_parsed": 1000,
+   "method": "multiple_choice_joint_chain_of_thought",
+   "temperature": 1,
+   "max_tokens": 14096,
+   "num_outputs": 5,
+   "max_eval_instances": 1000,
+   "prompt_parts_sha1": "864577cf2296",
+   "completions_per_item": [
+    1
+   ],
+   "helm_stat_names": [
+    "chain_of_thought_correctness"
+   ]
+  }
+ },
+ "seconds": 169
+}

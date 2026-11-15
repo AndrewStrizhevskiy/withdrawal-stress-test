@@ -1,0 +1,40 @@
+Cycle 8 inheritance at scale (protocol Section 32)
+pairs with metadata 60031; class sizes L0 41130, L1 18132, L2 737, L3 32; bootstrap 1000 over root-base families; seed 20261115
+
+[primary] statistic s; matched pairs {1: 18127, 2: 736, 3: 32} of {1: 18132, 2: 737, 3: 32}; families {1: 253, 2: 15, 3: 8}; share matched at tol 0.02: 1.00
+  L1: +0.0774 [+0.0630, +0.0916]
+  L2: +0.1008 [+0.0611, +0.2881]
+  L3: +0.1665 [+0.1140, +0.1915]
+  L3-L2: +0.0656 [-0.1462, +0.1146]
+  L2-L1: +0.0234 [-0.0236, +0.2112]
+
+[S1 equal parameter count] statistic s; matched pairs {1: 3776, 2: 160, 3: 22} of {1: 3781, 2: 161, 3: 22}; families {1: 216, 2: 14, 3: 7}; share matched at tol 0.02: 1.00
+  L1: +0.2464 [+0.2246, +0.2659]
+  L2: +0.3031 [+0.2455, +0.3597]
+  L3: +0.1552 [+0.1060, +0.1862]
+  L3-L2: -0.1480 [-0.2246, -0.0870]
+  L2-L1: +0.0567 [-0.0004, +0.1091]
+
+[S2 agreement when either wrong] statistic s_either; matched pairs {1: 18127, 2: 736, 3: 32} of {1: 18132, 2: 737, 3: 32}; families {1: 253, 2: 15, 3: 8}; share matched at tol 0.02: 1.00
+  L1: +0.0783 [+0.0644, +0.0928]
+  L2: +0.1069 [+0.0650, +0.3122]
+  L3: +0.1628 [+0.1151, +0.1864]
+  L3-L2: +0.0558 [-0.1742, +0.1040]
+  L2-L1: +0.0286 [-0.0193, +0.2353]
+
+[S3 without Qwen/Qwen2.5-14B family] statistic s; matched pairs {1: 18127, 2: 645, 3: 18} of {1: 18132, 2: 646, 3: 18}; families {1: 253, 2: 14, 3: 7}; share matched at tol 0.02: 1.00
+  L1: +0.0774 [+0.0626, +0.0916]
+  L2: +0.0824 [+0.0589, +0.3019]
+  L3: +0.1505 [+0.1075, +0.1975]
+  L3-L2: +0.0680 [-0.1580, +0.1224]
+  L2-L1: +0.0050 [-0.0263, +0.2239]
+
+I1 (L3 > 0, L2 > 0): L3 SUPPORTED, L2 SUPPORTED
+I2 (L3 > L2 > L1): NOT SUPPORTED
+I3 (descriptive, L3 excess by child's generation / type; n, mean):
+  generation=1: n 12, mean +0.1592
+  generation=2: n 14, mean +0.1614
+  generation=3: n 6, mean +0.1928
+  type=chat models (RLHF, DPO, IFT, ...): n 20, mean +0.1571
+  type=fine-tuned on domain-specific datasets: n 12, mean +0.1820
+seconds 532

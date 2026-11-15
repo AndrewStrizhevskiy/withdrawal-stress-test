@@ -1,0 +1,243 @@
+{
+ "labels": [
+  "yandexgpt5-lite-8b",
+  "t-lite-it-2.1",
+  "gigachat3.1-10b",
+  "vikhr-nemo-12b",
+  "saiga-nemo-12b",
+  "saiga-yandexgpt-8b",
+  "gigachat-20b-v1.5",
+  "cotype-nano",
+  "qwen3-8b",
+  "qwen2.5-7b",
+  "llama3.1-8b",
+  "mistral-nemo-12b"
+ ],
+ "accuracy": {
+  "yandexgpt5-lite-8b": 0.7326542242484685,
+  "t-lite-it-2.1": 0.7243909388801824,
+  "gigachat3.1-10b": 0.7176948283231229,
+  "vikhr-nemo-12b": 0.6536543667189059,
+  "saiga-nemo-12b": 0.6393360877617894,
+  "saiga-yandexgpt-8b": 0.6630574155862659,
+  "gigachat-20b-v1.5": 0.6163983473429263,
+  "cotype-nano": 0.538751958968514,
+  "qwen3-8b": 0.6728878757657786,
+  "qwen2.5-7b": 0.713064539108135,
+  "llama3.1-8b": 0.4556204587548084,
+  "mistral-nemo-12b": 0.6423279669468586
+ },
+ "inheritance": {
+  "t-lite-it-2.1|qwen3-8b": {
+   "x_pair": 0.040901288844541375,
+   "excess_vs_matched": 0.018218071510959374,
+   "p": 0.004975124378109453,
+   "n_matched": 9,
+   "tol": 0.03,
+   "same_wrong_given_both_wrong": 0.6473594548551959,
+   "kind": "fine-tune of declared base"
+  },
+  "vikhr-nemo-12b|mistral-nemo-12b": {
+   "x_pair": 0.0861605622207198,
+   "excess_vs_matched": 0.07760025472353807,
+   "p": 0.004975124378109453,
+   "n_matched": 11,
+   "tol": 0.03,
+   "same_wrong_given_both_wrong": 0.7431094460797432,
+   "kind": "fine-tune of declared base"
+  },
+  "saiga-nemo-12b|mistral-nemo-12b": {
+   "x_pair": 0.05204618715547166,
+   "excess_vs_matched": 0.0371743900080924,
+   "p": 0.004975124378109453,
+   "n_matched": 6,
+   "tol": 0.03,
+   "same_wrong_given_both_wrong": 0.6545758928571429,
+   "kind": "fine-tune, base by name"
+  },
+  "vikhr-nemo-12b|saiga-nemo-12b": {
+   "x_pair": 0.07161439190447853,
+   "excess_vs_matched": 0.0630540844072968,
+   "p": 0.004975124378109453,
+   "n_matched": 11,
+   "tol": 0.03,
+   "same_wrong_given_both_wrong": 0.7060902664491572,
+   "kind": "siblings on the same base"
+  },
+  "saiga-yandexgpt-8b|yandexgpt5-lite-8b": {
+   "x_pair": 0.032721584138749524,
+   "excess_vs_matched": 0.011306132811995887,
+   "p": 0.004975124378109453,
+   "n_matched": 17,
+   "tol": 0.03,
+   "same_wrong_given_both_wrong": 0.6457715133531158,
+   "kind": "fine-tune, base by name"
+  },
+  "gigachat3.1-10b|gigachat-20b-v1.5": {
+   "x_pair": 0.02961016634436643,
+   "excess_vs_matched": 0.010307637724264452,
+   "p": 0.004975124378109453,
+   "n_matched": 11,
+   "tol": 0.03,
+   "same_wrong_given_both_wrong": 0.6244884038199181,
+   "kind": "same developer, different models"
+  }
+ },
+ "admission": {
+  "open5": [
+   0.13769767773187064,
+   0.10630090778962568,
+   0.17774259543598112
+  ],
+  "open5+yandexgpt5-lite-8b": [
+   0.13897991166832882,
+   0.10815404529121311,
+   0.1789379145432643
+  ],
+  "single/yandexgpt5-lite-8b": [
+   0.26734577575153157,
+   0.21394165465738485,
+   0.3357014465355799
+  ],
+  "open5+t-lite-it-2.1": [
+   0.13848126513748396,
+   0.10850043759857488,
+   0.17824251726006854
+  ],
+  "single/t-lite-it-2.1": [
+   0.27560906111981764,
+   0.2168104491807633,
+   0.3484992111030663
+  ],
+  "open5+gigachat3.1-10b": [
+   0.14011967516740276,
+   0.10855202958613544,
+   0.17921544002397152
+  ],
+  "single/gigachat3.1-10b": [
+   0.282305171676877,
+   0.23065489431932912,
+   0.3536309171023855
+  ],
+  "open5+vikhr-nemo-12b": [
+   0.14076079213563186,
+   0.10852942730722831,
+   0.1799140044700228
+  ],
+  "single/vikhr-nemo-12b": [
+   0.3463456332810942,
+   0.2891066976513144,
+   0.42024966438223665
+  ],
+  "open5+saiga-nemo-12b": [
+   0.14019091038609488,
+   0.10830821694859019,
+   0.17969635887092586
+  ],
+  "single/saiga-nemo-12b": [
+   0.3606639122382106,
+   0.30153302331760384,
+   0.430909496992024
+  ],
+  "open5+saiga-yandexgpt-8b": [
+   0.1405470864795555,
+   0.10958117800674567,
+   0.17991487738438974
+  ],
+  "single/saiga-yandexgpt-8b": [
+   0.33694258441373415,
+   0.27981545216810744,
+   0.40763425118422364
+  ],
+  "open5+gigachat-20b-v1.5": [
+   0.14061832169824762,
+   0.10978517703869879,
+   0.18021743787585062
+  ],
+  "single/gigachat-20b-v1.5": [
+   0.38360165265707363,
+   0.32777745541595216,
+   0.4593635762523708
+  ],
+  "open5+cotype-nano": [
+   0.13962102863655793,
+   0.10850372541887258,
+   0.1798950014928897
+  ],
+  "single/cotype-nano": [
+   0.461248041031486,
+   0.41032173757503954,
+   0.5214793395393207
+  ],
+  "open5_with_russian_pool": [
+   0.13769767773187064,
+   0.10630090778962568,
+   0.17774259543598112
+  ],
+  "domestic5": [
+   0.2485396780168115,
+   0.19685926279410776,
+   0.3200186811458859
+  ],
+  "best_single_domestic": [
+   0.26734577575153157,
+   0.2130604456975881,
+   0.33632123596240254
+  ],
+  "best_single_open_helm": [
+   0.13242627154865366,
+   0.10289175501451746,
+   0.17505666472671877
+  ]
+ },
+ "portfolios": {
+  "open5": [
+   [
+    "deepseek-ai_deepseek-v3",
+    "01-ai_yi-34b",
+    "meta_llama-3.1-405b-instruct-turbo",
+    "qwen_qwen2-72b-instruct",
+    "nvidia_nemotron-4-340b-instruct"
+   ],
+   [
+    "deepseek-ai_deepseek-v3",
+    "01-ai_yi-34b",
+    "meta_llama-3.1-405b-instruct-turbo",
+    "qwen_qwen2.5-72b-instruct-turbo",
+    "meta_llama-3.1-70b-instruct-turbo"
+   ]
+  ],
+  "open5_with_russian_pool": [
+   [
+    "deepseek-ai_deepseek-v3",
+    "01-ai_yi-34b",
+    "meta_llama-3.1-405b-instruct-turbo",
+    "qwen_qwen2-72b-instruct",
+    "nvidia_nemotron-4-340b-instruct"
+   ],
+   [
+    "deepseek-ai_deepseek-v3",
+    "01-ai_yi-34b",
+    "meta_llama-3.1-405b-instruct-turbo",
+    "qwen_qwen2.5-72b-instruct-turbo",
+    "meta_llama-3.1-70b-instruct-turbo"
+   ]
+  ],
+  "domestic5": [
+   [
+    "yandexgpt5-lite-8b",
+    "t-lite-it-2.1",
+    "gigachat3.1-10b",
+    "saiga-nemo-12b",
+    "saiga-yandexgpt-8b"
+   ],
+   [
+    "yandexgpt5-lite-8b",
+    "t-lite-it-2.1",
+    "gigachat3.1-10b",
+    "saiga-yandexgpt-8b",
+    "saiga-nemo-12b"
+   ]
+  ]
+ }
+}

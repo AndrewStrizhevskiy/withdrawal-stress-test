@@ -1,0 +1,588 @@
+{
+ "releases": [
+  "v1.0.0",
+  "v1.1.0",
+  "v1.2.0",
+  "v1.3.0",
+  "v1.4.0",
+  "v1.5.0",
+  "v1.6.0",
+  "v1.7.0",
+  "v1.8.0",
+  "v1.9.0",
+  "v1.10.0",
+  "v1.11.0",
+  "v1.12.0",
+  "v1.13.0"
+ ],
+ "models": {
+  "01-ai_yi-34b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "01-ai_yi-6b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "01-ai_yi-large-preview": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "ai21_jamba-1.5-large": {
+   "releases_with_runs": {
+    "v1.8.0": 57
+   },
+   "chosen_release": "v1.8.0",
+   "items_parsed": 14038
+  },
+  "ai21_jamba-1.5-mini": {
+   "releases_with_runs": {
+    "v1.8.0": 57
+   },
+   "chosen_release": "v1.8.0",
+   "items_parsed": 14038
+  },
+  "ai21_jamba-instruct": {
+   "releases_with_runs": {
+    "v1.6.0": 57
+   },
+   "chosen_release": "v1.6.0",
+   "items_parsed": 14038
+  },
+  "allenai_olmo-1.7-7b": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "allenai_olmo-7b": {
+   "releases_with_runs": {
+    "v1.1.0": 57
+   },
+   "chosen_release": "v1.1.0",
+   "items_parsed": 14038
+  },
+  "amazon_nova-lite-v1:0": {
+   "releases_with_runs": {
+    "v1.13.0": 57
+   },
+   "chosen_release": "v1.13.0",
+   "items_parsed": 14038
+  },
+  "amazon_nova-micro-v1:0": {
+   "releases_with_runs": {
+    "v1.13.0": 57
+   },
+   "chosen_release": "v1.13.0",
+   "items_parsed": 14038
+  },
+  "amazon_nova-pro-v1:0": {
+   "releases_with_runs": {
+    "v1.13.0": 57
+   },
+   "chosen_release": "v1.13.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-2.1": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-3-5-haiku-20241022": {
+   "releases_with_runs": {
+    "v1.12.0": 57
+   },
+   "chosen_release": "v1.12.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-3-5-sonnet-20240620": {
+   "releases_with_runs": {
+    "v1.5.0": 57
+   },
+   "chosen_release": "v1.5.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-3-5-sonnet-20241022": {
+   "releases_with_runs": {
+    "v1.10.0": 57
+   },
+   "chosen_release": "v1.10.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-3-haiku-20240307": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-3-opus-20240229": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-3-sonnet-20240229": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "anthropic_claude-instant-1.2": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "cohere_command-r": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "cohere_command-r-plus": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "databricks_dbrx-instruct": {
+   "releases_with_runs": {
+    "v1.2.0": 57
+   },
+   "chosen_release": "v1.2.0",
+   "items_parsed": 14038
+  },
+  "deepseek-ai_deepseek-llm-67b-chat": {
+   "releases_with_runs": {
+    "v1.2.0": 57
+   },
+   "chosen_release": "v1.2.0",
+   "items_parsed": 14038
+  },
+  "deepseek-ai_deepseek-v3": {
+   "releases_with_runs": {
+    "v1.13.0": 57
+   },
+   "chosen_release": "v1.13.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.0-pro-001": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.5-flash-001": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.5-flash-002": {
+   "releases_with_runs": {
+    "v1.10.0": 57
+   },
+   "chosen_release": "v1.10.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.5-flash-preview-0514": {
+   "releases_with_runs": {
+    "v1.3.0": 57
+   },
+   "chosen_release": "v1.3.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.5-pro-001": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.5-pro-002": {
+   "releases_with_runs": {
+    "v1.10.0": 57
+   },
+   "chosen_release": "v1.10.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-1.5-pro-preview-0409": {
+   "releases_with_runs": {
+    "v1.2.0": 57
+   },
+   "chosen_release": "v1.2.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-2.0-flash-exp": {
+   "releases_with_runs": {
+    "v1.12.0": 57
+   },
+   "chosen_release": "v1.12.0",
+   "items_parsed": 14038
+  },
+  "google_gemini-pro": {
+   "releases_with_runs": {
+    "v1.0.0": 5
+   },
+   "chosen_release": null
+  },
+  "google_gemma-2-27b": {
+   "releases_with_runs": {
+    "v1.6.0": 57
+   },
+   "chosen_release": "v1.6.0",
+   "items_parsed": 14038
+  },
+  "google_gemma-2-9b": {
+   "releases_with_runs": {
+    "v1.6.0": 57
+   },
+   "chosen_release": "v1.6.0",
+   "items_parsed": 14038
+  },
+  "google_gemma-7b": {
+   "releases_with_runs": {
+    "v1.1.0": 57
+   },
+   "chosen_release": "v1.1.0",
+   "items_parsed": 14038
+  },
+  "google_text-bison@001": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "google_text-unicorn@001": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-2-13b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-2-70b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-2-7b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3-70b": {
+   "releases_with_runs": {
+    "v1.1.0": 57
+   },
+   "chosen_release": "v1.1.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3-8b": {
+   "releases_with_runs": {
+    "v1.1.0": 57
+   },
+   "chosen_release": "v1.1.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3.1-405b-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.7.0": 57
+   },
+   "chosen_release": "v1.7.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3.1-70b-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.7.0": 57
+   },
+   "chosen_release": "v1.7.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3.1-8b-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.7.0": 57
+   },
+   "chosen_release": "v1.7.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3.2-11b-vision-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.9.0": 57
+   },
+   "chosen_release": "v1.9.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3.2-90b-vision-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.9.0": 57
+   },
+   "chosen_release": "v1.9.0",
+   "items_parsed": 14038
+  },
+  "meta_llama-3.3-70b-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.11.0": 57
+   },
+   "chosen_release": "v1.11.0",
+   "items_parsed": 14038
+  },
+  "microsoft_phi-2": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "microsoft_phi-3-medium-4k-instruct": {
+   "releases_with_runs": {
+    "v1.6.0": 57
+   },
+   "chosen_release": "v1.6.0",
+   "items_parsed": 14038
+  },
+  "microsoft_phi-3-small-8k-instruct": {
+   "releases_with_runs": {
+    "v1.6.0": 57
+   },
+   "chosen_release": "v1.6.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mistral-7b-instruct-v0.3": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mistral-7b-v0.1": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mistral-large-2402": {
+   "releases_with_runs": {
+    "v1.2.0": 57
+   },
+   "chosen_release": "v1.2.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mistral-large-2407": {
+   "releases_with_runs": {
+    "v1.7.0": 57
+   },
+   "chosen_release": "v1.7.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mistral-small-2402": {
+   "releases_with_runs": {
+    "v1.2.0": 57
+   },
+   "chosen_release": "v1.2.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mixtral-8x22b": {
+   "releases_with_runs": {
+    "v1.1.0": 57
+   },
+   "chosen_release": "v1.1.0",
+   "items_parsed": 14038
+  },
+  "mistralai_mixtral-8x7b-32kseqlen": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "mistralai_open-mistral-nemo-2407": {
+   "releases_with_runs": {
+    "v1.7.0": 57
+   },
+   "chosen_release": "v1.7.0",
+   "items_parsed": 14038
+  },
+  "nvidia_nemotron-4-340b-instruct": {
+   "releases_with_runs": {
+    "v1.8.0": 57
+   },
+   "chosen_release": "v1.8.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-3.5-turbo-0125": {
+   "releases_with_runs": {
+    "v1.10.0": 57
+   },
+   "chosen_release": "v1.10.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-3.5-turbo-0613": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-4-0613": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-4-1106-preview": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-4-turbo-2024-04-09": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-4o-2024-05-13": {
+   "releases_with_runs": {
+    "v1.3.0": 57
+   },
+   "chosen_release": "v1.3.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-4o-2024-08-06": {
+   "releases_with_runs": {
+    "v1.10.0": 57
+   },
+   "chosen_release": "v1.10.0",
+   "items_parsed": 14038
+  },
+  "openai_gpt-4o-mini-2024-07-18": {
+   "releases_with_runs": {
+    "v1.7.0": 57
+   },
+   "chosen_release": "v1.7.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen1.5-110b-chat": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen1.5-14b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen1.5-32b": {
+   "releases_with_runs": {
+    "v1.1.0": 57
+   },
+   "chosen_release": "v1.1.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen1.5-72b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen1.5-7b": {
+   "releases_with_runs": {
+    "v1.0.0": 57
+   },
+   "chosen_release": "v1.0.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen2-72b-instruct": {
+   "releases_with_runs": {
+    "v1.4.0": 57
+   },
+   "chosen_release": "v1.4.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen2.5-72b-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.9.0": 57
+   },
+   "chosen_release": "v1.9.0",
+   "items_parsed": 14038
+  },
+  "qwen_qwen2.5-7b-instruct-turbo": {
+   "releases_with_runs": {
+    "v1.9.0": 57
+   },
+   "chosen_release": "v1.9.0",
+   "items_parsed": 14038
+  },
+  "snowflake_snowflake-arctic-instruct": {
+   "releases_with_runs": {
+    "v1.2.0": 57
+   },
+   "chosen_release": "v1.2.0",
+   "items_parsed": 14038
+  },
+  "upstage_solar-pro-241126": {
+   "releases_with_runs": {
+    "v1.11.0": 57
+   },
+   "chosen_release": "v1.11.0",
+   "items_parsed": 14038
+  },
+  "writer_palmyra-x-004": {
+   "releases_with_runs": {
+    "v1.8.0": 57
+   },
+   "chosen_release": "v1.8.0",
+   "items_parsed": 14038
+  },
+  "writer_palmyra-x-v3": {
+   "releases_with_runs": {
+    "v1.3.0": 57
+   },
+   "chosen_release": "v1.3.0",
+   "items_parsed": 14038
+  }
+ },
+ "rows": 1123040,
+ "seconds": 477
+}
