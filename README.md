@@ -1,17 +1,17 @@
 # Withdrawal stress test for LLM-based decision support
 
-Code, protocol and outputs for the study *Operational autonomy of LLM-based decision support under provider withdrawal: shared errors, diversity caps and model families* (A. V. Strizhevskiy, E. D. Verkhovykh, D. M. Paramonov, M. I. Kolosov, Bauman Moscow State Technical University; manuscript under review).
+Code, protocol and outputs for the study *Operational autonomy of LLM-based decision support under provider withdrawal: shared errors, diversity caps and model families* (A. V. Strizhevskiy, E. D. Verkhovykh, D. M. Paramonov, M. I. Kolosov, Bauman Moscow State Technical University; conference paper, BMSTU, November 2026; journal manuscript in preparation).
 
 The study treats a portfolio of large language models (LLMs) as a system of components. It measures what the system loses when groups of models are withdrawn, using reliability importance measures: the error increase ΔE, risk achievement worth (RAW) and joint importance (JI). Data:
 - public HELM answers of 70 models on MMLU and 58 models on MMLU-Pro;
-- 12 local runs of Russian and foreign open models;
+- local runs of 13 open models (nine Russian, four foreign);
 - pair statistics for 349 Open LLM Leaderboard models.
 
 ## Contents
 
 | Path | What it is |
 |---|---|
-| `protocol/withdrawal_stress_test_protocol.md` | The internal analysis protocol with its full amendment history (Sections 1–55): hypotheses, synthetic validation, every result, every post-hoc analysis, with dates. Four lines about the administration of a department server are redacted. |
+| `protocol/withdrawal_stress_test_protocol.md` | The internal analysis protocol with its full amendment history (Sections 1–60): hypotheses, synthetic validation, every result, every post-hoc analysis, with dates. Four lines about the administration of a department server are redacted. |
 | `checks/cycle8_s0*.py`, `cycle8_s0pro*.py` | Synthetic validation of the tests (size, power, interval coverage). |
 | `checks/cycle8_s1_step0_*.py`, `cycle8_pro_step0_*.py` | Download and parsing of the public HELM MMLU and MMLU-Pro outputs; panel construction. |
 | `checks/cycle8_s1_analysis.py`, `cycle8_s1b_supplementary.py`, `cycle8_pro_analysis.py` | Pre-specified analyses (H1–H3, ΔE, RAW, JI, null models, admission chart). |
