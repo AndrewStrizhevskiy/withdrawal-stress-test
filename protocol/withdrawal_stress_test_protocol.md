@@ -1077,7 +1077,7 @@ Two literature passes. Notes, with full references and read levels, are in `rese
 
 ## 32. Inheritance at scale on the Open LLM Leaderboard: pre-registration (2026-11-15, written before any outcome is computed)
 
-**Why.** The authors planned an international journal submission. The inheritance result of 28.4 rests on six pairs, so this section scales it up.
+**Why.** The authors wants an international journal submission by 2026-11-18. The inheritance result of 28.4 rests on six pairs, so this section scales it up.
 
 **Data and what has been seen.**
 - **Item-level answers are gated.** The leaderboard's per-item answers (`open-llm-leaderboard/*-details`) require a logged-in account that accepts each dataset's terms (gated "auto"). That needs a personal account, so this section does not use them.
@@ -1452,3 +1452,247 @@ Leave-one-developer-out results, with the full pipeline re-selected on each redu
 - **ΔE(API-only).** Its size depends strongly on DeepSeek. Without DeepSeek, no strong open-weight model remains, and losing the hosted models costs 7.6 points.
 - **H3.** The refutation is robust on both benchmarks: the largest gain of robust selection over the cap is +0.07 points, far below the 1-point bar.
 - **Jackknife SEs.** They are large because single developers are influential. They show that model sampling dominates the uncertainty, and they are reported as such.
+
+## 45. Russian-language run (MERA ruMMLU): specification (2026-11-15, written before any answer). POST HOC
+
+This is weak point 2 (English only); the authors approved the run.
+
+**Data.**
+- MERA (ai-forever/MERA, MIT licence), configuration `rummlu`, split `public_test`: 10,033 Russian four-option items in the MMLU subjects (`meta.domain`), with public answers.
+- The items cannot be matched one-to-one to HELM MMLU items (Russian text, no English identifier), so comparisons with English are made at group level.
+
+**Prompt and run.**
+- MERA's own Russian instruction, zero-shot, filled with the item (question, options A–D, Russian subject name), sent as the user message.
+- The same 12 local models and the same chat-format handling as the final English runs (Section 28.1: raw formats for T-lite, GigaChat-20B, YandexGPT-5-Lite and saiga_yandexgpt).
+- Greedy decoding, at most 8 output tokens, context 4,096.
+- Runner: `checks/cycle8_ru_run.py`, unchanged.
+- **Answer rule:** the first character of the stripped completion. Latin A–D and their Cyrillic look-alikes or equivalents (А, В, С, Д) map to options 1–4; anything else is invalid.
+
+**Analyses.** Script `checks/cycle8_mera_analysis.py`; intervals from a bootstrap over the 57 domains, 1,000 resamples, seed 20261118.
+- **M1, accuracy and invalid share** per model, set beside its English accuracy (local MMLU runs). Descriptive.
+- **M2, origin at matched size, in Russian:**
+  - group difference in accuracy, Russian 8–12B (6 models, and the 3 own-base models) minus foreign anchors without Llama;
+  - the difference-in-differences: (Russian minus English accuracy) for the Russian group minus the same for the foreign group. A positive value means Russian models gain relative to foreign ones when the questions are in Russian.
+  - Leave-one-model-out ranges as in Section 36.
+- **M3, portfolios in Russian:** cross-fitted (random halves within domain) plurality portfolios of 3: the best Russian-only trio against the best foreign-anchor trio. Error difference with interval.
+- **M4, inheritance in Russian.** For the six related local pairs:
+  - the excess same-wrong agreement over accuracy-matched unrelated local pairs (as in Section 28.4);
+  - a 1PL-g N2 null fitted to the 12 Russian-language runs, 200 panels.
+
+**Reading.** Descriptive and post hoc. The English conclusions on origin, portfolios and inheritance are checked for whether they hold in Russian. Any reversal is reported as found.
+
+## 46. Russian-language run: format checks and amended answer rule (2026-11-15, before the full run)
+
+**First check (60 items per model, rule of Section 45, 8 output tokens).** Many models announce their answer: "Ответ: B", "Правильный ответ — B", "**Ответ:**". The first-character rule then marks up to 54 of 60 answers invalid (Qwen3-8B 54, Qwen2.5-7B 43, Vikhr-Nemo 42, Cotype-Nano 33, Llama 26). That measures answer format, not knowledge.
+
+**Amendment (as with the English format checks of Section 27, made on the format-check items and before the full run).**
+- **Output length.** At most 32 output tokens (runner option `--num-predict`). The completion is stored to 160 characters.
+- **Parser,** `checks/cycle8_mera_parse.py`:
+  1. Strip leading markdown and answer-announcing phrases ("правильный ответ", "ответ на вопрос", "буква правильного ответа", "ответ", "answer", "the correct answer is", "вариант"), then read the first character: Latin A–D or Cyrillic А, В, С, Д, not followed by another letter. A lone letter followed by a space and a lower-case word is a preposition ("В данном случае …"), not an answer.
+  2. Fallback: the first option letter (case-sensitive) that directly follows "ответ" or "answer" anywhere in the completion.
+  3. Otherwise invalid.
+- **Check on the same 60 items with 32 tokens:**
+  - invalid answers are 0–3 for 10 of the 12 models;
+  - Vikhr-Nemo has 8 and GigaChat3.1 19: GigaChat3.1 often starts reasoning ("Для решения задачи …") and gives no letter within 32 tokens.
+
+  Invalid answers count as errors, as in English. Accuracy on valid answers only is added as a sensitivity analysis to M1 and M2.
+
+**Full run started.** Server, the 12 models of `checks/ru_models_mera.txt`, 4 parallel requests. SHA-256 prefixes: runner `c893db87…`, parser `9d87a8a2…`, prompt builder `d12431c9…`.
+
+## 47. Full-text check of reliability sources (2026-11-15)
+
+The authors supplied full texts. Each citing sentence was checked against them.
+- **Borgonovo & Apostolakis 2001** (RESS 72:193–212) [FT]. It supports every use:
+  - the differential importance measure is additive over groups, while Fussell–Vesely, RAW, Birnbaum and criticality importance are not;
+  - DIM ranks basic events like Birnbaum importance under uniform changes (H1) and like criticality importance under proportional changes (H2);
+  - RAW is defined as the risk with the basic event set "true" over the nominal risk.
+
+  Two sentences were added to the journal manuscript (English and Russian): DIM's additivity is contrasted with RAW and Fussell–Vesely, and JI is motivated by the non-additivity of RAW-type measures.
+- **Eckhardt & Lee** [FT], read as NASA Technical Memorandum 86369, January 1985, "A Theoretical Basis for the Analysis of Redundant Software Subject to Coincident Errors": the report version of the IEEE TSE 1985 paper that is cited.
+  - Theorem 2: independently selected versions fail independently if and only if the intensity of coincident errors θ(x) is constant over inputs. When θ(x) varies, coincident failure exceeds the independence prediction.
+  - The journal sentence was reworded to say exactly this; the experimental confirmation is attributed to Knight & Leveson.
+  - The conference sentence ("shared input difficulty is the null model") is consistent with it.
+- **Borgonovo, "A New Uncertainty Importance Measure"** [FT, working-paper version]: a moment-independent global sensitivity measure for input uncertainty. It is not cited. Its measure concerns uncertainty in the inputs, not what-if withdrawal of components, so it is not needed for the claims made.
+
+**Still read only at abstract level:** Hong & Lie 1993, Henry & Ramirez-Marquez 2012, Littlewood & Miller 1989, Knight & Leveson 1986, NUREG/CR-4780, Vesely et al. 1983.
+
+## 48. Full-text check, second batch (2026-11-15)
+
+- **Edler et al. 2023** [FT]. Technology sovereignty is conceived as state-level agency ("sovereignty of governmental action"), not sovereignty over something. The definition is "the ability of a state or a federation of states to provide the technologies it deems critical for its welfare, competitiveness, and ability to act, and to be able to develop these or source them from other economic areas without one-sided structural dependency". Explicitly not autarky. Our paraphrase "ability to act rather than control over every technology" was loose; all four documents now use the definition.
+- **Henry & Ramirez-Marquez 2012** [FT]. R(t) = Recovery(t)/Loss(t_d), with loss the drop of a figure of merit F from its original value F(t0). "No loss, no scope for resilience." Our "ΔE is the loss term" is correct with F = accuracy. No change.
+- **Vesely, Davis, Denning, Saltos 1983, NUREG/CR-3385** (1986 reprint) [FT]. Risk achievement worth is "the increase in risk if the feature were assumed not to be there or to be failed", defined either as a ratio A = R⁺/R₀ or on an interval scale A = R⁺ − R₀. Our ΔE and RAW are therefore exactly the interval and ratio forms. The journal versions now say so.
+- **IAEA-TECDOC-648 (1992)** [FT]. "Common cause failure events are defined as multiple failures of components from shared root causes." It replaces NUREG/CR-4780 (never read) as the citation for common-cause failure in both journal versions; `refs.bib` entry `iaea1992ccf`.
+
+**Still read only at abstract level:** Hong & Lie 1993, Littlewood & Miller 1989, Knight & Leveson 1986, Hosseini et al. 2016, Brown et al. 2005, Martens et al. 2025 (DSS).
+
+## 49. Full-text check, third batch (2026-11-15)
+
+- **Hosseini, Barker, Ramirez-Marquez 2016** [FT]. Quantitative performance-based resilience approaches are classed as deterministic or probabilistic and as static or dynamic. Vugrin et al.'s resilience combines absorptive, adaptive and restorative capacity. Our "loss vs recovery" citation is supported. A sentence was added to both journal versions: the withdrawal measures are static, performance-based measures of absorptive capacity.
+- **Martens et al. 2025** (Decision Support Systems 191:114402) [FT, abstract and introduction]. "XAIstories" use LLMs to turn SHAP and counterfactual explanations into narratives, tested with users. Our sentence ("to turn model explanations into narratives") is accurate. No change.
+- **Brown, Wyatt, Harris, Yao 2005** [FT, abstract and introduction]. A review of error diversity and a taxonomy of diversity creation methods; error diversity is a precondition for ensemble accuracy. "Diversity is the classical design principle of classifier ensembles" is supported. The remark that diversity measures mix sources of coincidence is our own reading, stated as such.
+
+**Still read only at abstract level:** Hong & Lie 1993, Littlewood & Miller 1989, Knight & Leveson 1986 (all IEEE).
+- **Knight & Leveson 1986** [FT, preprint version]. Twenty-seven versions written independently from one specification at two universities were run on one million tests. In 1,255 tests more than one version failed, and the independence model was rejected at 99% (z = 100.51). They also remark that "some parts of a problem may be inherently more difficult than others" and that independent programmers make the same mistakes. The journal sentence ("as an experiment confirmed") is supported; no change. **Still read only at abstract level:** Hong & Lie 1993 and Littlewood & Miller 1989.
+- **Hong & Lie 1993** [FT]. Joint reliability importance is JRI(i, j) = ∂²R/∂p_i∂p_j = R(G*i*j) − R(G*i−j) − R(G*j−i) + R(G−i−j), with * meaning working and − failed. With withdrawal as failure and E = 1 − R, our JI = −JRI exactly, so a positive JI means the two groups substitute for each other (a parallel-type interaction). Both journal versions now state this.
+- **Littlewood & Miller 1989** [FT]. Building on Eckhardt & Lee, diverse methodologies decrease the probability of simultaneous failure, and better-than-independent behaviour is theoretically possible. But forced diversity "should not be taken to mean" any guaranteed reliability, and "great caution" is advised. The loose phrase "depends on modelling assumptions" was replaced in all four documents by this content. The English conference version was trimmed by two sentences to stay at 5 pages.
+
+**All cited reliability sources are now read in full.**
+
+## 50. GPQA replication: specification (2026-11-15, written before any GPQA answer is downloaded). POST HOC
+
+This is weak point 6 (benchmark freshness): a third benchmark for H1, H3 and the sovereignty cost.
+
+**Data.** HELM Capabilities runs `gpqa:subset=gpqa_main,use_chain_of_thought=true,use_few_shot=false`: GPQA main set, four options, chain-of-thought answers. One run per model, the latest release.
+
+**Pipeline.** Identical to the MMLU-Pro replication (Section 22):
+- the same parser (last "answer is (X)", else the last "(X)");
+- the same exclusion of models whose parsed correctness agrees with HELM's own correctness on fewer than 95% of items;
+- the same deduplication and open-weight classification as in `checks/cycle8_pro_step0_checks.py`;
+- the same analysis code (`checks/cycle8_pro_analysis.py`), with K = 4 options, guessing floor 1/4 and random-half cross-fitting.
+
+The scripts are reused unchanged through the wrapper `checks/cycle8_gpqa.py`, which only sets the scenario name and K and keeps the outputs separate (`checks/cycle8_gpqa_*`).
+
+**Decision rules.** No synthetic validation is run for GPQA. H1 therefore has no MDE: it is reported as supported if p < 0.05 and T > 0, otherwise not supported, with the developer jackknife. H2 and H3 follow the rules of Section 5; the sovereignty cost C is defined as in Section 35. All intervals are approximate (item bootstrap, 200 resamples).
+
+**Reading.** H1, H3 and the sign of C are judged to replicate if they agree with MMLU and MMLU-Pro. Any disagreement is reported as found.
+
+**Section 50 outcome (2026-11-15): not feasible; dropped.**
+- The GPQA runs were downloaded for all 70 models, 446 items each. HELM publishes the GPQA completions encrypted ("[encrypted_text_N]"), in line with the benchmark's request to keep its items out of web text. Only HELM's per-item correctness (`chain_of_thought_correctness`) is public.
+- H1 (the same wrong answer) and the voting portfolios need the chosen option, so neither can be computed. Encryption is respected; no attempt was made to recover the texts.
+- The one parseable model (Claude 3.5 Sonnet 2024-06-20) does not make a panel.
+- Benchmark freshness therefore rests on MMLU-Pro, which includes 2025 frontier models.
+
+## 51. Quantisation check: specification (2026-11-15, written before the run). POST HOC
+
+Weak point 7b: all local runs are 4-bit quantised.
+- **Run.** Qwen2.5-7B-Instruct at 8-bit (Ollama `qwen2.5:7b-instruct-q8_0`) on the same 14,038 HELM MMLU prompts with the same settings as the 4-bit run (Section 27). Output: `data/ru/qwen2.5-7b-q8.jsonl`.
+- **Reported:**
+  - accuracy and invalid share at 8-bit vs 4-bit vs the hosted HELM run;
+  - answer agreement 8-bit vs 4-bit and 8-bit vs HELM;
+  - the excess same-wrong agreement x between the 8-bit run and the HELM run, against the 4-bit run's x of 0.142 (Section 28.3).
+- **Reading.** If 8-bit agrees with HELM clearly better than 4-bit does, quantisation contributes to the local–hosted gap, and the bridge and inheritance numbers carry a quantisation caveat. If not, quantisation is not a material source of difference.
+
+## 52. Large domestic model (T-pro-it-2.1, 32B): specification (2026-11-15, written before the run). POST HOC
+
+Weak point 4: "scale, not origin" was untested above 20B.
+- **Model.** T-pro-it-2.1 (T-Bank; declared base Qwen/Qwen3-32B; Apache-2.0), official GGUF Q4_K_M (19.8 GB). It runs with partial CPU offload on the 12 GB GPU, in the raw Qwen3 non-thinking format, as for T-lite (Section 27).
+- **Items.** A stratified subset of HELM MMLU: the first 50 items of each of the 57 subjects in the sorted item order, 2,850 items in total. The subset keeps the run to a few hours.
+- **Reported, on the same 2,850 items:**
+  - T-pro's accuracy against HELM's open-weight models of 27–72B parameters (as listed in the S1 parameter table);
+  - its accuracy against the 8–12B Russian models;
+  - whether adding T-pro to the open-weight portfolio lowers its error, cross-fitted on the subset;
+  - the excess same-wrong agreement between T-pro and T-lite (same developer, both on Qwen3 bases).
+- **Reading.** If T-pro reaches the accuracy of open models of similar size, the domestic gap at 8–20B is a scale gap, which supports the hedged claim. If it does not, origin or training differences matter beyond scale.
+- **Scripts.** `checks/cycle8_ru_run.py` with a prompts file restricted to the subset (`data/helm_mmlu_prompts_subset50.jsonl.gz`), and `checks/cycle8_tpro_analysis.py`.
+
+## 53. Russian-language run: results (2026-11-16). POST HOC
+
+**Run.** 12 models × 10,033 MERA ruMMLU items, server, about 4.5 h; no request errors. Analysis `checks/cycle8_mera_analysis.py` (SHA-256 prefix `d330d2c3`), 86 s. Outputs: `checks/cycle8_mera_analysis.{out,json}`; answers in `data/ru_mera/*.jsonl.gz`.
+
+**M1. Russian accuracy** (English accuracy in brackets; invalid share; accuracy on valid answers only):
+
+| Model | Russian | English | Invalid | Valid-only |
+|---|---|---|---|---|
+| YandexGPT-5-Lite-8B | 0.652 | 0.733 | 0.006 | 0.656 |
+| T-lite-it-2.1 | 0.626 | 0.724 | 0.050 | 0.659 |
+| GigaChat-20B | 0.567 | 0.616 | 0.001 | 0.568 |
+| saiga_yandexgpt | 0.554 | 0.663 | 0.101 | 0.616 |
+| saiga_nemo | 0.506 | 0.639 | 0.014 | 0.513 |
+| Vikhr-Nemo | 0.466 | 0.654 | 0.220 | 0.597 |
+| Cotype-Nano | 0.422 | 0.539 | 0.053 | 0.446 |
+| GigaChat3.1 | 0.392 | 0.718 | 0.396 | 0.649 |
+| Qwen3-8B | 0.587 | 0.673 | 0.089 | 0.645 |
+| Qwen2.5-7B | 0.574 | 0.713 | 0.069 | 0.617 |
+| Mistral-Nemo | 0.497 | 0.642 | 0.041 | 0.518 |
+| Llama-3.1-8B | 0.475 | 0.456 | 0.082 | 0.518 |
+
+All models but Llama score lower than in English. The zero-shot Russian prompt (against 5-shot English) and the answer-format failures confound the comparison of each model's two scores.
+
+**M2. Origin at matched size.** Russian 8–12B models minus foreign anchors without Llama; points; domain-bootstrap CI; leave-one-out range.
+
+| Comparison | All six Russian models | Three own-base Russian models |
+|---|---|---|
+| Russian accuracy, invalid counted as wrong | −2.01 [−3.00, −0.91]; LOO [−4.80, +0.81] | −2.01 [−3.27, −0.72] |
+| Russian accuracy, valid answers only | **+2.20 [+1.25, +3.08]**; LOO [−1.56, +4.78] | **+4.72 [+3.40, +5.87]**; LOO [+0.97, +7.30] |
+| Difference-in-differences (Russian − English) | −3.24 [−4.65, −1.81] | −4.85 [−6.68, −2.94] |
+
+- **Reading.** On the answers they give, the Russian models know more than size-matched foreign models in Russian too. They break the answer format more often (GigaChat3.1 40% and Vikhr-Nemo 22% invalid), which costs them more than their knowledge advantage gains.
+- **No relative gain from the language switch.** The negative difference-in-differences is dominated by those format failures.
+
+**M3. Cross-fitted plurality trios in Russian** (error %):
+
+| Pool | Error |
+|---|---|
+| Russian 8–12B | 34.45 [27.71, 40.65] |
+| All Russian | 33.16 |
+| Foreign | 38.08 |
+| Foreign without Llama | 37.77 |
+
+Russian minus foreign without Llama: **−3.32 [−5.14, −2.84]**. A Russian-only portfolio beats a foreign-only portfolio of the same size class when the questions are in Russian.
+
+**M4. Inheritance in Russian** (excess over matched unrelated local pairs; English value in brackets):
+
+| Pair | Russian | p | English |
+|---|---|---|---|
+| T-lite ~ Qwen3-8B | +0.031 | 0.005 | +0.018 |
+| Vikhr-Nemo ~ Mistral-Nemo | +0.065 | 0.005 | +0.078 |
+| saiga_nemo ~ Mistral-Nemo | +0.101 | 0.005 | +0.037 |
+| Vikhr-Nemo ~ saiga_nemo | +0.043 | 0.005 | +0.063 |
+| saiga_yandexgpt ~ YandexGPT | +0.020 | 0.005 | +0.011 |
+| GigaChat3.1 ~ GigaChat-20B | −0.020 | 1.000 | +0.010 |
+
+All five fine-tuning relations replicate in Russian. The same-developer pair, which has no fine-tuning link, does not.
+
+**Reading for the papers**
+- The "English only" limitation is answered for local models:
+  - inheritance replicates in Russian;
+  - in Russian the domestic models are more knowledgeable than size-matched foreign ones, and a domestic trio is the better portfolio;
+  - but they follow the answer format less reliably, which a decision-support integration must handle (format validation or retries).
+
+## 54. Quantisation check: results (2026-11-16). POST HOC
+
+**Run.** Qwen2.5-7B-Instruct at 8-bit, all 14,038 HELM MMLU prompts, about 15 min on the server. Analysis `checks/cycle8_q8_check.py` (SHA-256 prefix `f7365db8`). Output: `checks/cycle8_q8_check.out`; answers in `data/ru/qwen2.5-7b-q8.jsonl.gz`.
+
+| Quantity | 8-bit | 4-bit | HELM hosted |
+|---|---|---|---|
+| Accuracy | 0.7163 | 0.7131 | 0.7141 |
+| Invalid share | 0.0033 | 0.0027 | |
+| Answer agreement with HELM | 0.9741 | 0.9106 | |
+| Excess same-wrong agreement x with the HELM run | 0.177 | 0.140 | |
+
+8-bit vs 4-bit: answer agreement 0.917, x 0.142.
+
+**Reading**
+- **Quantisation changes answers, not accuracy.** 4-bit quantisation changes about 6% of individual answers relative to the hosted model without changing accuracy. The local accuracy comparisons stand. Comparisons among local runs are like-for-like, since all of them are 4-bit.
+- **The same-model ceiling.** The ceiling x for an identical model is about 0.18 at 8-bit, against 0.14–0.16 at 4-bit. Vikhr-Nemo's raw x of 0.086 with its base is therefore roughly half of the ceiling on either measure, so the wording "keeps roughly half" stands.
+
+## 55. Large domestic model (T-pro-it-2.1, 32B): results (2026-11-16). POST HOC
+
+**Run.** 2,850-item stratified subset, server with partial CPU offload, raw Qwen3 non-thinking format. 0 invalid, 0 errors. Analysis `checks/cycle8_tpro_analysis.py`. Output: `checks/cycle8_tpro_analysis.out`; answers in `data/ru_tpro/`.
+
+**Accuracy on the subset.** T-pro scores **0.841**, ranking 2nd of 15 among HELM's open-weight models of 27–72B on the same items:
+
+| Model | Size | Accuracy |
+|---|---|---|
+| Qwen2.5-72B | 72B | 0.842 |
+| **T-pro-it-2.1** | 32B | **0.841** |
+| Qwen2-72B | 72B | 0.827 |
+| Llama-3.1-70B | 70B | 0.800 |
+| Command-R | 35B | 0.662 (lowest) |
+| Mean of the 14 HELM models | | 0.759 |
+
+The 8–12B Russian models score 0.646–0.751 on the same subset.
+
+**Portfolio.**
+- The cross-fitted open-weight five-model plurality errs on 13.05%.
+- Adding T-pro as a sixth member gives 12.95%: change −0.11 [−1.51, +0.35] over 200 subject resamples.
+- Re-selecting with T-pro in the pool gives 13.23%: change +0.18 [−1.54, +0.84].
+
+**Shared errors (descriptive).** Excess same-wrong agreement x of T-pro with:
+- T-lite-it-2.1 (same developer, Qwen3 bases): +0.035;
+- Qwen3-8B: +0.010;
+- unrelated local models: +0.012 on average (range −0.013 to +0.032).
+
+**Reading**
+- **Scale, not origin.** At 32B the domestic model matches the best open models of 27–72B, supporting the reading that the domestic-only gap at 8–20B is a gap of scale. Caveat: T-pro (2025) is newer than most HELM open models (2024), so vintage and scale are confounded. The subset is 20% of the items.
+- **Admission.** Adding a model at about 84% accuracy does not measurably improve the open-weight portfolio, as the admission chart predicted (Section 21: gains only at about 0.85 accuracy and low copying).

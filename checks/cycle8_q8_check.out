@@ -1,0 +1,5 @@
+Cycle 8 quantisation check: Qwen2.5-7B-Instruct, HELM MMLU 14,038 items (protocol Section 51). POST HOC
+accuracy: 8-bit 0.7163, 4-bit 0.7131, HELM hosted 0.7141
+invalid share: 8-bit 0.0033, 4-bit 0.0027
+answer agreement: 8-bit vs 4-bit 0.9168; 8-bit vs HELM 0.9741; 4-bit vs HELM 0.9106
+excess same-wrong agreement x with the HELM run: 8-bit 0.1765, 4-bit 0.1396; 8-bit vs 4-bit 0.1421

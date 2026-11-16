@@ -1,0 +1,10 @@
+Cycle 8 T-pro-it-2.1 (32B, Qwen3-32B base) on 2,850 HELM MMLU items (protocol Section 52). POST HOC
+
+T-pro accuracy 0.841, invalid 0.000
+HELM open-weight models of 27-72B on the same items: qwen_qwen2.5-72b-instruct-turbo 0.842 (72B); qwen_qwen2-72b-instruct 0.827 (72B); meta_llama-3.1-70b-instruct-turbo 0.800 (70B); meta_llama-3-70b 0.794 (70B); meta_llama-3.3-70b-instruct-turbo 0.793 (70B); qwen_qwen1.5-72b 0.781 (72B); 01-ai_yi-34b 0.778 (34B); google_gemma-2-27b 0.756 (27B); qwen_qwen1.5-32b 0.745 (32B); deepseek-ai_deepseek-llm-67b-chat 0.732 (67B); mistralai_mixtral-8x7b-32kseqlen 0.716 (47B); ai21_jamba-1.5-mini 0.705 (52B); meta_llama-2-70b 0.701 (70B); cohere_command-r 0.662 (35B)
+  mean 0.759; T-pro rank among them 2 of 15
+Russian 8-12B local runs on the same items: yandexgpt5-lite-8b 0.751; t-lite-it-2.1 0.750; gigachat3.1-10b 0.740; vikhr-nemo-12b 0.662; saiga-nemo-12b 0.646; saiga-yandexgpt-8b 0.681
+
+Open-weight portfolio of five (cross-fitted): 13.05%; with T-pro added as sixth 12.95% (change -0.11 [-1.51, +0.35]); re-selected with T-pro in the pool 13.23% (change +0.18 [-1.54, +0.84]); 200 subject resamples
+
+Excess same-wrong agreement x of T-pro with: t-lite-it-2.1 +0.0346; qwen3-8b +0.0097; mean over unrelated local models +0.0118 (range -0.0130 to +0.0322)

@@ -1,6 +1,6 @@
 # Withdrawal stress test for LLM-based decision support
 
-Code, protocol and outputs for the study *Operational autonomy of LLM-based decision support under provider withdrawal: shared errors, diversity caps and model families* (A. Strizhevskiy, M. I. Kolosov, Bauman Moscow State Technical University; manuscript under review).
+Code, protocol and outputs for the study *Operational autonomy of LLM-based decision support under provider withdrawal: shared errors, diversity caps and model families* (A. V. Strizhevskiy, Ye. D. Verkhovykh, M. I. Kolosov, Bauman Moscow State Technical University; manuscript under review).
 
 The study treats a portfolio of large language models (LLMs) as a system of components. It measures what the system loses when groups of models are withdrawn, using reliability importance measures: the error increase ΔE, risk achievement worth (RAW) and joint importance (JI). Data:
 - public HELM answers of 70 models on MMLU and 58 models on MMLU-Pro;
@@ -11,13 +11,15 @@ The study treats a portfolio of large language models (LLMs) as a system of comp
 
 | Path | What it is |
 |---|---|
-| `protocol/withdrawal_stress_test_protocol.md` | The internal analysis protocol with its full amendment history (Sections 1–44): hypotheses, synthetic validation, every result, every post-hoc analysis, with dates. Four lines about the administration of a department server are redacted. |
+| `protocol/withdrawal_stress_test_protocol.md` | The internal analysis protocol with its full amendment history (Sections 1–55): hypotheses, synthetic validation, every result, every post-hoc analysis, with dates. Four lines about the administration of a department server are redacted. |
 | `checks/cycle8_s0*.py`, `cycle8_s0pro*.py` | Synthetic validation of the tests (size, power, interval coverage). |
 | `checks/cycle8_s1_step0_*.py`, `cycle8_pro_step0_*.py` | Download and parsing of the public HELM MMLU and MMLU-Pro outputs; panel construction. |
 | `checks/cycle8_s1_analysis.py`, `cycle8_s1b_supplementary.py`, `cycle8_pro_analysis.py` | Pre-specified analyses (H1–H3, ΔE, RAW, JI, null models, admission chart). |
 | `checks/cycle8_ru_*.py` | Local runs of 12 open models via Ollama, and their analyses. |
 | `checks/cycle8_olb_*.py` | Inheritance analysis on the Open LLM Leaderboard pair table. |
 | `checks/cycle8_h1_measures_posthoc.py`, `cycle8_sovereignty_cost.py`, `cycle8_null_panels_100.py`, `cycle8_olb_robustness.py`, `cycle8_olb_cardlineage.py`, `cycle8_dev_jackknife.py`, `cycle8_ru_posthoc_r2.py` | Post-hoc robustness analyses (labelled as such in the protocol). |
+| `checks/cycle8_mera_*.py`, `data/mera_rummlu_prompts.jsonl.gz`, `data/ru_mera/` | Russian-language run on MERA ruMMLU (ai-forever/MERA, MIT licence): prompts, answer parser, analysis and the 12 local models' answers. |
+| `checks/cycle8_q8_check.py`, `checks/cycle8_tpro_analysis.py`, `data/ru_tpro/` | Quantisation check (8-bit vs 4-bit) and the 32B domestic model T-pro-it-2.1 on a 2,850-item subset. |
 | `checks/cycle8_redux_sensitivity.py` | MMLU-Redux exclusion sensitivity (pre-specified; uses `data/redux/`, MMLU-Redux 2.0, CC BY 4.0). |
 | `data/olb/card_base_models.json` | Base models declared in Hugging Face model cards for the leaderboard models (public API). |
 | `checks/*.out`, `*.json`, `*.jsonl` | The stored outputs from which every number in the paper is taken. |

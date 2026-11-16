@@ -73,7 +73,7 @@ def run_model(label, name, prompts, outdir, threads, fmt=""):
         text = comp.split("</think>", 1)[1] if "</think>" in comp else comp
         c0 = text.strip()[:1]
         ans = p["mapping"].get(c0, -1)
-        return {"k": f"{p['subject']}|{p['instance_id']}", "ans": ans, "key": p["key"], "comp": comp[:40],
+        return {"k": f"{p['subject']}|{p['instance_id']}", "ans": ans, "key": p["key"], "comp": comp[:160],
                 "n_prompt": r.get("prompt_eval_count"), "think": bool(r.get("thinking"))}
 
     with open(path, "a") as f, ThreadPoolExecutor(threads) as ex:
@@ -89,7 +89,7 @@ def run_model(label, name, prompts, outdir, threads, fmt=""):
 
 
 def main():
-    global NUM_CTX
+    global NUM_CTX, NUM_PREDICT
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", required=True)
     ap.add_argument("--prompts", required=True)
@@ -97,8 +97,10 @@ def main():
     ap.add_argument("--threads", type=int, default=4)
     ap.add_argument("--limit", type=int, default=0, help="test: first N items only")
     ap.add_argument("--num-ctx", type=int, default=4096, help="context window (raise for re-runs of truncated items)")
+    ap.add_argument("--num-predict", type=int, default=8, help="maximum output tokens")
     args = ap.parse_args()
     NUM_CTX = args.num_ctx
+    NUM_PREDICT = args.num_predict
     os.makedirs(args.outdir, exist_ok=True)
     prompts = [json.loads(l) for l in gzip.open(args.prompts, "rt", encoding="utf-8")]
     if args.limit:

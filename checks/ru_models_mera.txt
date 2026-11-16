@@ -1,0 +1,12 @@
+yandexgpt5-lite-8b	hf.co/yandex/YandexGPT-5-Lite-8B-instruct-GGUF:Q4_K_M	yandexgpt
+t-lite-it-2.1	hf.co/t-tech/T-lite-it-2.1-GGUF:Q4_K_M	qwen3-nothink
+gigachat3.1-10b	hf.co/ai-sage/GigaChat3.1-10B-A1.8B-GGUF:Q6_K
+vikhr-nemo-12b	hf.co/bartowski/Vikhr-Nemo-12B-Instruct-R-21-09-24-GGUF:Q4_K_M
+saiga-nemo-12b	hf.co/IlyaGusev/saiga_nemo_12b_gguf:Q4_K_M
+saiga-yandexgpt-8b	hf.co/IlyaGusev/saiga_yandexgpt_8b_gguf:Q4_K_M	saiga-yandexgpt
+gigachat-20b-v1.5	hf.co/ai-sage/GigaChat-20B-A3B-instruct-v1.5-GGUF:Q5_0	gigachat-bos
+cotype-nano	hf.co/MTSAIR/Cotype-Nano-GGUF:latest
+qwen3-8b	qwen3:8b
+qwen2.5-7b	qwen2.5:7b-instruct-q4_K_M
+llama3.1-8b	llama3.1:8b-instruct-q4_K_M
+mistral-nemo-12b	mistral-nemo:12b-instruct-2407-q4_K_M
