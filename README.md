@@ -27,7 +27,7 @@ The study treats a portfolio of large language models (LLMs) as a system of comp
 | `data/helm_mmlu*_panel.json`, `*_runs.json` | Panel definitions and the list of HELM runs used. |
 | `data/ru/`, `data/ru_superseded/` | Local model answers (one JSON line per item), including the superseded runs replaced after template corrections (protocol Section 28.1). |
 | `paper/conference/` | Conference paper: the Russian submission (`stress_test_ru`) and its English version (`withdrawal_stress_test`), PDF and Word. |
-| `paper/journal/` | Extended journal manuscript, preprint version: English (`main.tex`, `main.pdf`) and Russian translation (`main_ru.tex`, `main_ru.pdf`), with `refs.bib` and the generated `.bbl` files, so the sources compile as they are. `main_preprint` is the arXiv version: no line numbers, emails under the author names. |
+| `paper/journal/` | Extended journal manuscript, preprint version: English (`main.tex`, `main.pdf`) and Russian translation (`main_ru.tex`, `main_ru.pdf`), with `refs.bib` and the generated `.bbl` files, so the sources compile as they are. `main_preprint` and `main_ru_preprint` are the preprint versions: no line numbers, emails under the author names (Russian builds with XeLaTeX). |
 | `paper/talk/` | Conference slides (PDF) and the talk script (PDF, Word). |
 
 ## Reproducing
