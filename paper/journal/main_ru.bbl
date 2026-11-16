@@ -1,0 +1,340 @@
+\begin{thebibliography}{35}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Misc
+\bibitem[{{ai-sage}(2026)}]{aisage2026gigachat}
+\bibinfo{author}{{ai-sage}}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{{GigaChat3.1-702B-A36B} and {GigaChat3.5-432B-A28B}:
+  open model weights}.
+\newblock \bibinfo{howpublished}{\url{https://huggingface.co/ai-sage}}.
+\newblock \bibinfo{note}{Accessed 16 November 2026}.
+%Type = Inproceedings
+\bibitem[{Alzahrani et~al.(2024)Alzahrani, Alyahya, Alnumay, Alrashed,
+  Alsubaie, Almushayqih, Mirza, Alotaibi, Al-Twairesh, Alowisheq, Bari and
+  Khan}]{alzahrani2024benchmarks}
+\bibinfo{author}{Alzahrani, N.A.}, \bibinfo{author}{Alyahya, H.A.},
+  \bibinfo{author}{Alnumay, Y.}, \bibinfo{author}{Alrashed, S.},
+  \bibinfo{author}{Alsubaie, S.Z.}, \bibinfo{author}{Almushayqih, Y.},
+  \bibinfo{author}{Mirza, F.A.}, \bibinfo{author}{Alotaibi, N.M.},
+  \bibinfo{author}{Al-Twairesh, N.}, \bibinfo{author}{Alowisheq, A.},
+  \bibinfo{author}{Bari, M.S.}, \bibinfo{author}{Khan, H.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{When benchmarks are targets: Revealing the
+  sensitivity of large language model leaderboards}, in:
+  \bibinfo{booktitle}{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pp.
+  \bibinfo{pages}{13787--13805}.
+\newblock \DOIprefix\doi{10.18653/v1/2024.acl-long.744}.
+%Type = Incollection
+\bibitem[{Birnbaum(1969)}]{birnbaum1969}
+\bibinfo{author}{Birnbaum, Z.W.}, \bibinfo{year}{1969}.
+\newblock \bibinfo{title}{On the importance of different components in a
+  multicomponent system}, in: \bibinfo{editor}{Krishnaiah, P.R.} (Ed.),
+  \bibinfo{booktitle}{Multivariate Analysis II}. \bibinfo{publisher}{Academic
+  Press}, \bibinfo{address}{New York}, pp. \bibinfo{pages}{581--592}.
+%Type = Article
+\bibitem[{Borgonovo and Apostolakis(2001)}]{borgonovo2001}
+\bibinfo{author}{Borgonovo, E.}, \bibinfo{author}{Apostolakis, G.E.},
+  \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{A new importance measure for risk-informed decision
+  making}.
+\newblock \bibinfo{journal}{Reliability Engineering \& System Safety}
+  \bibinfo{volume}{72}, \bibinfo{pages}{193--212}.
+\newblock \DOIprefix\doi{10.1016/S0951-8320(00)00108-3}.
+%Type = Article
+\bibitem[{Brown et~al.(2005)Brown, Wyatt, Harris and Yao}]{brown2005}
+\bibinfo{author}{Brown, G.}, \bibinfo{author}{Wyatt, J.},
+  \bibinfo{author}{Harris, R.}, \bibinfo{author}{Yao, X.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Diversity creation methods: a survey and
+  categorisation}.
+\newblock \bibinfo{journal}{Information Fusion} \bibinfo{volume}{6},
+  \bibinfo{pages}{5--20}.
+\newblock \DOIprefix\doi{10.1016/j.inffus.2004.04.004}.
+%Type = Article
+\bibitem[{Chen et~al.(2024)Chen, Zaharia and Zou}]{chen2024frugalgpt}
+\bibinfo{author}{Chen, L.}, \bibinfo{author}{Zaharia, M.},
+  \bibinfo{author}{Zou, J.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{{FrugalGPT}: How to use large language models while
+  reducing cost and improving performance}.
+\newblock \bibinfo{journal}{Transactions on Machine Learning Research}
+  \bibinfo{note}{ArXiv:2305.05176}.
+%Type = Article
+\bibitem[{Dawid and Skene(1979)}]{dawidskene1979}
+\bibinfo{author}{Dawid, A.P.}, \bibinfo{author}{Skene, A.M.},
+  \bibinfo{year}{1979}.
+\newblock \bibinfo{title}{Maximum likelihood estimation of observer error-rates
+  using the {EM} algorithm}.
+\newblock \bibinfo{journal}{Journal of the Royal Statistical Society: Series C
+  (Applied Statistics)} \bibinfo{volume}{28}, \bibinfo{pages}{20--28}.
+\newblock \DOIprefix\doi{10.2307/2346806}.
+%Type = Article
+\bibitem[{Eckhardt and Lee(1985)}]{eckhardt1985}
+\bibinfo{author}{Eckhardt, D.E.}, \bibinfo{author}{Lee, L.D.},
+  \bibinfo{year}{1985}.
+\newblock \bibinfo{title}{A theoretical basis for the analysis of multiversion
+  software subject to coincident errors}.
+\newblock \bibinfo{journal}{IEEE Transactions on Software Engineering}
+  \bibinfo{volume}{SE-11}, \bibinfo{pages}{1511--1517}.
+\newblock \DOIprefix\doi{10.1109/TSE.1985.231895}.
+%Type = Article
+\bibitem[{Edler et~al.(2023)Edler, Blind, Kroll and Schubert}]{edler2023}
+\bibinfo{author}{Edler, J.}, \bibinfo{author}{Blind, K.},
+  \bibinfo{author}{Kroll, H.}, \bibinfo{author}{Schubert, T.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Technology sovereignty as an emerging frame for
+  innovation policy. {Defining} rationales, ends and means}.
+\newblock \bibinfo{journal}{Research Policy} \bibinfo{volume}{52},
+  \bibinfo{pages}{104765}.
+\newblock \DOIprefix\doi{10.1016/j.respol.2023.104765}.
+%Type = Misc
+\bibitem[{{Federal Law No.~187-FZ}(2017)}]{fz187}
+\bibinfo{author}{{Federal Law No.~187-FZ}}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{On the security of the critical information
+  infrastructure of the {Russian Federation}}.
+\newblock \bibinfo{note}{Adopted 26 July 2017; in Russian}.
+%Type = Inproceedings
+\bibitem[{Fenogenova et~al.(2024)Fenogenova, Chervyakov, Martynov, Kozlova,
+  Tikhonova, Akhmetgareeva, Emelyanov, Shevelev, Lebedev, Sinev, Isaeva,
+  Kolomeytseva, Moskovskiy, Goncharova, Savushkin, Mikhailova, Minaeva,
+  Dimitrov, Panchenko and Markov}]{fenogenova2024mera}
+\bibinfo{author}{Fenogenova, A.}, \bibinfo{author}{Chervyakov, A.},
+  \bibinfo{author}{Martynov, N.}, \bibinfo{author}{Kozlova, A.},
+  \bibinfo{author}{Tikhonova, M.}, \bibinfo{author}{Akhmetgareeva, A.},
+  \bibinfo{author}{Emelyanov, A.}, \bibinfo{author}{Shevelev, D.},
+  \bibinfo{author}{Lebedev, P.}, \bibinfo{author}{Sinev, L.},
+  \bibinfo{author}{Isaeva, U.}, \bibinfo{author}{Kolomeytseva, K.},
+  \bibinfo{author}{Moskovskiy, D.}, \bibinfo{author}{Goncharova, E.},
+  \bibinfo{author}{Savushkin, N.}, \bibinfo{author}{Mikhailova, P.},
+  \bibinfo{author}{Minaeva, A.}, \bibinfo{author}{Dimitrov, D.},
+  \bibinfo{author}{Panchenko, A.}, \bibinfo{author}{Markov, S.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{{MERA}: A comprehensive {LLM} evaluation in
+  {Russian}}, in: \bibinfo{booktitle}{Proceedings of the 62nd Annual Meeting of
+  the Association for Computational Linguistics (Volume 1: Long Papers)}, pp.
+  \bibinfo{pages}{9920--9948}.
+\newblock \DOIprefix\doi{10.18653/v1/2024.acl-long.534}.
+%Type = Inproceedings
+\bibitem[{Gema et~al.(2025)Gema, Leang, Hong et~al.}]{gema2025mmlu}
+\bibinfo{author}{Gema, A.P.}, \bibinfo{author}{Leang, J.O.J.},
+  \bibinfo{author}{Hong, G.}, et~al., \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Are we done with {MMLU}?}, in:
+  \bibinfo{booktitle}{Proceedings of the 2025 Conference of the Nations of the
+  Americas Chapter of the Association for Computational Linguistics (NAACL),
+  Long Papers}, pp. \bibinfo{pages}{5069--5096}.
+\newblock \DOIprefix\doi{10.18653/v1/2025.naacl-long.262}.
+%Type = Inproceedings
+\bibitem[{Goel et~al.(2025)}]{goel2025great}
+\bibinfo{author}{Goel, S.}, et~al., \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Great models think alike and this undermines {AI}
+  oversight}, in: \bibinfo{booktitle}{Proceedings of the 42nd International
+  Conference on Machine Learning (ICML)}, pp. \bibinfo{pages}{19621--19678}.
+\newblock \bibinfo{note}{ArXiv:2502.04313}.
+%Type = Inproceedings
+\bibitem[{Hendrycks et~al.(2021)Hendrycks, Burns, Basart, Zou, Mazeika, Song
+  and Steinhardt}]{hendrycks2021mmlu}
+\bibinfo{author}{Hendrycks, D.}, \bibinfo{author}{Burns, C.},
+  \bibinfo{author}{Basart, S.}, \bibinfo{author}{Zou, A.},
+  \bibinfo{author}{Mazeika, M.}, \bibinfo{author}{Song, D.},
+  \bibinfo{author}{Steinhardt, J.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Measuring massive multitask language understanding},
+  in: \bibinfo{booktitle}{International Conference on Learning Representations
+  (ICLR)}.
+\newblock \bibinfo{note}{ArXiv:2009.03300}.
+%Type = Article
+\bibitem[{Henry and Ramirez-Marquez(2012)}]{henry2012}
+\bibinfo{author}{Henry, D.}, \bibinfo{author}{Ramirez-Marquez, J.E.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Generic metrics and quantitative approaches for
+  system resilience as a function of time}.
+\newblock \bibinfo{journal}{Reliability Engineering \& System Safety}
+  \bibinfo{volume}{99}, \bibinfo{pages}{114--122}.
+\newblock \DOIprefix\doi{10.1016/j.ress.2011.09.002}.
+%Type = Article
+\bibitem[{Hong and Lie(1993)}]{honglie1993}
+\bibinfo{author}{Hong, J.S.}, \bibinfo{author}{Lie, C.H.},
+  \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{Joint reliability-importance of two edges in an
+  undirected network}.
+\newblock \bibinfo{journal}{IEEE Transactions on Reliability}
+  \bibinfo{volume}{42}, \bibinfo{pages}{17--23}.
+\newblock \DOIprefix\doi{10.1109/24.210266}.
+%Type = Article
+\bibitem[{Hosseini et~al.(2016)Hosseini, Barker and
+  Ramirez-Marquez}]{hosseini2016}
+\bibinfo{author}{Hosseini, S.}, \bibinfo{author}{Barker, K.},
+  \bibinfo{author}{Ramirez-Marquez, J.E.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{A review of definitions and measures of system
+  resilience}.
+\newblock \bibinfo{journal}{Reliability Engineering \& System Safety}
+  \bibinfo{volume}{145}, \bibinfo{pages}{47--61}.
+\newblock \DOIprefix\doi{10.1016/j.ress.2015.08.006}.
+%Type = Techreport
+\bibitem[{{International Atomic Energy Agency}(1992)}]{iaea1992ccf}
+\bibinfo{author}{{International Atomic Energy Agency}}, \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{Procedures for Conducting Common Cause Failure
+  Analysis in Probabilistic Safety Assessment}.
+\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{IAEA-TECDOC-648}.
+  International Atomic Energy Agency. \bibinfo{address}{Vienna}.
+%Type = Inproceedings
+\bibitem[{Jiang et~al.(2023)Jiang, Ren and Lin}]{jiang2023blender}
+\bibinfo{author}{Jiang, D.}, \bibinfo{author}{Ren, X.}, \bibinfo{author}{Lin,
+  B.Y.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{{LLM-Blender}: Ensembling large language models with
+  pairwise ranking and generative fusion}, in: \bibinfo{booktitle}{Proceedings
+  of the 61st Annual Meeting of the Association for Computational Linguistics
+  (Volume 1: Long Papers)}, pp. \bibinfo{pages}{14165--14178}.
+\newblock \DOIprefix\doi{10.18653/v1/2023.acl-long.792}.
+%Type = Inproceedings
+\bibitem[{Kim et~al.(2025)Kim, Garg, Peng and Garg}]{kim2025correlated}
+\bibinfo{author}{Kim, E.}, \bibinfo{author}{Garg, A.}, \bibinfo{author}{Peng,
+  K.}, \bibinfo{author}{Garg, N.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Correlated errors in large language models}, in:
+  \bibinfo{booktitle}{Proceedings of the 42nd International Conference on
+  Machine Learning (ICML)}.
+\newblock \bibinfo{note}{ArXiv:2506.07962}.
+%Type = Article
+\bibitem[{Knight and Leveson(1986)}]{knight1986}
+\bibinfo{author}{Knight, J.C.}, \bibinfo{author}{Leveson, N.G.},
+  \bibinfo{year}{1986}.
+\newblock \bibinfo{title}{An experimental evaluation of the assumption of
+  independence in multiversion programming}.
+\newblock \bibinfo{journal}{IEEE Transactions on Software Engineering}
+  \bibinfo{volume}{SE-12}, \bibinfo{pages}{96--109}.
+\newblock \DOIprefix\doi{10.1109/TSE.1986.6312924}.
+%Type = Article
+\bibitem[{Kuncheva and Whitaker(2003)}]{kuncheva2003}
+\bibinfo{author}{Kuncheva, L.I.}, \bibinfo{author}{Whitaker, C.J.},
+  \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Measures of diversity in classifier ensembles and
+  their relationship with the ensemble accuracy}.
+\newblock \bibinfo{journal}{Machine Learning} \bibinfo{volume}{51},
+  \bibinfo{pages}{181--207}.
+\newblock \DOIprefix\doi{10.1023/A:1022859003006}.
+%Type = Article
+\bibitem[{Liang et~al.(2023)Liang, Bommasani, Lee et~al.}]{liang2023helm}
+\bibinfo{author}{Liang, P.}, \bibinfo{author}{Bommasani, R.},
+  \bibinfo{author}{Lee, T.}, et~al., \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Holistic evaluation of language models}.
+\newblock \bibinfo{journal}{Transactions on Machine Learning Research}
+  \bibinfo{note}{ArXiv:2211.09110}.
+%Type = Article
+\bibitem[{Littlewood and Miller(1989)}]{littlewood1989}
+\bibinfo{author}{Littlewood, B.}, \bibinfo{author}{Miller, D.R.},
+  \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{Conceptual modeling of coincident failures in
+  multiversion software}.
+\newblock \bibinfo{journal}{IEEE Transactions on Software Engineering}
+  \bibinfo{volume}{15}, \bibinfo{pages}{1596--1614}.
+\newblock \DOIprefix\doi{10.1109/32.58771}.
+%Type = Article
+\bibitem[{Martens et~al.(2025)Martens, Hinns, Dams, Vergouwen and
+  Evgeniou}]{martens2025}
+\bibinfo{author}{Martens, D.}, \bibinfo{author}{Hinns, J.},
+  \bibinfo{author}{Dams, C.}, \bibinfo{author}{Vergouwen, M.},
+  \bibinfo{author}{Evgeniou, T.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Tell me a story! {Narrative-driven XAI} with large
+  language models}.
+\newblock \bibinfo{journal}{Decision Support Systems} \bibinfo{volume}{191},
+  \bibinfo{pages}{114402}.
+\newblock \DOIprefix\doi{10.1016/j.dss.2025.114402}.
+%Type = Inproceedings
+\bibitem[{Ong et~al.(2025)Ong, Almahairi, Wu et~al.}]{ong2025routellm}
+\bibinfo{author}{Ong, I.}, \bibinfo{author}{Almahairi, A.},
+  \bibinfo{author}{Wu, V.}, et~al., \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{RouteLLM}: Learning to route {LLMs} from preference
+  data}, in: \bibinfo{booktitle}{International Conference on Learning
+  Representations (ICLR)}.
+\newblock \bibinfo{note}{ArXiv:2406.18665}.
+%Type = Article
+\bibitem[{Opara-Martins et~al.(2016)Opara-Martins, Sahandi and
+  Tian}]{oparamartins2016}
+\bibinfo{author}{Opara-Martins, J.}, \bibinfo{author}{Sahandi, R.},
+  \bibinfo{author}{Tian, F.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Critical analysis of vendor lock-in and its impact on
+  cloud computing migration: a business perspective}.
+\newblock \bibinfo{journal}{Journal of Cloud Computing} \bibinfo{volume}{5},
+  \bibinfo{pages}{4}.
+\newblock \DOIprefix\doi{10.1186/s13677-016-0054-z}.
+%Type = Misc
+\bibitem[{{Presidential Decree No.~166}(2022)}]{ukaz166}
+\bibinfo{author}{{Presidential Decree No.~166}}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{On measures to ensure the technological independence
+  and security of the critical information infrastructure of the {Russian
+  Federation}}.
+\newblock \bibinfo{note}{Signed 30 March 2022; in Russian}.
+%Type = Inproceedings
+\bibitem[{Sclar et~al.(2024)Sclar, Choi, Tsvetkov and Suhr}]{sclar2024format}
+\bibinfo{author}{Sclar, M.}, \bibinfo{author}{Choi, Y.},
+  \bibinfo{author}{Tsvetkov, Y.}, \bibinfo{author}{Suhr, A.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Quantifying language models' sensitivity to spurious
+  features in prompt design or: How {I} learned to start worrying about prompt
+  formatting}, in: \bibinfo{booktitle}{The Twelfth International Conference on
+  Learning Representations (ICLR)}.
+\newblock \DOIprefix\doi{10.48550/arXiv.2310.11324}.
+%Type = Misc
+\bibitem[{Turkmen et~al.(2026)Turkmen, Buyukates and Bastopcu}]{turkmen2026}
+\bibinfo{author}{Turkmen, Y.}, \bibinfo{author}{Buyukates, B.},
+  \bibinfo{author}{Bastopcu, M.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Don't always pick the highest-performing model: An
+  information theoretic view of {LLM} ensemble selection}.
+\newblock \bibinfo{note}{ArXiv:2602.08003}.
+%Type = Techreport
+\bibitem[{Vesely et~al.(1983)Vesely, Davis, Denning and Saltos}]{vesely1983}
+\bibinfo{author}{Vesely, W.E.}, \bibinfo{author}{Davis, T.C.},
+  \bibinfo{author}{Denning, R.S.}, \bibinfo{author}{Saltos, N.},
+  \bibinfo{year}{1983}.
+\newblock \bibinfo{title}{Measures of Risk Importance and Their Applications}.
+\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{NUREG/CR-3385}.
+  Battelle Columbus Laboratories for the U.S. Nuclear Regulatory Commission.
+%Type = Inproceedings
+\bibitem[{Wang et~al.(2025)Wang, Wang, Athiwaratkun, Zhang and
+  Zou}]{wang2025moa}
+\bibinfo{author}{Wang, J.}, \bibinfo{author}{Wang, J.},
+  \bibinfo{author}{Athiwaratkun, B.}, \bibinfo{author}{Zhang, C.},
+  \bibinfo{author}{Zou, J.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Mixture-of-agents enhances large language model
+  capabilities}, in: \bibinfo{booktitle}{International Conference on Learning
+  Representations (ICLR)}.
+\newblock \bibinfo{note}{ArXiv:2406.04692}.
+%Type = Inproceedings
+\bibitem[{Wang et~al.(2024)Wang, Ma, Zhang et~al.}]{wang2024mmlupro}
+\bibinfo{author}{Wang, Y.}, \bibinfo{author}{Ma, X.}, \bibinfo{author}{Zhang,
+  G.}, et~al., \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{{MMLU-Pro}: A more robust and challenging multi-task
+  language understanding benchmark}, in: \bibinfo{booktitle}{Advances in Neural
+  Information Processing Systems 37, Datasets and Benchmarks Track}.
+\newblock \bibinfo{note}{ArXiv:2406.01574}.
+%Type = Inproceedings
+\bibitem[{Yax et~al.(2025)Yax, Oudeyer and Palminteri}]{yax2025phylolm}
+\bibinfo{author}{Yax, N.}, \bibinfo{author}{Oudeyer, P.Y.},
+  \bibinfo{author}{Palminteri, S.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{PhyloLM}: Inferring the phylogeny of large language
+  models and predicting their performances in benchmarks}, in:
+  \bibinfo{booktitle}{International Conference on Learning Representations
+  (ICLR)}.
+\newblock \bibinfo{note}{ArXiv:2404.04671}.
+%Type = Inproceedings
+\bibitem[{Zang et~al.(2025)Zang, Meng, Chen, Cong, Zha, Qi, Li and
+  Guo}]{zang2025errortrace}
+\bibinfo{author}{Zang, C.}, \bibinfo{author}{Meng, X.}, \bibinfo{author}{Chen,
+  W.}, \bibinfo{author}{Cong, T.}, \bibinfo{author}{Zha, Y.},
+  \bibinfo{author}{Qi, D.}, \bibinfo{author}{Li, Z.}, \bibinfo{author}{Guo,
+  S.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{ErrorTrace}: A black-box traceability mechanism
+  based on model family error space}, in: \bibinfo{booktitle}{Advances in
+  Neural Information Processing Systems 38}, pp. \bibinfo{pages}{76468--76496}.
+\newblock \DOIprefix\doi{10.52202/085713-2306}.
+
+\end{thebibliography}

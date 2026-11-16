@@ -26,6 +26,9 @@ The study treats a portfolio of large language models (LLMs) as a system of comp
 | `checks/*.out`, `*.json`, `*.jsonl` | The stored outputs from which every number in the paper is taken. |
 | `data/helm_mmlu*_panel.json`, `*_runs.json` | Panel definitions and the list of HELM runs used. |
 | `data/ru/`, `data/ru_superseded/` | Local model answers (one JSON line per item), including the superseded runs replaced after template corrections (protocol Section 28.1). |
+| `paper/conference/` | Conference paper: the Russian submission (`stress_test_ru`) and its English version (`withdrawal_stress_test`), PDF and Word. |
+| `paper/journal/` | Extended journal manuscript, preprint version: English (`main.tex`, `main.pdf`) and Russian translation (`main_ru.tex`, `main_ru.pdf`), with `refs.bib` and the generated `.bbl` files, so the sources compile as they are (for example on arXiv). |
+| `paper/talk/` | Conference slides (PDF) and the talk script (PDF, Word). |
 
 ## Reproducing
 
@@ -52,4 +55,4 @@ The authors are grateful to Anthropic for the Claude AI assistant, which support
 
 ## Licence
 
-Code: MIT (see `LICENSE`). Our outputs and local model answers: CC BY 4.0.
+Code: MIT (see `LICENSE`). Our outputs and local model answers, and the papers, slides and talk script in `paper/`: CC BY 4.0.
