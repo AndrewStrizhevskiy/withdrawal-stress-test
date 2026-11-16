@@ -72,6 +72,7 @@ def main():
     ap.add_argument("--local", required=True)
     ap.add_argument("--tpro", required=True)
     ap.add_argument("--boot", type=int, default=1000)
+    ap.add_argument("--items", choices=["subset", "all"], default="subset", help="subset50 (Section 52) or all items (Section 56)")
     args = ap.parse_args()
     g = s1.load_real(args.data)
     items = set()
@@ -81,7 +82,8 @@ def main():
             fs = line.split("\t")
             items.add((fs[2], fs[3]))
     order_all = {f"{s}|{i}": j for j, (s, i) in enumerate(sorted(items))}
-    sub = [json.loads(l) for l in gzip.open(os.path.join(args.data, "helm_mmlu_prompts_subset50.jsonl.gz"), "rt", encoding="utf-8")]
+    pf = "helm_mmlu_prompts_subset50.jsonl.gz" if args.items == "subset" else "helm_mmlu_prompts.jsonl.gz"
+    sub = [json.loads(l) for l in gzip.open(os.path.join(args.data, pf), "rt", encoding="utf-8")]
     idx = np.array([order_all[f"{r['subject']}|{r['instance_id']}"] for r in sub])
     key = g["key"][idx]
     subj = g["subj"][idx]
@@ -103,7 +105,7 @@ def main():
         ids = np.where(subj == s)[0]
         fold[rng.permutation(ids)[: len(ids) // 2]] = 1
     w1 = np.ones(len(key))
-    L = ["Cycle 8 T-pro-it-2.1 (32B, Qwen3-32B base) on 2,850 HELM MMLU items (protocol Section 52). POST HOC",
+    L = [f"Cycle 8 T-pro-it-2.1 (32B, Qwen3-32B base) on {len(sub):,} HELM MMLU items (protocol Sections 52/56). POST HOC",
          f"\nT-pro accuracy {acc[iT]:.3f}, invalid {np.mean(tp < 0):.3f}"]
     L.append("HELM open-weight models of 27-72B on the same items: " + "; ".join(
         f"{g['models'][i]} {acc[i]:.3f} ({g['params'][i]:.0f}B)" for i in sorted(open_mid, key=lambda i: -acc[i])))
@@ -135,7 +137,7 @@ def main():
         f"{l} {X[iT, nH + loc_labels.index(l)]:+.4f}" for l in QWEN3_FAMILY) + f"; mean over unrelated local models {base:+.4f} "
         f"(range {min(X[iT, j] for j in unrel):+.4f} to {max(X[iT, j] for j in unrel):+.4f})")
     text = "\n".join(L)
-    open(os.path.join(HERE, "cycle8_tpro_analysis.out"), "w").write(text + "\n")
+    open(os.path.join(HERE, "cycle8_tpro_analysis.out" if args.items == "subset" else "cycle8_tpro_full_analysis.out"), "w").write(text + "\n")
     print(text)
 
 

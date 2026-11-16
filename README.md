@@ -1,6 +1,6 @@
 # Withdrawal stress test for LLM-based decision support
 
-Code, protocol and outputs for the study *Operational autonomy of LLM-based decision support under provider withdrawal: shared errors, diversity caps and model families* (A. V. Strizhevskiy, Ye. D. Verkhovykh, M. I. Kolosov, Bauman Moscow State Technical University; manuscript under review).
+Code, protocol and outputs for the study *Operational autonomy of LLM-based decision support under provider withdrawal: shared errors, diversity caps and model families* (A. V. Strizhevskiy, E. D. Verkhovykh, D. M. Paramonov, M. I. Kolosov, Bauman Moscow State Technical University; manuscript under review).
 
 The study treats a portfolio of large language models (LLMs) as a system of components. It measures what the system loses when groups of models are withdrawn, using reliability importance measures: the error increase ΔE, risk achievement worth (RAW) and joint importance (JI). Data:
 - public HELM answers of 70 models on MMLU and 58 models on MMLU-Pro;
@@ -18,8 +18,9 @@ The study treats a portfolio of large language models (LLMs) as a system of comp
 | `checks/cycle8_ru_*.py` | Local runs of 12 open models via Ollama, and their analyses. |
 | `checks/cycle8_olb_*.py` | Inheritance analysis on the Open LLM Leaderboard pair table. |
 | `checks/cycle8_h1_measures_posthoc.py`, `cycle8_sovereignty_cost.py`, `cycle8_null_panels_100.py`, `cycle8_olb_robustness.py`, `cycle8_olb_cardlineage.py`, `cycle8_dev_jackknife.py`, `cycle8_ru_posthoc_r2.py` | Post-hoc robustness analyses (labelled as such in the protocol). |
-| `checks/cycle8_mera_*.py`, `data/mera_rummlu_prompts.jsonl.gz`, `data/ru_mera/` | Russian-language run on MERA ruMMLU (ai-forever/MERA, MIT licence): prompts, answer parser, analysis and the 12 local models' answers. |
-| `checks/cycle8_q8_check.py`, `checks/cycle8_tpro_analysis.py`, `data/ru_tpro/` | Quantisation check (8-bit vs 4-bit) and the 32B domestic model T-pro-it-2.1 on a 2,850-item subset. |
+| `checks/cycle8_mera_*.py`, `data/mera_rummlu_prompts.jsonl.gz`, `data/mera_rummlu_fewshot_prompts.jsonl.gz`, `data/ru_mera/`, `data/ru_mera_fs/` | Russian-language runs on MERA ruMMLU (ai-forever/MERA, MIT licence), zero-shot and with five worked examples: prompts, answer parser (v1 and the post-hoc variant v2), analyses and the 12 local models' answers (protocol Sections 45–46, 53, 56–57, 59). |
+| `checks/cycle8_h1_letterbias.py` | H1 under a null with model-specific answer-letter bias (N3; protocol Section 58). |
+| `checks/cycle8_q8_check.py`, `checks/cycle8_tpro_analysis.py`, `data/ru_tpro/` | Quantisation check (8-bit vs 4-bit) and the 32B domestic model T-pro-it-2.1 (a fine-tune of Qwen3-32B) on all 14,038 MMLU items (`--items all`; protocol Sections 52, 55, 60) and on the earlier 2,850-item subset. |
 | `checks/cycle8_redux_sensitivity.py` | MMLU-Redux exclusion sensitivity (pre-specified; uses `data/redux/`, MMLU-Redux 2.0, CC BY 4.0). |
 | `data/olb/card_base_models.json` | Base models declared in Hugging Face model cards for the leaderboard models (public API). |
 | `checks/*.out`, `*.json`, `*.jsonl` | The stored outputs from which every number in the paper is taken. |

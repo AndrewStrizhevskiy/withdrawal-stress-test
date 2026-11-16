@@ -27,6 +27,7 @@ import cycle8_s0b_synthetic_validation as v2         # noqa: E402
 
 SEED = 20261118
 LABELS = list(ru.LOCAL)
+PARSER_V2 = False
 RUS6 = ["yandexgpt5-lite-8b", "t-lite-it-2.1", "gigachat3.1-10b", "vikhr-nemo-12b", "saiga-nemo-12b", "saiga-yandexgpt-8b"]
 OWN3 = ["yandexgpt5-lite-8b", "saiga-yandexgpt-8b", "gigachat3.1-10b"]
 FOR4 = ["qwen2.5-7b", "qwen3-8b", "llama3.1-8b", "mistral-nemo-12b"]
@@ -42,10 +43,11 @@ def load_ru(prompts, runs):
     A = np.full((len(LABELS), len(items)), -1, dtype=np.int8)
     for i, lab in enumerate(LABELS):
         n = 0
-        for line in open(os.path.join(runs, f"{lab}.jsonl")):
+        fp = os.path.join(runs, f"{lab}.jsonl")
+        for line in (open(fp) if os.path.exists(fp) else gzip.open(fp + ".gz", "rt", encoding="utf-8")):
             r = json.loads(line)
             if r["k"] in idx and "comp" in r:
-                A[i, idx[r["k"]]] = mp.parse(r["comp"])
+                A[i, idx[r["k"]]] = mp.parse(r["comp"], v2=PARSER_V2)
                 n += 1
         assert n == len(items), (lab, n)
     return A, key, subj, subj_names
@@ -117,7 +119,11 @@ def main():
     ap.add_argument("--en-parsed", required=True)
     ap.add_argument("--boot", type=int, default=1000)
     ap.add_argument("--k-null", type=int, default=200)
+    ap.add_argument("--parser", choices=["v1", "v2"], default="v1", help="v2: Section 57 variant")
+    ap.add_argument("--tag", default="", help="output suffix, e.g. _fewshot or _zeroshot_sameitems (Section 56)")
     args = ap.parse_args()
+    global PARSER_V2
+    PARSER_V2 = args.parser == "v2"
     t0 = time.time()
     A, key, subj, subj_names = load_ru(args.prompts, args.runs)
     Cen, subj_en = load_en(args.en_runs, args.en_parsed, subj_names)
@@ -132,7 +138,8 @@ def main():
     ones_ru, ones_en = np.ones(len(key)), np.ones(Cen.shape[1])
     acc_ru, acc_en = wacc(Cru, ones_ru), wacc(Cen, ones_en)
     acc_valid = (Cru * valid).sum(1) / np.maximum(valid.sum(1), 1)
-    L = ["Cycle 8 Russian-language run (MERA ruMMLU public_test; protocol Sections 45-46). POST HOC",
+    L = [f"Cycle 8 Russian-language run (MERA ruMMLU public_test; protocol Sections 45-46, 56){' ' + args.tag if args.tag else ''}. POST HOC",
+         f"prompts {os.path.basename(args.prompts)}, runs {os.path.normpath(args.runs)}, parser {args.parser}",
          f"{len(key)} items, {nS} domains; English: local HELM MMLU runs ({Cen.shape[1]} items); bootstrap {args.boot} over domains"]
     L.append("\nM1. Accuracy (Russian / English), invalid share and accuracy on valid answers (Russian):")
     for i, lab in enumerate(LABELS):
@@ -214,8 +221,8 @@ def main():
         L.append(f"  {k[0]} ~ {k[1]}: {dd:+.4f} (matched {len(m)}, tol {t}); p {pv:.3f}  [EN {en:+.4f}]" if en is not None else
                  f"  {k[0]} ~ {k[1]}: {dd:+.4f}; p {pv:.3f}")
     L.append(f"seconds {round(time.time() - t0)}")
-    json.dump(out, open(os.path.join(HERE, "cycle8_mera_analysis.json"), "w"), indent=1)
-    open(os.path.join(HERE, "cycle8_mera_analysis.out"), "w").write("\n".join(L) + "\n")
+    json.dump(out, open(os.path.join(HERE, f"cycle8_mera_analysis{args.tag}.json"), "w"), indent=1)
+    open(os.path.join(HERE, f"cycle8_mera_analysis{args.tag}.out"), "w").write("\n".join(L) + "\n")
     print("\n".join(L))
 
 

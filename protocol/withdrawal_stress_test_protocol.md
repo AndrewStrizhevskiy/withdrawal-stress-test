@@ -1696,3 +1696,136 @@ The 8–12B Russian models score 0.646–0.751 on the same subset.
 **Reading**
 - **Scale, not origin.** At 32B the domestic model matches the best open models of 27–72B, supporting the reading that the domestic-only gap at 8–20B is a gap of scale. Caveat: T-pro (2025) is newer than most HELM open models (2024), so vintage and scale are confounded. The subset is 20% of the items.
 - **Admission.** Adding a model at about 84% accuracy does not measurably improve the open-weight portfolio, as the admission chart predicted (Section 21: gains only at about 0.85 accuracy and low copying).
+
+## 56. Russian few-shot run and full T-pro run: specification (2026-11-16, written before the runs). POST HOC
+
+**R-few, Russian test with worked examples.** It separates language from answer format: the zero-shot Russian run (Section 53) confounds the two.
+- **Shots.** For each of the 57 domains of MERA ruMMLU public_test, the 5 items with the smallest `meta.id` are the worked examples. They are excluded from scoring for every model, leaving 10,033 − 285 = 9,748 scored items.
+- **Prompt.** A Russian header ("Ниже приведены вопросы с вариантами ответов по теме {subject}. Запишите букву правильного ответа."), the 5 examples each ending "Ответ: X", then the target item ending "Ответ:".
+- **Run settings.** The same 12 models and formats, 32 output tokens, the parser of Section 46, invalid counted as wrong.
+- **Analyses.**
+  - M1 and M2 of Section 45 repeated on the 9,748 items: accuracy, invalid share, valid-only accuracy; the Russian minus foreign group difference with domain-bootstrap CI and leave-one-out range.
+  - The same items are also scored from the zero-shot run, so that the format effect (zero-shot vs few-shot) is measured on identical items.
+- **Reading.** If invalid shares fall and the Russian–foreign difference with invalid answers counted converges on the valid-only difference, the zero-shot deficit was a format effect.
+
+**T-full, T-pro on all items.** The runner resumes the subset run (`data/ru_tpro`) on all 14,038 HELM MMLU prompts. The Section 52 analyses are then repeated on all items: accuracy rank among HELM open models of 27–72B, and the portfolio change.
+
+**Scripts:** `checks/cycle8_mera_fewshot_prompts.py`, `checks/cycle8_mera_analysis.py` (`--subset-exclude` option added), `checks/cycle8_tpro_analysis.py` (`--items all` option).
+
+## 57. Parser variant v2 for the Russian runs (2026-11-16, 07:50 MSK, written after 3 of 12 few-shot models had finished and before the other 9). POST HOC
+
+**Deviation from Section 56.** The same-item comparison is implemented by passing the few-shot prompts file to `checks/cycle8_mera_analysis.py` (it scores only the 9,748 items in that file), not by a `--subset-exclude` option; the option `--tag` names the output files. Zero-shot on the same items: `checks/cycle8_mera_analysis_zeroshot_sameitems.out`. It matches Section 53 to within 0.01 everywhere (valid-only RUS6 − FOR3 +2.15, invalid counted −2.07).
+
+**Why v2.** Looking at invalid few-shot completions of the three finished models showed two patterns:
+- T-lite writes the Latin letter followed by the option text ("B абелева группа"). Rule 1 of the Section 46 parser rejects this. Its "word follows" guard exists for the Cyrillic letters А, В, С, which double as words ("В данном случае"); it was applied to the Latin letters as well.
+- GigaChat3.1 re-answers all five worked examples ("1. C\n2. D\n…") or starts a solution. These are real format failures and v2 leaves them invalid.
+
+**v2.** It is v1 with the guard restricted to the Cyrillic letters; a Latin A–D followed by text is accepted (`parse(comp, v2=True)`; `--parser v2`). A known risk is an English sentence starting with the article "A"; this is rare in Russian output.
+
+**Check on the three finished models** (accuracy / invalid / valid-only, v1 → v2):
+- T-lite few-shot: 0.536 / 0.157 / 0.636 → 0.628 / 0.032 / 0.649;
+- T-lite zero-shot: 0.626 / 0.050 / 0.660 → 0.645 / 0.028 / 0.664;
+- YandexGPT and GigaChat3.1 change by at most 0.004 in either run.
+
+Valid-only accuracy barely moves, so v2 adds correct reads, not noise.
+
+**Reporting.** v1 stays the primary parser. Both runs (zero-shot and few-shot, same 9,748 items) are reported under v1 and v2.
+
+**Zero-shot under v2** (same 9,748 items; `checks/cycle8_mera_analysis_zeroshot_sameitems_v2.out`):
+- RUS6 − FOR3, valid answers only: +2.14 [+1.25, +2.98] (v1 +2.15).
+- With invalid answers counted: −1.49 [−2.36, −0.52] (v1 −2.07).
+- Russian trio minus foreign trio: −3.80 (v1 −3.60).
+- Invalid shares fall mainly for saiga-yandexgpt (0.101 → 0.023), T-lite (0.050 → 0.028) and Mistral-Nemo (0.041 → 0.007). GigaChat3.1 (0.397) and Vikhr-Nemo (0.220) are unchanged.
+
+## 58. H1 under model-specific letter bias (N3): specification (2026-11-16, 11:35 MSK, written before computing). POST HOC
+
+**Motivation.** Alzahrani et al. (ACL 2024) report position and symbol bias in every tested model, differing even within a family. If models of one developer share a preference for particular answer letters, they would give the same wrong letter more often for reasons unrelated to content. The N2 null pools the wrong-option distribution over models, so it does not absorb model-specific letter bias.
+
+**N3.** As N2 (1PL-g correctness), but each model's wrong answer on item n has distribution w_ink ∝ w_nk · b_ik over the non-key options. Here w is the pooled per-item wrong distribution of N2, and b_i is model i's letter-bias vector. b_i is estimated by 20 multiplicative fixed-point updates, b_ik ← b_ik · O_ik / Ê_ik, normalised to mean 1, where:
+- O_ik is model i's count of wrong answers with letter k;
+- Ê_ik = Σ over i's wrong items of w_ink.
+
+The expected same-wrong agreement becomes E_ij = Σ_n (1 − p_in)(1 − p_jn) Σ_k w_ink w_jnk. Null panels draw wrong answers from w_in.
+
+**Test.** The H1 statistic T is computed exactly as in Section 19: matched developer contrast, prompt class and accuracy matching. It uses the N3 expectation, a p-value from 200 N3 panels with 1PL-g refits, and the developer jackknife. MMLU, 70 models, seed [20261114, 9].
+
+**Reading.**
+- If T under N3 stays above the MDE 0.0028 with p < 0.05, letter bias does not explain the developer effect.
+- If T falls below the MDE, the H1 effect is at least partly letter bias, and the papers must say so.
+
+The N2 value is recomputed by the same script as a check (it must reproduce 0.00462).
+
+**Script:** `checks/cycle8_h1_letterbias.py`; output `checks/cycle8_h1_letterbias.out`.
+
+**Result (Section 58, 11:50 MSK; `checks/cycle8_h1_letterbias.out`, 467 s).**
+- **Letter bias is real.** Median max |b_ik − 1| is 0.36 (max 1.49), so models do prefer particular wrong letters.
+- **It does not explain the developer effect.** Under N3, T = 0.00466 (N2 check 0.00462 reproduced). The N3 null mean is 0.00007 (sd 0.00028), p = 0.005, and the jackknife 90% interval is [0.00204, 0.00727], above the MDE.
+- **No shared letter bias within developers.** T rises slightly rather than falls, so same-developer pairs do not share letter preferences more than matched cross-developer pairs.
+- **Verdict:** H1 holds under N3.
+
+## 59. Few-shot Russian run: results (2026-11-16, 11:55 MSK). POST HOC
+
+The run covered 12 models on 9,748 items with 5 worked examples per domain (Section 56). Outputs: `checks/cycle8_mera_analysis_fewshot_v1.out` (primary parser) and `checks/cycle8_mera_analysis_fewshot_v2.out` (Section 57 variant). The zero-shot comparison on the same items is in `…_zeroshot_sameitems.out` and `…_zeroshot_sameitems_v2.out`.
+
+- **Worked examples do not remove format failures.** Several models' invalid shares fall; others rise, because those models answer the worked examples again or start a solution. Invalid share, zero-shot → few-shot (v1):
+
+  | Model | Zero-shot | Few-shot |
+  |---|---|---|
+  | GigaChat3.1 | 0.397 | 0.355 |
+  | Vikhr-Nemo | 0.220 | 0.384 |
+  | Qwen3-8B | 0.089 | 0.196 |
+  | Llama-3.1-8B | 0.082 | 0.453 |
+  | T-lite | 0.050 | 0.157 (0.032 under v2) |
+  | saiga-yandexgpt | 0.101 | 0.081 |
+
+  The Section 56 reading ("if invalid shares fall …") therefore does not apply. Format failure depends on the model-prompt combination, consistent with Sclar et al. (ICLR 2024).
+- **Accuracy rises where the format holds:**
+
+  | Model | Zero-shot | Few-shot |
+  |---|---|---|
+  | YandexGPT-5-Lite | 0.652 | 0.700 |
+  | saiga-nemo | 0.506 | 0.565 |
+  | GigaChat-20B | 0.568 | 0.600 |
+  | Qwen2.5-7B | 0.576 | 0.609 |
+
+- **RUS6 − FOR3, valid answers only:**
+  - zero-shot +2.15 [+1.29, +2.97];
+  - few-shot −0.53 [−1.43, +0.62] (v1) and −0.12 (v2).
+
+  The advantage of all six Russian 8–12B models on valid answers is prompt-dependent and is not claimed.
+- **OWN3 − FOR3, valid answers only:**
+  - zero-shot +4.71;
+  - few-shot +2.12 [+1.14, +3.50] (v1) and +2.27 (v2).
+
+  Positive in both prompts, but the leave-one-out range includes 0 in few-shot (−0.35 to +5.00).
+- **With invalid answers counted** (accuracy), RUS6 − FOR3:
+  - zero-shot −2.07;
+  - few-shot −5.25 (v1) and −2.87 (v2).
+- **Plurality trios:** the Russian trio errs less than the foreign trio in both prompts (zero-shot −3.60, few-shot −5.42 [−6.93, −3.48] (v1), −5.50 (v2)). This is the robust Russian-language result.
+- **Inheritance in Russian, few-shot:** 4 of 5 fine-tune pairs exceed the null (p ≤ 0.005): Vikhr–Mistral-Nemo +0.064, saiga_nemo–Mistral-Nemo +0.142, Vikhr–saiga_nemo +0.055, saiga_yandexgpt–YandexGPT +0.026. T-lite–Qwen3-8B does not (−0.014, p 1.000; zero-shot +0.030). The GigaChat same-developer pair again does not.
+
+**Claims allowed in the papers:**
+- In Russian, a portfolio of Russian models beats a foreign one (both prompts).
+- Russian models on Russian bases are more accurate on valid answers in both prompts.
+- Worked examples do not fix answer-format failures.
+- Inheritance replicates for 5/5 fine-tune pairs zero-shot and 4/5 few-shot.
+
+**Withdrawn:** the claim that all six Russian 8–12B models are more accurate on valid answers.
+
+## 60. T-pro on all items: results (2026-11-16, evening). POST HOC
+
+The run covered all 14,038 HELM MMLU prompts (11,188 new plus the 2,850 subset answers resumed), took 18,086 s and produced 0 invalid answers. Point estimates: `checks/cycle8_tpro_full_analysis_quick.out` (one bootstrap resample). The full 200-resample interval is added below when computed.
+
+- **Accuracy:** 0.820. That is third of 15 against HELM open models of 27–72B on the same items: Qwen2.5-72B 0.833, Qwen2-72B 0.827, then T-pro, then Llama-3.1-70B 0.809. The mean of the 14 HELM models is 0.752. The subset value was 0.841 (second of 15). The full set weights subjects by item count, so it differs from the subset's 50 per subject.
+- **Portfolio:**
+  - The cross-fitted open-weight five-model vote errs on 13.84%.
+  - T-pro added as a sixth member gives 13.58% (−0.26).
+  - Re-selection with T-pro in the pool does not pick it (change 0.00).
+- **Family signal:** T-pro's excess same-wrong agreement is +0.039 with T-lite (same Qwen3 family, same developer) and +0.015 with Qwen3-8B, against a mean of +0.012 over unrelated local models (range −0.014 to +0.032).
+- **Reading:** this is consistent with the subset result and with Section 55. "Scale, not origin" remains a hypothesis, since T-pro is a Qwen fine-tune.
+
+**Section 60 interval (2026-11-16, 18:50 MSK; `checks/cycle8_tpro_full_boot.out`, script `checks/cycle8_tpro_boot_parallel.py`).**
+- The script draws the same 200 subject resamples as the serial script (same seed and order), spread over 18 server cores.
+- **T-pro as a sixth member:** −0.26 [−0.56, +0.26], so the interval includes zero.
+- **Re-selection with T-pro in the pool:** 0.00 [−0.45, +0.10].
+- **Reading:** T-pro does not measurably improve the open-weight portfolio, as for the subset (Section 55: −0.11 [−1.51, 0.35]).

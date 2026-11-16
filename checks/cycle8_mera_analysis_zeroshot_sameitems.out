@@ -1,0 +1,47 @@
+Cycle 8 Russian-language run (MERA ruMMLU public_test; protocol Sections 45-46, 56) _zeroshot_sameitems. POST HOC
+prompts mera_rummlu_fewshot_prompts.jsonl.gz, runs data/ru_mera
+9748 items, 57 domains; English: local HELM MMLU runs (14038 items); bootstrap 1000 over domains
+
+M1. Accuracy (Russian / English), invalid share and accuracy on valid answers (Russian):
+  yandexgpt5-lite-8b: RU 0.652 / EN 0.733 (change -0.081); invalid 0.006; valid-only 0.656
+  t-lite-it-2.1: RU 0.626 / EN 0.724 (change -0.098); invalid 0.050; valid-only 0.660
+  gigachat3.1-10b: RU 0.392 / EN 0.718 (change -0.326); invalid 0.397; valid-only 0.650
+  vikhr-nemo-12b: RU 0.465 / EN 0.654 (change -0.189); invalid 0.220; valid-only 0.596
+  saiga-nemo-12b: RU 0.506 / EN 0.639 (change -0.133); invalid 0.014; valid-only 0.514
+  saiga-yandexgpt-8b: RU 0.554 / EN 0.663 (change -0.109); invalid 0.101; valid-only 0.617
+  gigachat-20b-v1.5: RU 0.568 / EN 0.616 (change -0.049); invalid 0.001; valid-only 0.568
+  cotype-nano: RU 0.421 / EN 0.539 (change -0.118); invalid 0.053; valid-only 0.445
+  qwen3-8b: RU 0.588 / EN 0.673 (change -0.085); invalid 0.089; valid-only 0.645
+  qwen2.5-7b: RU 0.576 / EN 0.713 (change -0.137); invalid 0.068; valid-only 0.618
+  llama3.1-8b: RU 0.476 / EN 0.456 (change +0.020); invalid 0.082; valid-only 0.518
+  mistral-nemo-12b: RU 0.496 / EN 0.642 (change -0.146); invalid 0.041; valid-only 0.518
+
+M2. Origin at matched size (points; 95% domain-bootstrap CI; leave-one-model-out range):
+  RUS6 - FOR3 / Russian accuracy: -2.07 [-3.08, -1.00]; LOO [-4.93, +0.74]
+  RUS6 - FOR3 / diff-in-diff (RU-EN): -3.31 [-4.68, -1.74]; LOO [-4.81, +0.09]
+  RUS6 - FOR3 / Russian accuracy, valid answers only: +2.15 [+1.29, +2.97]; LOO [-1.65, +4.73]
+  OWN3 - FOR3 / Russian accuracy: -2.06 [-3.29, -0.78]; LOO [-8.02, +4.98]
+  OWN3 - FOR3 / diff-in-diff (RU-EN): -4.90 [-6.53, -3.03]; LOO [-9.44, +2.80]
+  OWN3 - FOR3 / Russian accuracy, valid answers only: +4.71 [+3.49, +5.77]; LOO [+0.91, +7.29]
+  RUS6 - FOR4 / Russian accuracy: -0.13 [-1.03, +0.94]; LOO [-2.51, +2.68]
+  RUS6 - FOR4 / diff-in-diff (RU-EN): -6.88 [-8.12, -5.41]; LOO [-8.85, -3.31]
+  RUS6 - FOR4 / Russian accuracy, valid answers only: +4.04 [+3.18, +4.93]; LOO [+2.14, +6.40]
+  OWN3 - FOR4 / Russian accuracy: -0.12 [-1.22, +1.12]; LOO [-6.07, +6.92]
+  OWN3 - FOR4 / diff-in-diff (RU-EN): -8.47 [-10.01, -6.62]; LOO [-13.01, -0.77]
+  OWN3 - FOR4 / Russian accuracy, valid answers only: +6.60 [+5.41, +7.90]; LOO [+4.70, +8.95]
+
+M3. Cross-fitted plurality trios (error %, 95% domain-bootstrap CI over 200 resamples):
+  Russian 8-12B (6): 34.06 [27.89, 40.89]
+  all Russian (8): 33.08 [27.36, 40.12]
+  foreign (4): 37.66 [31.60, 44.71]
+  foreign without Llama (3): 37.66 [31.81, 44.71]
+  Russian 8-12B minus foreign without Llama: -3.60 [-4.80, -2.96]
+
+M4. Inheritance in Russian: excess x of the pair minus matched unrelated local pairs; N2 p (English value in brackets):
+  t-lite-it-2.1 ~ qwen3-8b: +0.0299 (matched 5, tol 0.03); p 0.005  [EN +0.0182]
+  vikhr-nemo-12b ~ mistral-nemo-12b: +0.0645 (matched 11, tol 0.06); p 0.005  [EN +0.0776]
+  saiga-nemo-12b ~ mistral-nemo-12b: +0.1011 (matched 6, tol 0.06); p 0.005  [EN +0.0372]
+  vikhr-nemo-12b ~ saiga-nemo-12b: +0.0428 (matched 11, tol 0.06); p 0.005  [EN +0.0631]
+  saiga-yandexgpt-8b ~ yandexgpt5-lite-8b: +0.0206 (matched 5, tol 0.03); p 0.005  [EN +0.0113]
+  gigachat3.1-10b ~ gigachat-20b-v1.5: -0.0202 (matched 7, tol 0.03); p 1.000  [EN +0.0103]
+seconds 136

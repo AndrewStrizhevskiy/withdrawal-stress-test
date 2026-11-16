@@ -4,6 +4,8 @@
 2. Fallback: the first option letter that directly follows "ответ"/"answer" (optionally "на вопрос", a colon or dash,
    markdown) anywhere in the completion.
 Otherwise invalid (-1).
+Variant v2 (protocol Section 57, POST HOC, reported beside v1): the "word follows" guard of rule 1 applies only to the
+Cyrillic letters, which double as prepositions; a Latin A-D followed by the option text ("B абелева группа") is accepted.
 """
 import re
 
@@ -16,7 +18,7 @@ FALLBACK = re.compile(r"(?i:ответ|answer)(?i:\s+на\s+(?:этот\s+)?во
                       r"([ABCDАВСД])(?![A-Za-zА-Яа-яЁё])")   # option letter itself is case-sensitive
 
 
-def parse(comp):
+def parse(comp, v2=False):
     t = comp.split("</think>", 1)[1] if "</think>" in comp else comp
     s = t
     for _ in range(3):
@@ -28,6 +30,8 @@ def parse(comp):
     s = JUNK.sub("", s)
     if s and s[0] in MAP and (len(s) == 1 or not s[1].isalpha()):
         word_follows = len(s) > 2 and s[1] == " " and s[2].islower()      # "В данном случае ..." is a preposition
+        if v2 and s[0] in "ABCD":
+            word_follows = False
         if not word_follows:
             return MAP[s[0]]
     m = FALLBACK.search(t)
