@@ -1,0 +1,11 @@
+Calibrated intervals (protocol Section 61). k: MMLU 1.116, MMLU-Pro 1.170
+benchmark | quantity | estimate | bootstrap 95% | calibrated (item sampling) | + developer jackknife (model sampling)
+MMLU | dE API-only | 2.19 | [1.24, 5.28] | [1.13, 5.64] | [-8.15, 13.04]
+MMLU | dE Anthropic | 0.59 | [0.26, 1.27] | [0.22, 1.35] | n/a
+MMLU | dE DeepSeek | 0.46 | [0.02, 0.83] | [-0.03, 0.87] | n/a
+MMLU | dE Google | 0.38 | [0.06, 0.93] | [0.02, 0.99] | n/a
+MMLU | dE OpenAI | 0.27 | [-0.10, 0.69] | [-0.14, 0.74] | n/a
+MMLU | C (cap vs open5) | 2.86 | [1.89, 3.41] | [1.78, 3.47] | [0.22, 5.35]
+MMLU | C' (cap vs best open) | 2.33 | [1.46, 2.96] | [1.36, 3.03] | n/a
+MMLU-Pro | C (cap vs open5) | 5.20 | [2.90, 7.90] | [2.51, 8.36] | [0.10, 10.56]
+Note: the synthetic validation covers Delta E; applying k to C and C' is an approximation (same estimator type).

@@ -1,0 +1,90 @@
+[
+ {
+  "benchmark": "MMLU",
+  "quantity": "dE API-only",
+  "est": 2.19,
+  "lo": 1.24,
+  "hi": 5.28,
+  "cal_lo": 1.13,
+  "cal_hi": 5.64,
+  "jk_se": 5.25,
+  "combined": "[-8.15, 13.04]"
+ },
+ {
+  "benchmark": "MMLU",
+  "quantity": "dE Anthropic",
+  "est": 0.59,
+  "lo": 0.26,
+  "hi": 1.27,
+  "cal_lo": 0.22,
+  "cal_hi": 1.35,
+  "jk_se": null,
+  "combined": "n/a"
+ },
+ {
+  "benchmark": "MMLU",
+  "quantity": "dE DeepSeek",
+  "est": 0.46,
+  "lo": 0.02,
+  "hi": 0.83,
+  "cal_lo": -0.03,
+  "cal_hi": 0.87,
+  "jk_se": null,
+  "combined": "n/a"
+ },
+ {
+  "benchmark": "MMLU",
+  "quantity": "dE Google",
+  "est": 0.38,
+  "lo": 0.06,
+  "hi": 0.93,
+  "cal_lo": 0.02,
+  "cal_hi": 0.99,
+  "jk_se": null,
+  "combined": "n/a"
+ },
+ {
+  "benchmark": "MMLU",
+  "quantity": "dE OpenAI",
+  "est": 0.27,
+  "lo": -0.1,
+  "hi": 0.69,
+  "cal_lo": -0.14,
+  "cal_hi": 0.74,
+  "jk_se": null,
+  "combined": "n/a"
+ },
+ {
+  "benchmark": "MMLU",
+  "quantity": "C (cap vs open5)",
+  "est": 2.86,
+  "lo": 1.89,
+  "hi": 3.41,
+  "cal_lo": 1.78,
+  "cal_hi": 3.47,
+  "jk_se": 1.23,
+  "combined": "[0.22, 5.35]"
+ },
+ {
+  "benchmark": "MMLU",
+  "quantity": "C' (cap vs best open)",
+  "est": 2.33,
+  "lo": 1.46,
+  "hi": 2.96,
+  "cal_lo": 1.36,
+  "cal_hi": 3.03,
+  "jk_se": null,
+  "combined": "n/a"
+ },
+ {
+  "benchmark": "MMLU-Pro",
+  "quantity": "C (cap vs open5)",
+  "est": 5.2,
+  "lo": 2.9,
+  "hi": 7.9,
+  "cal_lo": 2.51,
+  "cal_hi": 8.36,
+  "jk_se": 2.21,
+  "combined": "[0.10, 10.56]"
+ }
+]

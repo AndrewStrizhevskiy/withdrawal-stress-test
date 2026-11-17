@@ -1,0 +1,13 @@
+{
+ "label": "MMLU S0b, admission sigma 0.3 (Section 13 subset)",
+ "sigma": 0.3,
+ "datasets": 99,
+ "intervals": 454,
+ "coverage_k1": 0.9118942731277533,
+ "k_median": 1.1155988490272137,
+ "k_p05": 1.0353452046062392,
+ "k_p95": 1.303318868531019,
+ "oos_coverage_median": 0.9508928571428571,
+ "oos_coverage_p05": 0.8967082027064567,
+ "coverage_all_at_kmed": 0.9515418502202643
+}

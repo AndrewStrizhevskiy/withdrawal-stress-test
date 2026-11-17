@@ -1,0 +1,191 @@
+{
+ "primary": {
+  "point": {
+   "developer/full": 0.10913235503632997,
+   "developer/worst_dev": 0.11654081778031058,
+   "developer/worst_fam": 0.11654081778031058,
+   "family/full": 0.10913235503632997,
+   "family/worst_dev": 0.11654081778031058,
+   "family/worst_fam": 0.11654081778031058,
+   "joint/full": 0.10913235503632997,
+   "joint/worst_dev": 0.11654081778031058,
+   "joint/worst_fam": 0.11654081778031058,
+   "_portfolios": {
+    "developer": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ],
+    "family": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ],
+    "joint": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ]
+   }
+  }
+ },
+ "no_solar_merge": {
+  "point": {
+   "developer/full": 0.10913235503632997,
+   "developer/worst_dev": 0.11654081778031058,
+   "developer/worst_fam": 0.11654081778031058,
+   "family/full": 0.10913235503632997,
+   "family/worst_dev": 0.11654081778031058,
+   "family/worst_fam": 0.11654081778031058,
+   "joint/full": 0.10913235503632997,
+   "joint/worst_dev": 0.11654081778031058,
+   "joint/worst_fam": 0.11654081778031058,
+   "_portfolios": {
+    "developer": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ],
+    "family": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ],
+    "joint": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ]
+   }
+  }
+ },
+ "gemma_in_gemini": {
+  "point": {
+   "developer/full": 0.10913235503632997,
+   "developer/worst_dev": 0.11654081778031058,
+   "developer/worst_fam": 0.11654081778031058,
+   "family/full": 0.10913235503632997,
+   "family/worst_dev": 0.11654081778031058,
+   "family/worst_fam": 0.11654081778031058,
+   "joint/full": 0.10913235503632997,
+   "joint/worst_dev": 0.11654081778031058,
+   "joint/worst_fam": 0.11654081778031058,
+   "_portfolios": {
+    "developer": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ],
+    "family": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ],
+    "joint": [
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "google_gemini-1.5-pro-002",
+      "deepseek-ai_deepseek-v3",
+      "openai_gpt-4o-2024-08-06",
+      "meta_llama-3.1-405b-instruct-turbo"
+     ],
+     [
+      "anthropic_claude-3-5-sonnet-20241022",
+      "deepseek-ai_deepseek-v3",
+      "google_gemini-1.5-pro-002",
+      "meta_llama-3.1-405b-instruct-turbo",
+      "openai_gpt-4o-2024-08-06"
+     ]
+    ]
+   }
+  }
+ }
+}

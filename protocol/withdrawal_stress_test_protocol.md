@@ -1829,3 +1829,86 @@ The run covered all 14,038 HELM MMLU prompts (11,188 new plus the 2,850 subset a
 - **T-pro as a sixth member:** −0.26 [−0.56, +0.26], so the interval includes zero.
 - **Re-selection with T-pro in the pool:** 0.00 [−0.45, +0.10].
 - **Reading:** T-pro does not measurably improve the open-weight portfolio, as for the subset (Section 55: −0.11 [−1.51, 0.35]).
+
+## 61. Journal revision: calibrated ΔE intervals and a family-cap experiment (specification, 2026-11-17, written before computing). POST HOC
+
+Motivation: two external reviews of the journal manuscript.
+- ΔE coverage of the nominal 95% intervals was 0.912 on MMLU (Section 13, S0b, 454 intervals) and 0.896 on MMLU-Pro (Section 25, A5, 431 intervals).
+- The family-level rule ("count model families, not brands") had not been tested as a selection rule.
+
+**C1. Calibrated ΔE intervals (MMLU).**
+- **Data:** the 454 S0b ΔE intervals with their true values (`checks/cycle8_s0b_results.jsonl`, fields est/lo/hi/truth).
+- **Calibrated interval:** est − k·(est − lo), est + k·(hi − est), i.e. both half-widths scaled by one factor k.
+- **Choice of k:** the smallest k with coverage ≥ 0.95, found on a random half of the datasets (split by dataset, not by interval) and evaluated on the other half. This is repeated over 200 random splits.
+- **Report:** the median k, its 5–95% range, and the median out-of-sample coverage.
+- **Application:** the median k is applied to every reported real ΔE interval on MMLU.
+- **Accuracy split:** the subject bootstrap (item sampling) and the developer jackknife (model sampling, Section 44) are reported side by side, with a combined interval: half-width = √(calibrated bootstrap half-width² + (1.96·jackknife SE)²).
+
+**C2. MMLU-Pro.** The A5 run stored only summary statistics. The A5 coverage part is re-run with the same seeds and generator, now storing est/lo/hi/truth, and C1 is repeated on it. If the re-run differs from Section 25, the difference is reported.
+
+**F1. Family-cap experiment (MMLU, 70 models, same folds and seed as S1).**
+- **Family labels:** equal to the developer, with two exceptions:
+  - Google splits into PaLM 2 (text-bison, text-unicorn), Gemini and Gemma (three separately trained families);
+  - Upstage Solar Pro is labelled as Phi (the Solar Pro Preview model card states it scales Phi-3-medium; the HELM model is the release version, so this label is an assumption).
+- **Variants:** without the Solar→Phi merge, and with Gemma merged into Gemini.
+- **Three rules, all taking the most accurate model per group, five models, plurality vote:**
+  - developer cap (as in S1);
+  - family cap;
+  - joint cap (at most one per developer and one per family).
+- **Outcomes:**
+  - full-availability error;
+  - held-out worst case over single-developer withdrawals (as in S1 H3);
+  - worst case over single-family withdrawals.
+- **Uncertainty:** 200-resample subject bootstrap for the family − developer difference.
+- **Reading:**
+  - If the family cap does not differ from the developer cap by more than the interval, the paper says the family rule is not distinguishable from the developer rule in this panel. The likely reason is that families and developers nearly coincide here.
+  - If it is better, the family rule is supported as a selection rule in this panel.
+
+**Scripts:** `checks/cycle8_ci_calibration.py` and `checks/cycle8_family_cap.py`.
+
+**C1/C2 results (2026-11-17).** Script `checks/cycle8_ci_calibration.py`; outputs `checks/cycle8_ci_calibration_mmlu.out`, `…_mmlu_all.out`, `…_pro.out`; application in `checks/cycle8_ci_apply.py` → `checks/cycle8_ci_apply.out`.
+- **MMLU (S0b, σ = 0.3, the Section 13 subset):** reproduces 0.912 over 454 intervals.
+  - k = 1.12 (5–95% over 200 splits: 1.04–1.30).
+  - Out-of-sample coverage: median 0.951 (5%: 0.897).
+  - All σ levels: k = 1.14, coverage 0.916 → 0.95.
+- **MMLU-Pro (A5 coverage datasets):** reproduces 0.896 over 431 intervals.
+  - k = 1.17 (1.05–1.30); out-of-sample coverage median 0.949.
+  - Deviation from C2: the A5 rows already stored est/lo/hi/truth, so no re-run was needed.
+- **Calibrated real intervals:**
+
+  | Quantity | Calibrated interval |
+  |---|---|
+  | MMLU ΔE(API-only) | 2.19 [1.13, 5.64] |
+  | MMLU ΔE Anthropic | 0.59 [0.22, 1.35] |
+  | MMLU ΔE DeepSeek | 0.46 [−0.03, 0.87] (now includes 0) |
+  | MMLU ΔE Google | 0.38 [0.02, 0.99] |
+  | MMLU ΔE OpenAI | 0.27 [−0.14, 0.74] |
+  | MMLU C | 2.86 [1.78, 3.47] |
+  | MMLU C′ | 2.33 [1.36, 3.03] |
+  | MMLU-Pro C | 5.20 [2.51, 8.36] |
+
+  Applying k to C and C′ is an approximation: the validation covers ΔE.
+- **Combined with the developer jackknife SE** (Section 44): MMLU C [0.22, 5.35]; MMLU-Pro C [0.10, 10.56]. For ΔE(API-only), the jackknife is dominated by DeepSeek (leave-one-out 1.68–7.62), and the range is reported instead of a combined interval.
+
+**F1 result (2026-11-17, `checks/cycle8_family_cap.out`).**
+- In the 70-model panel all three caps select identical portfolios in both folds, under all three label variants. The five most accurate models already come from five different developers and five different families.
+- Full error is 10.91% for each cap; the worst single-developer and single-family withdrawals are 11.65% for each.
+- The rules cannot be distinguished in this panel, so no bootstrap was run (the differences are identically zero).
+
+**F2, added after F1 and before computing (exploratory).**
+- **Panel:** the 12 local MMLU runs, where fine-tunes of foreign bases exist.
+- **Labels:** developers from `LOCAL`; families from the pre-existing `LINEAGE` table in `checks/cycle8_ru_analysis.py`: nemo = {Mistral-Nemo, Vikhr-Nemo, saiga_nemo}; qwen3 = {Qwen3-8B, T-lite}; yagpt = {YandexGPT-5-Lite, saiga_yandexgpt}; giga; qwen2.5; llama3.1; cotype.
+- **Method:** the three caps as in F1, five models, plurality vote, cross-fitted on the subject folds of `cycle8_tpro_analysis.py` (seed 20261119).
+- **Outcomes:** full error, worst single-family withdrawal, worst single-developer withdrawal; 200-resample subject bootstrap of family − developer and joint − developer.
+- **Script:** `checks/cycle8_family_cap_local.py`.
+
+**F2 result (2026-11-17, `checks/cycle8_family_cap_local.out`, exploratory).**
+- 9 developers and 7 families.
+- **Developer cap:** {YandexGPT, GigaChat3.1, T-lite, Qwen2.5, saiga_yandexgpt} in both folds. Full error 24.27%; worst single-family withdrawal 25.61%; worst single-developer withdrawal 24.99%.
+- **Family cap (= joint cap):** saiga_yandexgpt (same family as YandexGPT) is replaced by Vikhr-Nemo. Full error 24.76%; worst single-family withdrawal 25.29%; worst single-developer withdrawal 25.29%.
+- **Family − developer (200 subject resamples):**
+  - full +0.49 [0.00, +0.82];
+  - worst family −0.32 [−0.39, +0.25];
+  - worst developer +0.30 [−0.17, +0.53].
+- **Reading:** a small trade-off. The family cap gives up some full-availability accuracy (it admits a weaker model) for slightly better protection against losing one family; neither difference is clearly established.
+- Together with F1 (identical portfolios in the HELM panel), the family rule stays a design hypothesis. It is not shown to dominate the developer cap.

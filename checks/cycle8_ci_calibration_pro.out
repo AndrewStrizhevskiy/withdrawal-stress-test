@@ -1,0 +1,13 @@
+{
+ "label": "MMLU-Pro A5 coverage datasets (Section 25)",
+ "sigma": null,
+ "datasets": 100,
+ "intervals": 431,
+ "coverage_k1": 0.8955916473317865,
+ "k_median": 1.17,
+ "k_p05": 1.0475166666666662,
+ "k_p95": 1.295,
+ "oos_coverage_median": 0.9489556416881999,
+ "oos_coverage_p05": 0.8970982142857143,
+ "coverage_all_at_kmed": 0.951276102088167
+}

@@ -1,0 +1,13 @@
+{
+ "label": "MMLU S0b, all sigma (sensitivity)",
+ "sigma": null,
+ "datasets": 299,
+ "intervals": 1349,
+ "coverage_k1": 0.916234247590808,
+ "k_median": 1.1419150521609542,
+ "k_p05": 1.0852746620649985,
+ "k_p95": 1.2077947667087012,
+ "oos_coverage_median": 0.9515295452522915,
+ "oos_coverage_p05": 0.923731174145105,
+ "coverage_all_at_kmed": 0.9510748702742773
+}
