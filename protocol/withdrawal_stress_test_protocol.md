@@ -1912,3 +1912,24 @@ Motivation: two external reviews of the journal manuscript.
   - worst developer +0.30 [−0.17, +0.53].
 - **Reading:** a small trade-off. The family cap gives up some full-availability accuracy (it admits a weaker model) for slightly better protection against losing one family; neither difference is clearly established.
 - Together with F1 (identical portfolios in the HELM panel), the family rule stays a design hypothesis. It is not shown to dominate the developer cap.
+
+## 62. Fourth journal review: engineering-subset interval (specification, 2026-11-17, written before computing). POST HOC
+
+Motivation: the API-only withdrawal effect on the 936 engineering-science items (0.43 points, Section 21) was reported without an interval.
+
+- **Quantity:** ΔE_eng = error of the primary portfolio on the engineering items with the API-only models withdrawn, minus its full-availability error on the same items.
+  - Primary portfolio: accuracy-greedy, n = 5, plurality vote, cross-fitted on the S1 folds.
+  - The quantity is exactly as in S1 (`S/prim_api_withdrawn/eng` − `S/prim_full/eng`), including re-selection of the portfolio in every resample.
+- **Interval:** S1 subject bootstrap, 200 resamples, seed [20261114, 62]. Reported: percentile 95% interval, and the same interval widened by the MMLU calibration factor k = 1.12 (Section 61). The calibration was validated on all items, not on this subset, so the widened interval is approximate.
+- **Reading:**
+  - If the interval includes 0, the subset supports no direction of effect.
+  - If it excludes 0, the subset effect is positive but measured imprecisely.
+- **Script:** `checks/cycle8_eng_interval.py`, run on the server in parallel with the same resample draws as a serial run.
+
+**Section 62 result (2026-11-17, `checks/cycle8_eng_interval.out`).**
+- Deviation from the specification: the S1 resample draws ([20261114, 1000 + b]) were used instead of a new seed, so this interval uses the same resamples as every other S1 interval.
+- ΔE_eng = +0.43 points (15.81% → 16.24%).
+  - Percentile 95% interval: [−1.01, +5.87].
+  - Widened by k = 1.12 (approximate for this subset): [−1.17, +6.50].
+  - 24% of resamples have ΔE_eng ≤ 0.
+- Reading: the interval includes 0 and also contains the all-MMLU value (2.19). The subset supports no direction of effect and cannot say whether the headline cost transfers to technical questions.
